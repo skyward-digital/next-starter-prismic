@@ -1,0 +1,49 @@
+{
+  "BannerSlice": {
+    "primary": {
+      "linkLabel": {
+        "content": "Button Link"
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "link": {
+        "content": "https://prismic.io"
+      },
+      "background": {
+        "content": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db"
+      }
+    }
+  },
+  "HeroSlice": {
+    "primary": {
+      "linkLabel": {
+        "content": "Button Link"
+      },
+      "link": {
+        "content": "https://prismic.io"
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    }
+  }
+}

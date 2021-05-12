@@ -1,0 +1,32 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "HeroSlice",
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Seize clicks-and-mortar convergence",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Duis duis ullamco sint mollit nulla mollit proident deserunt consectetur do nulla pariatur. Laboris aliqua aute qui ad laboris Lorem veniam nisi aliquip.",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://prismic.io"
+      },
+      "linkLabel": "Button Link"
+    },
+    "items": [],
+    "slice_type": "hero_slice"
+  }
+]
