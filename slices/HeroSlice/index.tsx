@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, RichText, RichTextBlock } from "prismic-reactjs";
 
-const MySlice = ({ slice }: HeroSliceTypes) => (
+export const HeroSlice = ({ slice }: HeroSliceTypes) => (
   <section>
     {slice.primary.title ? (
       <RichText render={slice.primary.title} />
@@ -15,7 +15,7 @@ const MySlice = ({ slice }: HeroSliceTypes) => (
     )}
 
     {slice.primary.link ? (
-      <a href={Link.url(slice.primary.link)}>
+      <a href={Link.url(slice.primary.link)} className="btn btn-primary">
         <span>{slice.primary.linkLabel}</span>
       </a>
     ) : null}
@@ -32,5 +32,3 @@ export interface HeroSliceTypes {
     };
   };
 }
-
-export default MySlice;

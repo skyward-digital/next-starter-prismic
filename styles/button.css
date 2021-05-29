@@ -1,0 +1,8 @@
+.btn {
+  @apply inline-flex bg-gray-400 items-center justify-center gap-2 px-8 py-3 rounded-md font-semibold antialiased transition duration-200 ease-in-out no-underline;
+}
+
+.btn:hover,
+.btn:focus {
+  @apply bg-gray-200;
+}

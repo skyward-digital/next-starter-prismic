@@ -14,23 +14,31 @@
     "sm": "start-slicemachine --port 9999",
     "sm-create": "prismic sm --create-slice",
     "storybook": "start-storybook -p 8888",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "slicemachine": "start-slicemachine --port 9999"
   },
   "dependencies": {
-    "next": "^10.0.8",
+    "@tailwindcss/line-clamp": "^0.2.1",
+    "@tailwindcss/typography": "^0.4.1",
+    "next": "^10.2.3",
     "next-slicezone": "^0.0.14",
     "next-transpile-modules": "^6.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.5",
     "prismic-javascript": "^3.0.2",
     "prismic-reactjs": "^1.3.3",
-    "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@storybook/react": "6.1.21",
+    "autoprefixer": "^10.2.6",
     "babel-loader": "^8.2.2",
     "babel-plugin-react-require": "^3.1.3",
+    "postcss": "^8.3.0",
     "shx": "^0.3.3",
     "slice-machine-ui": "^0.0.45",
-    "sm-commons": "^0.0.23"
+    "sm-commons": "^0.0.23",
+    "tailwindcss": "^2.1.2"
   }
 }

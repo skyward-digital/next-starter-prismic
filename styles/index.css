@@ -1,0 +1,20 @@
+/* Using JIT mode, see tailwind's limitations with this mode here https://tailwindcss.com/docs/just-in-time-mode#known-limitations */
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+@import "./button.css";
+
+@import "tailwindcss/utilities";
+
+* {
+  @apply antialiased;
+}
+
+.prose h1 {
+  @apply font-extrabold text-6xl text-heading;
+}
+
+.prose h1 strong {
+  @apply font-extrabold bg-clip-text text-transparent bg-gradient-to-br from-orange-400 to-rose-400;
+}
