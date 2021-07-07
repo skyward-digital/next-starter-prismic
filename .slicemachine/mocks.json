@@ -24,28 +24,6 @@
       }
     }
   },
-  "HeroSlice": {
-    "primary": {
-      "linkLabel": {
-        "content": "Button Link"
-      },
-      "link": {
-        "content": "https://prismic.io"
-      },
-      "description": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "title": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      }
-    }
-  },
   "CustomerLogos": {
     "items": {
       "logo": {

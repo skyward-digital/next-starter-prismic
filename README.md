@@ -1,24 +1,4 @@
-# Prismic Slice Machine & Next.js Boilerplate
-
-> [Next.js](https://nextjs.org/) & Slice Machine boilerplate project with content managed in [Prismic](https://prismic.io) and components built with Slice Machine
-
-## Check out the dedicated article to get this project up and running
-
-> [Learn how to use this boilerplate to build a project from scratch](https://prismic.io/docs/technologies/tutorial-series-introduction-nextjs)
-
-### Learn more about using Prismic with Next.js
-
-[Prismic + Next.js documentation](https://prismic.io/docs/technologies/home-prismic-and-nextjs).
-
-### License
-
-This software is licensed under the Apache 2 license, quoted below.
-
-Copyright 2021 [Prismic](http://prismic.io/).
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+## Introduction
 
 ## How to make a slice
 
@@ -67,7 +47,7 @@ You'll see how your component now looks, and it'll be mostly unstyled, and missi
 
 #### Add the new fields
 
-Slicemachines is very generous and will give us the code we need to utilise the new slice fields we've created. In the top, click _*show code snippets*_ which will show you the code needed to output each field.
+Slicemachines is very generous and will give us the code we need to utilise the new slice fields we've created. In the top, click _show code snippets_ which will show you the code needed to output each field.
 
 You don't have to stick to using this code, but it's a very good starting point to get content outputting. Feel free to tidy up the code or make it more efficient once you've got things outputting.
 
@@ -99,6 +79,40 @@ Sometimes slice machines aren't the answer, and you will have to edit prismic in
 
 Typically, this will be when you don't want to use slices. This could be for the header & footer, SEO metadata, product details, or other similarly static data.
 
-In this case, simply build your components in prismic
+In this case, simply build your components in prismic and link to them from the page, using a `component` instead of a `slice`. Check out the `Hero` component to see a static component in action
 
 # Testing
+
+Every software needs testing, and a website is no exception. Fortunately, prismic + slicemachines makes this easy as it comes with storybook built in.
+
+Storybook is a way of visually testing and documenting components. Prismic does a good job of getting us started, but we may need to add more information.
+
+Components which are outside of the slicemachine will also need their own stories created so that they can be tested. Again, see the `Hero` for an example of this.
+
+TODO:
+
+- [ ] Chromatic (for showing visual changes in storybook)
+- [ ] Cypress (for page level testing)
+- [ ] Jest (for testing core functionality)
+- [ ] Typescript (for guaranteeing types work as expected)
+
+## Links & other resources
+
+This project is extended from the [Prismic](https://prismic.io) + [Next.js](https://nextjs.org/) slicemachine starter. If you are unfamiliar with this project, I highly recommend checking that out first.
+
+**Check out the dedicated article to create your own boilerplate**
+
+> [Learn how to use this boilerplate to build a project from scratch](https://prismic.io/docs/technologies/tutorial-series-introduction-nextjs)
+
+**Learn more about using Prismic with Next.js**
+[Prismic + Next.js documentation](https://prismic.io/docs/technologies/home-prismic-and-nextjs).
+
+## License
+
+This software is licensed under the Apache 2 license, quoted below.
+
+Copyright 2021 [Skyward Digital](http://skyward.digital/).
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
