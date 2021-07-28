@@ -24,7 +24,7 @@ const Contact = ({ slices, data, url, lang, ...rest }) => {
   };
 
   return (
-    <Layout>
+    <Layout seo={seo}>
       <Hero {...hero} />
       <SliceZone slices={slices} resolver={resolver} />
     </Layout>
