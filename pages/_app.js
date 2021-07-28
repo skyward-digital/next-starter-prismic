@@ -7,9 +7,15 @@ import { Client } from "../prismic-configuration";
 export default class MyApp extends NextApp {
   static async getInitialProps(appCtx) {
     const header = (await Client().getSingle("header")) || {};
+    const footer = (await Client().getSingle("footer")) || {};
+    const socials = (await Client().getSingle("socials")) || {};
     return {
       props: {
-        header: header,
+        layout: {
+          header,
+          footer,
+          socials,
+        },
       },
     };
   }
@@ -17,6 +23,6 @@ export default class MyApp extends NextApp {
   render() {
     const { Component, pageProps, props } = this.props;
     // console.log(props.header);
-    return <Component {...pageProps} header={props.header} />;
+    return <Component {...pageProps} {...props} />;
   }
 }

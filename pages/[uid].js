@@ -6,7 +6,7 @@ import resolver from "../sm-resolver.js";
 import { Layout } from "../components/Layout";
 import { Hero } from "../components/Hero";
 
-const Page = ({ slices, data, url, lang, header }) => {
+const Page = ({ slices, data, url, lang, layout }) => {
   const seo = {
     meta_title: data.meta_title, // || prismicLayout.data.meta_title,
     meta_description: data.meta_description, // || prismicLayout.data.meta_description,
@@ -15,6 +15,7 @@ const Page = ({ slices, data, url, lang, header }) => {
     article: false,
     lang: lang,
   };
+
   const hero = {
     title: data.hero_title,
     description: data.hero_description,
@@ -23,7 +24,7 @@ const Page = ({ slices, data, url, lang, header }) => {
   };
 
   return (
-    <Layout seo={seo} header={header}>
+    <Layout seo={seo} {...layout}>
       <Hero {...hero} />
       <SliceZone slices={slices} resolver={resolver} />;
     </Layout>

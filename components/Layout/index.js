@@ -1,28 +1,19 @@
 import React from "react";
 import { Seo } from "../Seo";
-import { Header } from "../Header/index";
-// import { Footer } from "../Footer/Footer";
+import { Header } from "../Header";
+import { Footer } from "../Footer";
 
-export const Layout = ({ seo, header, children }) => {
-  // console.log(rest);
-
-  // const footer = {
-  //   linkGroup: data.footer_body,
-  //   socials: [
-  //     { name: "Facebook link", ...data.facebook_social_link },
-  //     { name: "LinkedIn link", ...data.linkedin_social_link },
-  //     { name: "Twitter link", ...data.twitter_social_link },
-  //     { name: "Email link", ...data.email_address },
-  //   ],
-  //   addresses: data.addresses,
-  // };
-
+export const Layout = ({ seo, header, footer, socials, children }) => {
   return (
     <div className="bg-gray-50">
       <Seo {...seo} />
       <Header {...header} />
       <main>{children}</main>
-      {/* <Footer {...footer} /> */}
+      <Footer
+        logos={{ header_logo: header.data.header_logo }}
+        socials={socials}
+        {...footer}
+      />
     </div>
   );
 };
