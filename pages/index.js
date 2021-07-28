@@ -21,7 +21,7 @@ const Homepage = ({ slices, data }) => {
   );
 };
 
-// Fetch content from prismic
+// Fetch content from prismic - previews but doesn't hot reload
 export const getStaticProps = useGetStaticProps({
   client: Client(),
   queryType: "single",

@@ -95,6 +95,7 @@ TODO:
 - [ ] Cypress (for page level testing)
 - [ ] Jest (for testing core functionality)
 - [ ] Typescript (for guaranteeing types work as expected)
+- [ ] BrowserStack/Percy integration for automatically testing across different devices (requires Cypress first)
 
 ## Links & other resources
 
