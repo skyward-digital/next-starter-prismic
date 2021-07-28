@@ -1,0 +1,71 @@
+{
+  "Main": {
+    "footer_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Footer title"
+      }
+    },
+    "footer_text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,strong,em,hyperlink",
+        "allowTargetBlank": true,
+        "label": "Footer text"
+      }
+    },
+    "footer_newsletter": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,strong,em,hyperlink",
+        "allowTargetBlank": true,
+        "label": "Footer newsletter"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "list_of_articles": []
+        },
+        "choices": {
+          "list_of_articles": {
+            "type": "Slice",
+            "fieldset": "List of Links",
+            "description": "Section title and link list",
+            "icon": "photo_filter",
+            "non-repeat": {
+              "title_of_section": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "heading3",
+                  "label": "Title of Section",
+                  "placeholder": "Featured"
+                }
+              }
+            },
+            "repeat": {
+              "link_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Link Title"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "Select your page",
+                  "select": null
+                }
+              }
+            },
+            "display": "list"
+          }
+        }
+      }
+    }
+  }
+}

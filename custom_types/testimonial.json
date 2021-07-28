@@ -1,0 +1,39 @@
+{
+  "Main": {
+    "author": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "allowTargetBlank": true,
+        "label": "Author"
+      }
+    },
+    "location": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,hyperlink",
+        "allowTargetBlank": true,
+        "label": "Location"
+      }
+    },
+    "avatar": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 320,
+          "height": 320
+        },
+        "thumbnails": [],
+        "label": "Avatar"
+      }
+    },
+    "quote": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,strong,em,hyperlink",
+        "allowTargetBlank": true,
+        "label": "Quote"
+      }
+    }
+  }
+}
