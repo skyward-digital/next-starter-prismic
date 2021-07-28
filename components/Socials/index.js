@@ -7,7 +7,7 @@ import {
   faLinkedinIn,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-// import { Link } from "../Link/Link";
+import { Link } from "../Link";
 
 export const Socials = ({ socials }) => (
   <div className="flex -mx-2">
@@ -15,18 +15,18 @@ export const Socials = ({ socials }) => (
       const [type, link] = social;
 
       return (
-        // <Link
-        //   key={index}
-        //   to={link}
-        //   className="text-paragraph hover:text-heading focus:text-heading transition duration-200 mx-2"
-        //   aria-label={type}
-        // >
-        <FontAwesomeIcon
-          icon={mapSocialIcon[type]}
-          className="fill-current"
-          size="lg"
-        />
-        // </Link>
+        <Link
+          key={index}
+          href={link}
+          className="text-paragraph hover:text-heading focus:text-heading transition duration-200 mx-2"
+          aria-label={type}
+        >
+          <FontAwesomeIcon
+            icon={mapSocialIcon[type]}
+            className="fill-current"
+            size="lg"
+          />
+        </Link>
       );
     })}
   </div>

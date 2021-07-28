@@ -19,13 +19,13 @@ export const MobileNav = ({
       {({ open }) => (
         <>
           <div className="flex justify-between w-full mx-5 mt-2">
-            {/* <Link to="/" aria-label="Link to homepage"> */}
-            <img
-              className="w-36 md:w-52 h-auto z-0"
-              src={header_logo.url}
-              alt={header_logo.alt}
-            />
-            {/* </Link> */}
+            <Link href="/" aria-label="Link to homepage">
+              <img
+                className="w-36 md:w-52 h-auto z-0"
+                src={header_logo.url}
+                alt={header_logo.alt}
+              />
+            </Link>
             {!open && (
               <Menu.Button
                 className="w-8 h-8 z-10 my-auto"
@@ -39,17 +39,17 @@ export const MobileNav = ({
             <div className="bg-white rounded absolute transform left-1/2 -translate-x-1/2 w-96vw">
               <nav className="shadow-menu">
                 <div className="flex justify-between mx-4 mt-5 mb-3">
-                  {/* <Link
-                    to="/"
+                  <Link
+                    href="/"
                     className="my-auto"
                     aria-label="Link to homepage"
-                  > */}
-                  <img
-                    className="w-36"
-                    src={header_logo.url}
-                    alt={header_logo.alt}
-                  />
-                  {/* </Link> */}
+                  >
+                    <img
+                      className="w-36"
+                      src={header_logo.url}
+                      alt={header_logo.alt}
+                    />
+                  </Link>
                   {open && (
                     <Menu.Button
                       aria-label="Close mobile menu button"
@@ -67,34 +67,32 @@ export const MobileNav = ({
                       to={link}
                       className="w-max mx-5 mt-5 whitespace-nowrap"
                     >
-                      {/* <Link
+                      <Link
+                        href={link}
                         className="underline text-base"
                         activeClassName="underline"
-                        aria-label={RichText.asText(link_title.raw)}
-                      > */}
-                      {RichText.asText(link_title.raw)}
-                      {/* </Link> */}
+                      >
+                        {link_title}
+                      </Link>
                     </Menu.Item>
                   ))}
                   <Menu.Item className="mt-5 mb-6 w-max mx-5 whitespace-nowrap">
-                    {/* <Link
-                      to={secondary_button_link.url}
-                      aria-label={RichText.asText(secondary_button_label.raw)}
+                    <Link
+                      href={secondary_button_link}
                       className="link text-base"
                       activeClassName="underline"
-                    > */}
-                    {RichText.asText(secondary_button_label.raw)}
-                    {/* </Link> */}
+                    >
+                      {RichText.asText(secondary_button_label.raw)}
+                    </Link>
                   </Menu.Item>
                   <Menu.Item className="btn btn-primary w-auto mt-2 mx-5 mb-6">
-                    {/* <Link
-                      to={primary_button_link.url}
+                    <Link
+                      href={primary_button_link}
                       className="link text-base"
                       activeClassName="underline"
-                      aria-label={RichText.asText(primary_button_label.raw)}
-                    > */}
-                    {RichText.asText(primary_button_label.raw)}
-                    {/* </Link> */}
+                    >
+                      {RichText.asText(primary_button_label.raw)}
+                    </Link>
                   </Menu.Item>
                 </Menu.Items>
               </nav>

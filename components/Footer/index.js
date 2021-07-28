@@ -1,10 +1,9 @@
 import { RichText } from "prismic-reactjs";
 import { Socials } from "../Socials";
+import { Link } from "../Link";
 
 export const Footer = ({ data, logos, socials }) => {
   const { footer_title, footer_text, body } = data;
-  // console.log(data);
-
   return (
     <footer className="bg-muted text-paragraph">
       <div className="container">
@@ -27,12 +26,12 @@ export const Footer = ({ data, logos, socials }) => {
                 </p>
                 {items.map(({ link, link_title }, index) => (
                   <li key={index} className="my-4">
-                    {/* <Link
-                      to={link}
+                    <Link
+                      href={link}
                       className="no-underline hover:underline focus:underline"
-                    > */}
-                    {link_title}
-                    {/* </Link> */}
+                    >
+                      {link_title}
+                    </Link>
                   </li>
                 ))}
               </ul>

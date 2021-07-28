@@ -2,7 +2,8 @@ import Prismic from "prismic-javascript";
 
 import smConfig from "./sm.json";
 
-export { linkResolver, customLink } from "./utils/link";
+export { linkResolver } from "./utils/linkResolver";
+export { Link as customLink } from "./components/Link";
 
 if (!smConfig.apiEndpoint) {
   console.warn(

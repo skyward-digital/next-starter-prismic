@@ -1,6 +1,6 @@
-import React from 'react'
-import { RichText } from 'prismic-reactjs'
-import { Link } from 'prismic-reactjs'
+import React from "react";
+import { RichText } from "prismic-reactjs";
+import { Link } from "prismic-reactjs";
 
 const BannerSlice = ({ slice }) => (
   <section className="homepage-banner">
@@ -9,13 +9,12 @@ const BannerSlice = ({ slice }) => (
       <div className="banner-description">
         <RichText render={slice.primary.description} />
       </div>
-      <a href={Link.url(slice.primary.link)}>
-        { slice.primary.linkLabel }
-      </a>
+      {console.log(slice.primary.link)}
+      <a href={Link.url(slice.primary.link)}>{slice.primary.linkLabel}</a>
     </div>
     <style jsx>{`
       .homepage-banner {
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         margin: -70px 0 80px;
         padding: 6em 0 6em;
         background-position: center center;
@@ -23,7 +22,11 @@ const BannerSlice = ({ slice }) => (
         color: #ffffff;
         line-height: 1.75;
         text-align: center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${ slice.primary.background.url });
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(${slice.primary.background.url});
       }
       .banner-content {
         text-align: center;
@@ -67,6 +70,6 @@ const BannerSlice = ({ slice }) => (
       }
     `}</style>
   </section>
-)
+);
 
-export default BannerSlice
+export default BannerSlice;
