@@ -43,5 +43,29 @@
         }
       }
     }
+  },
+  "SEO": {
+    "meta_title": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Title",
+        "placeholder": "Meta title..."
+      }
+    },
+    "meta_description": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Description",
+        "placeholder": "Meta Description..."
+      }
+    },
+    "meta_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "SEO Image"
+      }
+    }
   }
 }
