@@ -1,9 +1,11 @@
 import React from "react";
 import { Seo } from "../Seo";
-// import { Header } from "../Header/Header";
+import { Header } from "../Header/index";
 // import { Footer } from "../Footer/Footer";
 
-export const Layout = ({ seo, data, header, children }) => {
+export const Layout = ({ seo, header, children }) => {
+  // console.log(rest);
+
   // const footer = {
   //   linkGroup: data.footer_body,
   //   socials: [
@@ -18,7 +20,7 @@ export const Layout = ({ seo, data, header, children }) => {
   return (
     <div className="bg-gray-50">
       <Seo {...seo} />
-      {/* <Header {...header} /> */}
+      <Header {...header} />
       <main>{children}</main>
       {/* <Footer {...footer} /> */}
     </div>
