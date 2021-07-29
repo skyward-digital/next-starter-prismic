@@ -1,6 +1,6 @@
 import React from "react";
 import { RichText } from "prismic-reactjs";
-import { Link } from "prismic-reactjs";
+import { Link } from "../../components/Link";
 
 const BannerSlice = ({ slice }) => (
   <section className="homepage-banner">
@@ -9,8 +9,8 @@ const BannerSlice = ({ slice }) => (
       <div className="banner-description">
         <RichText render={slice.primary.description} />
       </div>
-      {console.log(slice.primary.link)}
-      <a href={Link.url(slice.primary.link)}>{slice.primary.linkLabel}</a>
+
+      <Link href={slice.primary.link}>{slice.primary.linkLabel}</Link>
     </div>
     <style jsx>{`
       .homepage-banner {

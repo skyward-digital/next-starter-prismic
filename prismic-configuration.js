@@ -18,7 +18,27 @@ export const apiEndpoint = smConfig.apiEndpoint;
 export const accessToken = "";
 
 export const Router = {
-  routes: [{ type: "page", path: "/:uid" }],
+  routes: [
+    { type: "page", path: "/:uid" },
+    // {
+    //   type: "blog_category",
+    //   path: "/blog/:uid",
+    // },
+    {
+      type: "blog_post",
+      path: "/blog/:category/:uid",
+      resolvers: {
+        category: "category", // id of the content relationship in the article mask
+      },
+    },
+    {
+      type: "help_article",
+      path: "/help-center/:category/:uid",
+      resolvers: {
+        category: "category", // id of the content relationship in the article mask
+      },
+    },
+  ],
   href: (type) => {
     const route = Router.routes.find((r) => r.type === type);
     return route && route.href;
