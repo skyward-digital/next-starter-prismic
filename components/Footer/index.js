@@ -3,6 +3,7 @@ import { Socials } from "../Socials";
 import { Link } from "../Link";
 
 export const Footer = ({ data, logos, socials }) => {
+  if (!data) return null;
   const { footer_title, footer_text, body } = data;
   return (
     <footer className="bg-muted text-paragraph">

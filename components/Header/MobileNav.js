@@ -19,13 +19,15 @@ export const MobileNav = ({
       {({ open }) => (
         <>
           <div className="flex justify-between w-full mx-5 mt-2">
-            <Link href="/" aria-label="Link to homepage">
-              <img
-                className="w-36 md:w-52 h-auto z-0"
-                src={header_logo.url}
-                alt={header_logo.alt}
-              />
-            </Link>
+            {header_logo && (
+              <Link href="/" aria-label="Link to homepage">
+                <img
+                  className="w-36 md:w-52 h-auto z-0"
+                  src={header_logo.url}
+                  alt={header_logo.alt}
+                />
+              </Link>
+            )}
             {!open && (
               <Menu.Button
                 className="w-8 h-8 z-10 my-auto"

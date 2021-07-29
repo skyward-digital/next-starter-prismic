@@ -10,7 +10,7 @@ export const Layout = ({ seo, header, footer, socials, children }) => {
       <Header {...header} />
       <main>{children}</main>
       <Footer
-        logos={{ header_logo: header.data.header_logo }}
+        logos={{ header_logo: header?.data?.header_logo }}
         socials={socials}
         {...footer}
       />
