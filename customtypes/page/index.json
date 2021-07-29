@@ -1,0 +1,84 @@
+{
+  "id": "page",
+  "label": "Page",
+  "repeatable": true,
+  "json": {
+    "Page": {
+      "hero_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1",
+          "label": "Hero Title"
+        }
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID",
+          "placeholder": "The unique identifier for the page (slug)..."
+        }
+      },
+      "hero_description": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph",
+          "label": "Hero Description"
+        }
+      },
+      "primary_link": {
+        "type": "Link",
+        "config": {
+          "label": "Primary Link",
+          "select": null
+        }
+      },
+      "primary_link_label": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph",
+          "label": "Primary Link Label"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "banner_slice": {
+              "type": "SharedSlice"
+            },
+            "customer_logos": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "Meta title..."
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "Meta Description..."
+        }
+      },
+      "meta_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "SEO Image"
+        }
+      }
+    }
+  },
+  "status": true
+}

@@ -1,0 +1,42 @@
+{
+  "id": "socials",
+  "label": "Socials",
+  "repeatable": false,
+  "json": {
+    "Main": {
+      "twitter": {
+        "type": "Link",
+        "config": {
+          "allowTargetBlank": true,
+          "label": "Twitter",
+          "select": null
+        }
+      },
+      "linkedin": {
+        "type": "Link",
+        "config": {
+          "allowTargetBlank": true,
+          "label": "LinkedIn",
+          "select": null
+        }
+      },
+      "instagram": {
+        "type": "Link",
+        "config": {
+          "allowTargetBlank": true,
+          "label": "Instagram",
+          "select": null
+        }
+      },
+      "github": {
+        "type": "Link",
+        "config": {
+          "allowTargetBlank": true,
+          "label": "Github",
+          "select": null
+        }
+      }
+    }
+  },
+  "status": true
+}
