@@ -2,8 +2,8 @@ name: Skyward Checks
 
 on: [push]
 
-env:
-  # SOME_VARIABLE_HERE: unused
+# env:
+# SOME_VARIABLE_HERE: unused
 
 jobs:
   linting:
