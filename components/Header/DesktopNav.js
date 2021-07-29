@@ -9,12 +9,12 @@ export const DesktopNav = ({
   secondary_button_link,
   secondary_button_label,
 }) => (
-  <div className="hidden justify-between mx-auto lg:flex container">
+  <div className="container justify-between hidden mx-auto lg:flex">
     <Link href="/" aria-label="Link to homepage">
       {header_logo && (
-        <div className="w-72 h-16 text-left">
+        <div className="h-16 text-left w-72">
           <img
-            className="w-full h-full object-contain  -mt-3 xl:w-80"
+            className="object-contain w-full h-full -mt-3 xl:w-80"
             src={header_logo.url}
             alt={header_logo.alt}
           />
@@ -22,15 +22,15 @@ export const DesktopNav = ({
       )}
     </Link>
     <div className="w-full">
-      <nav className="h-full w-full flex flex-row items-center my-auto">
+      <nav className="flex flex-row items-center w-full h-full my-auto">
         {navigation && (
-          <div className="flex justify-center w-full flex-row gap-2 mt-0">
+          <div className="flex flex-row justify-center w-full mt-0 gap-2">
             {navigation.map(({ id, primary: { link, link_title } }) => {
               return (
                 <Link
                   key={id}
                   href={link}
-                  className="hover:text-yellow-400 transition duration-200 ease-in-out mx-3 whitespace-nowrap text-base xl:mx-5 text-gray-500"
+                  className="mx-3 text-base text-gray-500 hover:text-yellow-400 transition duration-200 ease-in-out whitespace-nowrap xl:mx-5"
                   activeClassName="underline text-gray-900"
                 >
                   {link_title}
@@ -39,11 +39,11 @@ export const DesktopNav = ({
             })}
           </div>
         )}
-        <div className="flex flex-row justify-self-end gap-2 mt-0">
+        <div className="flex flex-row mt-0 justify-self-end gap-2">
           {secondary_button_link && secondary_button_link && (
             <Link
               href={secondary_button_link}
-              className="btn btn-secondary whitespace-nowrap mr-6 text-base"
+              className="mr-6 text-base btn btn-secondary whitespace-nowrap"
             >
               {RichText.asText(secondary_button_label)}
             </Link>
@@ -51,7 +51,7 @@ export const DesktopNav = ({
           {primary_button_link && primary_button_label && (
             <Link
               href={primary_button_link}
-              className="btn btn-primary order-first md:order-none text-base"
+              className="order-first text-base btn btn-primary md:order-none"
             >
               {RichText.asText(primary_button_label)}
             </Link>

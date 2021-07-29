@@ -4,9 +4,9 @@ import { RichText, Link } from "prismic-reactjs";
 const CustomerLogos = ({ slice }) => (
   <section>
     <div className="container my-12">
-      <div className="text-center mb-8">
+      <div className="mb-8 text-center">
         {slice.primary.title && (
-          <div className="text-4xl mb-4">
+          <div className="mb-4 text-4xl">
             {RichText.render(slice.primary.title)}
           </div>
         )}

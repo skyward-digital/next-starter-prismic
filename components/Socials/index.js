@@ -18,7 +18,7 @@ export const Socials = ({ socials }) => (
         <Link
           key={index}
           href={link}
-          className="text-paragraph hover:text-heading focus:text-heading transition duration-200 mx-2"
+          className="mx-2 text-paragraph hover:text-heading focus:text-heading transition duration-200"
           aria-label={type}
         >
           <FontAwesomeIcon

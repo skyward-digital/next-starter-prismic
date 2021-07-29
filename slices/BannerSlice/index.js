@@ -4,7 +4,7 @@ import { Link } from "../../components/Link";
 
 const BannerSlice = ({ slice }) => (
   <section className="homepage-banner">
-    <div className="banner-content container">
+    <div className="container banner-content">
       <h2 className="banner-title">{RichText.asText(slice.primary.title)}</h2>
       <div className="banner-description">
         <RichText render={slice.primary.description} />

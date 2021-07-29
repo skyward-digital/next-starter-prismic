@@ -22,7 +22,7 @@ export const MobileNav = ({
             {header_logo && (
               <Link href="/" aria-label="Link to homepage">
                 <img
-                  className="w-36 md:w-52 h-auto z-0"
+                  className="z-0 h-auto w-36 md:w-52"
                   src={header_logo.url}
                   alt={header_logo.alt}
                 />
@@ -30,7 +30,7 @@ export const MobileNav = ({
             )}
             {!open && (
               <Menu.Button
-                className="w-8 h-8 z-10 my-auto"
+                className="z-10 w-8 h-8 my-auto"
                 aria-label="Open mobile menu button"
               >
                 <OpenMenuIcon />
@@ -38,7 +38,7 @@ export const MobileNav = ({
             )}
           </div>
           {open && (
-            <div className="bg-white rounded absolute transform left-1/2 -translate-x-1/2 w-96vw">
+            <div className="absolute bg-white rounded transform left-1/2 -translate-x-1/2 w-96vw">
               <nav className="shadow-menu">
                 <div className="flex justify-between mx-4 mt-5 mb-3">
                   <Link
@@ -55,7 +55,7 @@ export const MobileNav = ({
                   {open && (
                     <Menu.Button
                       aria-label="Close mobile menu button"
-                      className="my-auto w-8 h-8 z-10 pb-0"
+                      className="z-10 w-8 h-8 pb-0 my-auto"
                     >
                       <CloseMenuIcon />
                     </Menu.Button>
@@ -67,30 +67,30 @@ export const MobileNav = ({
                     <Menu.Item
                       key={id}
                       to={link}
-                      className="w-max mx-5 mt-5 whitespace-nowrap"
+                      className="mx-5 mt-5 w-max whitespace-nowrap"
                     >
                       <Link
                         href={link}
-                        className="underline text-base"
+                        className="text-base underline"
                         activeClassName="underline"
                       >
                         {link_title}
                       </Link>
                     </Menu.Item>
                   ))}
-                  <Menu.Item className="mt-5 mb-6 w-max mx-5 whitespace-nowrap">
+                  <Menu.Item className="mx-5 mt-5 mb-6 w-max whitespace-nowrap">
                     <Link
                       href={secondary_button_link}
-                      className="link text-base"
+                      className="text-base link"
                       activeClassName="underline"
                     >
                       {RichText.asText(secondary_button_label.raw)}
                     </Link>
                   </Menu.Item>
-                  <Menu.Item className="btn btn-primary w-auto mt-2 mx-5 mb-6">
+                  <Menu.Item className="w-auto mx-5 mt-2 mb-6 btn btn-primary">
                     <Link
                       href={primary_button_link}
-                      className="link text-base"
+                      className="text-base link"
                       activeClassName="underline"
                     >
                       {RichText.asText(primary_button_label.raw)}

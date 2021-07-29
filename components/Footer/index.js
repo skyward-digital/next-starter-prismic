@@ -8,10 +8,10 @@ export const Footer = ({ data, logos, socials }) => {
   return (
     <footer className="bg-muted text-paragraph">
       <div className="container">
-        <div className="flex flex-wrap justify-between overflow-hidden py-8 lg:flex-row lg:flex-nowrap lg:justify-end">
-          <div className="flex-0 w-48 my-8">
+        <div className="flex flex-wrap justify-between py-8 overflow-hidden lg:flex-row lg:flex-nowrap lg:justify-end">
+          <div className="w-48 my-8 flex-0">
             <img
-              className="h-12 object-contain  -mt-3 xl:w-80"
+              className="object-contain h-12 -mt-3 xl:w-80"
               src={logos.header_logo.url}
               alt={logos.header_logo.alt}
             />
@@ -19,10 +19,10 @@ export const Footer = ({ data, logos, socials }) => {
             {RichText.render(footer_text)}
             <Socials socials={socials} />
           </div>
-          <div className="flex flex-wrap -mx-4 mt-8 mb-0 lg:my-8 lg:flex-grow lg:flex-nowrap lg:justify-end">
+          <div className="flex flex-wrap mt-8 mb-0 -mx-4 lg:my-8 lg:flex-grow lg:flex-nowrap lg:justify-end">
             {body.map(({ id, primary: { title_of_section }, items }) => (
-              <ul key={id} className="w-40 md:w-28 xl:w-40 mb-12 mx-4">
-                <p className="font-semibold mb-4">
+              <ul key={id} className="w-40 mx-4 mb-12 md:w-28 xl:w-40">
+                <p className="mb-4 font-semibold">
                   {RichText.asText(title_of_section.raw)}
                 </p>
                 {items.map(({ link, link_title }, index) => (
@@ -50,7 +50,7 @@ export const Footer = ({ data, logos, socials }) => {
         </div>
       </div>
       <div className="pb-16 md:pb-0">
-        <div className="container border-t border-paragraph py-6">
+        <div className="container py-6 border-t border-paragraph">
           <p className="text-sm text-paragraph">
             © {new Date().getFullYear()}, Pigeon Loans
           </p>
