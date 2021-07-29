@@ -137,9 +137,7 @@
         "type": "Link",
         "config": {
           "select": "document",
-          "customtypes": [
-            "author"
-          ],
+          "customtypes": ["author"],
           "label": "Author",
           "placeholder": "Who wrote this"
         }
@@ -148,9 +146,7 @@
         "type": "Link",
         "config": {
           "select": "document",
-          "customtypes": [
-            "help_category"
-          ],
+          "customtypes": ["help_category"],
           "label": "Category",
           "placeholder": "Which category is most relevant?"
         }
