@@ -21,19 +21,12 @@ export const Router = {
   routes: [
     { type: "page", path: "/:uid" },
     // {
-    //   type: "blog_category",
+    //   type: "blogCategory",
     //   path: "/blog/:uid",
     // },
     {
-      type: "blog_post",
+      type: "blogPost",
       path: "/blog/:category/:uid",
-      resolvers: {
-        category: "category", // id of the content relationship in the article mask
-      },
-    },
-    {
-      type: "help_article",
-      path: "/help-center/:category/:uid",
       resolvers: {
         category: "category", // id of the content relationship in the article mask
       },

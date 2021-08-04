@@ -15,6 +15,11 @@ storybook-static
 /.next/
 /out/
 
+# env
+.env.development
+.env.staging
+.env.production
+
 # production
 /build
 

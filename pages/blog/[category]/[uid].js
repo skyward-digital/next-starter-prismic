@@ -8,9 +8,9 @@ import { Hero } from "../../../components/Hero";
 
 const BlogPost = ({ slices, data, url, lang, layout }) => {
   const seo = {
-    meta_title: data.meta_title, // || prismicLayout.data.meta_title,
-    meta_description: data.meta_description, // || prismicLayout.data.meta_description,
-    meta_image: data.meta_image?.url, // || prismicLayout.data.meta_image?.url,
+    metaTitle: data.metaTitle, // || prismicLayout.data.metaTitle,
+    metaDescription: data.metaDescription, // || prismicLayout.data.metaDescription,
+    metaImage: data.metaImage?.url, // || prismicLayout.data.metaImage?.url,
     url: url,
     article: false,
     lang: lang,
@@ -37,7 +37,7 @@ const BlogPost = ({ slices, data, url, lang, layout }) => {
 // Fetch content from prismic - previews but doesn't hot reload
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  type: "blog_post",
+  type: "blogPost",
   apiParams({ params }) {
     return {
       uid: params.uid,
@@ -47,7 +47,7 @@ export const getStaticProps = useGetStaticProps({
 
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
-  type: "blog_post",
+  type: "blogPost",
   formatPath: (prismicDocument) => {
     return {
       params: {

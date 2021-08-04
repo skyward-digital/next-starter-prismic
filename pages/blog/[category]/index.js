@@ -1,16 +1,15 @@
 import { Client } from "../../../prismic-configuration";
-import SliceZone from "next-slicezone";
 import { useGetStaticProps, useGetStaticPaths } from "next-slicezone/hooks";
-import resolver from "../../../sm-resolver.js";
 
 import { Layout } from "../../../components/Layout";
-import { Hero } from "../../../components/Hero";
+import { Article } from "../../../components/Article";
+import { ArticleHero } from "../../../components/ArticleHero";
 
-const BlogCategory = ({ slices, data, url, lang, layout }) => {
+const BlogPost = ({ data, url, lang, layout }) => {
   const seo = {
-    meta_title: data.meta_title, // || prismicLayout.data.meta_title,
-    meta_description: data.meta_description, // || prismicLayout.data.meta_description,
-    meta_image: data.meta_image?.url, // || prismicLayout.data.meta_image?.url,
+    metaTitle: data.metaTitle || layout.metaTitle,
+    metaDescription: data.metaDescription || layout.metaDescription,
+    metaImage: data.metaImage?.url || layout.metaImage?.url,
     url: url,
     article: false,
     lang: lang,
@@ -18,15 +17,22 @@ const BlogCategory = ({ slices, data, url, lang, layout }) => {
 
   const hero = {
     title: data.title,
-    // description: data.hero_description,
-    // primaryLink: data.hero_link,
-    // primaryLinkLabel: data.hero_link_label,
+    grandparentLink: "/blog",
+    grandparentLinkLabel: "Blog",
+    parentLink: data.category,
+    parentLinkLabel: data.category.data.title,
+  };
+
+  const article = {
+    featuredImage: data.featuredImage,
+    publishDate: data.publishDate,
+    article: data.articleContent,
   };
 
   return (
     <Layout seo={seo} {...layout}>
-      <Hero {...hero} />
-      <SliceZone slices={slices} resolver={resolver} />;
+      <ArticleHero {...hero} />
+      <Article {...article} />
     </Layout>
   );
 };
@@ -34,24 +40,27 @@ const BlogCategory = ({ slices, data, url, lang, layout }) => {
 // Fetch content from prismic - previews but doesn't hot reload
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  type: "blog_category",
+  type: "blogPost",
   apiParams({ params }) {
     return {
-      uid: params.category,
+      uid: params.uid,
+      //fetchLinks gets data related via fields - blogPost.data.category.data.title
+      fetchLinks: ["blogCategory.title"],
     };
   },
 });
 
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
-  type: "blog_category",
+  type: "blogPost",
   formatPath: (prismicDocument) => {
     return {
       params: {
-        category: prismicDocument.uid,
+        category: prismicDocument.data.category.uid,
+        uid: prismicDocument.uid,
       },
     };
   },
 });
 
-export default BlogCategory;
+export default BlogPost;

@@ -5,13 +5,15 @@ import NextApp from "next/app";
 import { Client } from "../prismic-configuration";
 
 export default class MyApp extends NextApp {
-  static async getInitialProps(appCtx) {
+  static async getInitialProps() {
+    const seo = (await Client().getSingle("defaultSeo")) || {};
     const header = (await Client().getSingle("header")) || {};
     const footer = (await Client().getSingle("footer")) || {};
     const socials = (await Client().getSingle("socials")) || {};
     return {
       props: {
         layout: {
+          seo,
           header,
           footer,
           socials,
@@ -22,7 +24,6 @@ export default class MyApp extends NextApp {
 
   render() {
     const { Component, pageProps, props } = this.props;
-    // console.log(props.header);
     return <Component {...pageProps} {...props} />;
   }
 }

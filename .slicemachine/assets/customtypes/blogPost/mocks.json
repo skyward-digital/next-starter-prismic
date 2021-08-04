@@ -1,0 +1,50 @@
+{
+  "id": "847a545f-4a5c-4a1b-a013-e3e4ce7d2862",
+  "uid": "et-inventore-perspiciatis",
+  "type": "blogPost",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Monetize magnetic e-business",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Adipisicing sit officia enim et labore aute amet duis sit id adipisicing dolor non sint.",
+        "spans": []
+      }
+    ],
+    "publish_date": "2012-09-08",
+    "author": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "category": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "featured_image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+    },
+    "metaTitle": "empower clicks-and-mortar deliverables",
+    "metaDescription": "deploy impactful networks",
+    "metaImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+    }
+  }
+}
