@@ -5,7 +5,7 @@ module.exports = {
     ...getStoriesPaths(),
     "../slices/**/*.stories.[tj]s",
     "../components/**/*.stories.[tj]s",
-  ],
+  ].map((storyPath) => storyPath.replace(/\\/g, "/")),
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
