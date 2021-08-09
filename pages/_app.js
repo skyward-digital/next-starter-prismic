@@ -5,7 +5,7 @@ import NextApp from "next/app";
 import { Client } from "../prismic-configuration";
 
 export default class MyApp extends NextApp {
-  static async getInitialProps(appCtx) {
+  static async getInitialProps() {
     const header = (await Client().getSingle("header")) || {};
     const footer = (await Client().getSingle("footer")) || {};
     const socials = (await Client().getSingle("socials")) || {};
