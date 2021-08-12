@@ -8,11 +8,11 @@ import { Hero } from "../../../components/Hero";
 
 const BlogPost = ({ slices, data, url, lang, layout }) => {
   const seo = {
-    metaTitle: data.metaTitle, // || prismicLayout.data.metaTitle,
-    metaDescription: data.metaDescription, // || prismicLayout.data.metaDescription,
-    metaImage: data.metaImage?.url, // || prismicLayout.data.metaImage?.url,
+    metaTitle: data.metaTitle || layout.metaTitle,
+    metaDescription: data.metaDescription || layout.metaDescription,
+    metaImage: data.metaImage?.url || layout.metaImage?.url,
     url: url,
-    article: false,
+    article: true,
     lang: lang,
   };
 
@@ -23,12 +23,9 @@ const BlogPost = ({ slices, data, url, lang, layout }) => {
     // primaryLinkLabel: data.hero_link_label,
   };
 
-  console.log(data);
-
   return (
     <Layout seo={seo} {...layout}>
       <Hero {...hero} />
-      {/* How to link to category from here? - https://prismic.io/docs/technologies/links-content-relationships-nextjs */}
       <SliceZone slices={slices} resolver={resolver} />;
     </Layout>
   );
@@ -41,6 +38,8 @@ export const getStaticProps = useGetStaticProps({
   apiParams({ params }) {
     return {
       uid: params.uid,
+      //fetchlinks gets nested
+      fetchLinks: ["blog_category.title"],
     };
   },
 });
