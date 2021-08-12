@@ -52,7 +52,7 @@ export const Footer = ({ data, logos, socials }) => {
       <div className="pb-16 md:pb-0">
         <div className="container py-6 border-t border-paragraph">
           <p className="text-sm text-paragraph">
-            © {new Date().getFullYear()}, Pigeon Loans
+            © {new Date().getFullYear()}, Skyward Digital Solutions LTD
           </p>
         </div>
       </div>
