@@ -18,3 +18,7 @@
 .prose h1 strong {
   @apply font-extrabold bg-clip-text text-transparent bg-gradient-to-br from-orange-400 to-rose-400;
 }
+
+html {
+  scroll-behavior: smooth;
+}
