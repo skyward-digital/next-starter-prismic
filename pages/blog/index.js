@@ -29,7 +29,7 @@ const BlogRoot = ({ data, posts, url, lang, layout, blogCategories }) => {
 };
 
 export const getStaticProps = async ({ params }) => {
-  //get our blog root page outside the normal approach - make sure to pass params
+  //get our blog root page outside the normal approach - make sure to pass params down
   const blogRoot = await useGetStaticProps({
     client: Client(),
     queryType: "single",
