@@ -1,0 +1,52 @@
+[
+  {
+    "featuredImage": {
+      "dimensions": {
+        "width": 2048,
+        "height": 1536
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.prismic.io/slicemachine-blank/b07ef5eb-891d-44f2-a239-2fea5a999116_reading-side.png?auto=compress,format"
+    },
+    "publishDate": "2021-07-30",
+    "article": [
+      {
+        "type": "heading2",
+        "text": "How to create your new Pigeon Loans account",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Quis semper vulputate aliquam venenatis egestas sagittis quisque orci. Donec commodo sit viverra aliquam porttitor ultrices gravida eu. Tincidunt leo, elementum mattis elementum ut nisl, justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis. Amet, duis sed elit interdum dignissim.",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Quis semper vulputate aliquam venenatis egestas sagittis quisque orci. Donec commodo sit viverra aliquam porttitor ultrices gravida eu. Tincidunt leo, elementum mattis elementum ut nisl, justo, amet, mattis. Nunc purus, diam commodo tincidunt turpis. Amet, duis sed elit interdum dignissim.",
+        "spans": []
+      }
+    ],
+    "feedback": true
+  }
+]

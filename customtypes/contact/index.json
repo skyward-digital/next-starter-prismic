@@ -14,21 +14,21 @@
       }
     },
     "SEO": {
-      "meta_title": {
+      "metaTitle": {
         "type": "Text",
         "config": {
           "label": "Meta Title",
           "placeholder": "Meta title..."
         }
       },
-      "meta_description": {
+      "metaDescription": {
         "type": "Text",
         "config": {
           "label": "Meta Description",
           "placeholder": "Meta Description..."
         }
       },
-      "meta_image": {
+      "metaImage": {
         "type": "Image",
         "config": {
           "constraint": {},

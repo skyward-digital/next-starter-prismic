@@ -8,11 +8,11 @@ import { Hero } from "../../../components/Hero";
 
 const BlogPost = ({ slices, data, url, lang, layout }) => {
   const seo = {
-    meta_title: data.meta_title, // || prismicLayout.data.meta_title,
-    meta_description: data.meta_description, // || prismicLayout.data.meta_description,
-    meta_image: data.meta_image?.url, // || prismicLayout.data.meta_image?.url,
+    metaTitle: data.metaTitle || layout.metaTitle,
+    metaDescription: data.metaDescription || layout.metaDescription,
+    metaImage: data.metaImage?.url || layout.metaImage?.url,
     url: url,
-    article: false,
+    article: true,
     lang: lang,
   };
 
@@ -23,12 +23,9 @@ const BlogPost = ({ slices, data, url, lang, layout }) => {
     // primaryLinkLabel: data.hero_link_label,
   };
 
-  console.log(data);
-
   return (
     <Layout seo={seo} {...layout}>
       <Hero {...hero} />
-      {/* How to link to category from here? - https://prismic.io/docs/technologies/links-content-relationships-nextjs */}
       <SliceZone slices={slices} resolver={resolver} />;
     </Layout>
   );
@@ -37,17 +34,19 @@ const BlogPost = ({ slices, data, url, lang, layout }) => {
 // Fetch content from prismic - previews but doesn't hot reload
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  type: "blog_post",
+  type: "blogPost",
   apiParams({ params }) {
     return {
       uid: params.uid,
+      //fetchlinks gets nested
+      fetchLinks: ["blog_category.title"],
     };
   },
 });
 
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
-  type: "blog_post",
+  type: "blogPost",
   formatPath: (prismicDocument) => {
     return {
       params: {

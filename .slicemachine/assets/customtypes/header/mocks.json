@@ -1,0 +1,45 @@
+{
+  "id": "b6f8caea-1d0a-4a24-8e25-838b5571a266",
+  "uid": "voluptas-quia-ipsa",
+  "type": "header",
+  "data": {
+    "header_logo": {
+      "dimensions": {
+        "width": null,
+        "height": null
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=null&h=null&fit=crop"
+    },
+    "primary_button_link": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "primary_button_label": [
+      {
+        "type": "paragraph",
+        "text": "Aliquip reprehenderit aliquip cupidatat esse reprehenderit ipsum consectetur ullamco nulla consectetur dolor exercitation deserunt. Ea occaecat ex sit ea ullamco culpa deserunt reprehenderit nulla ut. Ut laborum aute sint sunt elit irure culpa ea dolore velit.",
+        "spans": []
+      }
+    ],
+    "secondary_button_link": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "secondary_button_label": [
+      {
+        "type": "paragraph",
+        "text": "Ex labore consequat fugiat est. Lorem ut labore cupidatat deserunt. Sint sit minim amet qui nostrud excepteur eu.",
+        "spans": []
+      }
+    ],
+    "banner_text": [
+      {
+        "type": "paragraph",
+        "text": "Labore sunt incididunt minim amet commodo labore excepteur.",
+        "spans": []
+      }
+    ]
+  }
+}

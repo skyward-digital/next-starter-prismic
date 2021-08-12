@@ -2,6 +2,7 @@
   "id": "homepage",
   "label": "Homepage",
   "repeatable": false,
+  "status": true,
   "json": {
     "Main": {
       "hero_title": {
@@ -31,47 +32,31 @@
           "single": "paragraph",
           "label": "Primary Link Label"
         }
-      },
-      "body": {
-        "type": "Slices",
-        "fieldset": "Slice zone",
-        "config": {
-          "labels": {},
-          "choices": {
-            "banner_slice": {
-              "type": "SharedSlice"
-            },
-            "customer_logos": {
-              "type": "SharedSlice"
-            }
-          }
-        }
       }
     },
     "SEO": {
-      "meta_title": {
+      "metaTitle": {
         "type": "Text",
         "config": {
           "label": "Meta Title",
           "placeholder": "Meta title..."
         }
       },
-      "meta_description": {
+      "metaDescription": {
         "type": "Text",
         "config": {
           "label": "Meta Description",
           "placeholder": "Meta Description..."
         }
       },
-      "meta_image": {
+      "metaImage": {
         "type": "Image",
         "config": {
+          "label": "SEO Image",
           "constraint": {},
-          "thumbnails": [],
-          "label": "SEO Image"
+          "thumbnails": []
         }
       }
     }
-  },
-  "status": true
+  }
 }

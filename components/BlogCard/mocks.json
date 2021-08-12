@@ -1,0 +1,81 @@
+[
+  {
+    "data": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Avoiding a usurious loan",
+          "spans": []
+        }
+      ],
+      "articleContent": [
+        {
+          "type": "heading2",
+          "text": "Learn how to navigate Usury Laws in the US",
+          "spans": []
+        }
+      ],
+      "publishDate": "2021-07-30",
+      "author": {
+        "id": "YQfzXRAAACYAO5kh",
+        "type": "author",
+        "tags": [],
+        "slug": "brian-bristol",
+        "lang": "en-us",
+        "first_publication_date": "2021-08-02T13:30:09+0000",
+        "last_publication_date": "2021-08-02T13:30:09+0000",
+        "data": {
+          "name": [
+            {
+              "type": "paragraph",
+              "text": "Brian Bristol",
+              "spans": []
+            }
+          ],
+          "avatar": {
+            "dimensions": {
+              "width": 2048,
+              "height": 1536
+            },
+            "alt": null,
+            "copyright": null,
+            "url": "https://images.prismic.io/slicemachine-blank/6b2bf485-aa12-44ef-8f06-dce6b91b9309_dancing.png?auto=compress,format"
+          }
+        },
+        "link_type": "Document",
+        "isBroken": false
+      },
+      "category": {
+        "id": "YQQAahAAACYAKjYW",
+        "type": "blog_category",
+        "tags": [],
+        "slug": "loans-tips-and-tricks",
+        "lang": "en-us",
+        "first_publication_date": "2021-07-30T13:36:45+0000",
+        "last_publication_date": "2021-07-30T13:36:45+0000",
+        "uid": "loans-tips-and-tricks",
+        "data": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Loans Tips and Tricks",
+              "spans": []
+            }
+          ]
+        },
+        "link_type": "Document",
+        "isBroken": false
+      },
+      "featuredImage": {
+        "dimensions": {
+          "width": 2048,
+          "height": 1536
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://images.prismic.io/slicemachine-blank/b07ef5eb-891d-44f2-a239-2fea5a999116_reading-side.png?auto=compress,format"
+      }
+    },
+    "lang": "en-us"
+  }
+]

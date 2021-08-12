@@ -1,0 +1,32 @@
+{
+  "id": "defaultSeo",
+  "label": "Default SEO",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "metaTitle": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "metaDescription": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "metaImage": {
+        "config": {
+          "label": "Meta Image",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}

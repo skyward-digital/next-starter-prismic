@@ -8,9 +8,9 @@ import { Hero } from "../components/Hero";
 
 const Contact = ({ slices, data, url, lang, layout }) => {
   const seo = {
-    meta_title: data.meta_title, // || prismicLayout.data.meta_title,
-    meta_description: data.meta_description, // || prismicLayout.data.meta_description,
-    meta_image: data.meta_image?.url, // || prismicLayout.data.meta_image?.url,
+    metaTitle: data.metaTitle || layout.metaTitle,
+    metaDescription: data.metaDescription || layout.metaDescription,
+    metaImage: data.metaImage?.url || layout.metaImage?.url,
     url: url,
     article: false,
     lang: lang,

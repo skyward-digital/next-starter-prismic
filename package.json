@@ -31,8 +31,8 @@
     "@tailwindcss/line-clamp": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "chromatic": "^5.10.0-canary.0",
-    "next": "^11.0.1",
-    "next-slicezone": "^0.1.0",
+    "next": "^11.1.0",
+    "next-slicezone": "^0.1.2",
     "next-transpile-modules": "^8.0.0",
     "prismic-cli": "^4.0.7",
     "prismic-javascript": "^3.0.2",
@@ -63,8 +63,8 @@
     "postcss-nested": "^5.0.5",
     "prettier": "^2.3.2",
     "shx": "^0.3.3",
-    "slice-machine-ui": "^0.1.0-beta.1",
+    "slice-machine-ui": "^0.1.0-beta.2",
     "sm-commons": "^0.0.23",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^2.2.7"
   }
 }

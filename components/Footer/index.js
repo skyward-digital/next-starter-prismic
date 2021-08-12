@@ -1,10 +1,14 @@
 import { RichText } from "prismic-reactjs";
 import { Socials } from "../Socials";
-import { Link } from "../Link";
+// import { Link } from "../Link";
 
 export const Footer = ({ data, logos, socials }) => {
   if (!data) return null;
-  const { footer_title, footer_text, body } = data;
+  const {
+    footer_title,
+    footer_text,
+    // body
+  } = data;
   return (
     <footer className="bg-muted text-paragraph">
       <div className="container">
@@ -20,7 +24,7 @@ export const Footer = ({ data, logos, socials }) => {
             <Socials socials={socials} />
           </div>
           <div className="flex flex-wrap mt-8 mb-0 -mx-4 lg:my-8 lg:flex-grow lg:flex-nowrap lg:justify-end">
-            {body.map(({ id, primary: { title_of_section }, items }) => (
+            {/* {body.map(({ id, primary: { title_of_section }, items }) => (
               <ul key={id} className="w-40 mx-4 mb-12 md:w-28 xl:w-40">
                 <p className="mb-4 font-semibold">
                   {RichText.asText(title_of_section.raw)}
@@ -36,7 +40,7 @@ export const Footer = ({ data, logos, socials }) => {
                   </li>
                 ))}
               </ul>
-            ))}
+            ))} */}
           </div>
           {/* <div className="mt-0 mb-8 flex flex-col items-start md:mr-24 md:flex-row md:items-center md:flex-grow md:justify-between lg:flex-col lg:items-end lg:my-8 lg:mr-0 lg:max-w-1/5 xl:w-1/5">
             <div className="mb-6">
@@ -52,7 +56,7 @@ export const Footer = ({ data, logos, socials }) => {
       <div className="pb-16 md:pb-0">
         <div className="container py-6 border-t border-paragraph">
           <p className="text-sm text-paragraph">
-            © {new Date().getFullYear()}, Pigeon Loans
+            © {new Date().getFullYear()}, Skyward Digital Solutions LTD
           </p>
         </div>
       </div>

@@ -1,0 +1,28 @@
+{
+  "id": "6415eabe-e2dd-4cb8-8c84-35e6c15db0a6",
+  "uid": "id-corrupti-nihil",
+  "type": "footer",
+  "data": {
+    "footer_title": [
+      {
+        "type": "heading2",
+        "text": "Drive synergistic networks",
+        "spans": []
+      }
+    ],
+    "footer_text": [
+      {
+        "type": "paragraph",
+        "text": "Ipsum deserunt fugiat laboris ullamco culpa culpa reprehenderit. Est proident laborum anim qui fugiat consectetur consectetur eiusmod cupidatat. Est mollit incididunt ut deserunt do sunt ut veniam aliqua.",
+        "spans": []
+      }
+    ],
+    "footer_newsletter": [
+      {
+        "type": "paragraph",
+        "text": "Enim est occaecat magna ullamco reprehenderit in ea esse esse ex exercitation.",
+        "spans": []
+      }
+    ]
+  }
+}
