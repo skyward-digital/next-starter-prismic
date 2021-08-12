@@ -1,112 +1,126 @@
-## Introduction
+# Skyward Next Starter Template
 
-## How to make a slice
+This repo is a starting point for all Next/Prismic projects built by Skyward Digital. It can also be used by teams outside of Skyward if you'd like to get up and running quickly.
 
-### 1. Break the design into pieces
+This repository includes
 
-These pieces will create the building blocks of our components, and what the user will edit in Prismic.
+- Prismic Slicemachines with example documents
+  - Example documents include blog categories with fetched links and global layout data
+- TailwindCSS (version 2.0+) using Just In Time (JIT)
+- Storybook with chromatic integration for automated frontend testing
+- Github workflows to ensure changes are correct before deployment
+- Docs for getting familar with all of these parts
 
-Guidelines:
+## Getting started
 
-- Make sure the fields are descriptive and clear. These need to be read by non-technical people and understood without question
-- If the field isn't clear, add a description that clarifies how to use it or what content is expected
-- Limit the user where possible so they cannot make unexpected additions. The user shouldn't have to think about how things work
-- Plan ahead - sometimes a rich text field might be better than a title field if you may need the option to underline headings (for example)
+_Prerequisites_
+You'll need to have installed the prismic cli to your machine. We'll need this at multiple points throughout our project.
 
-### 2. Create a component
+`npm install -g prismic-cli` or
+`yarn global add prismic-cli`
 
-Using Slicemachines, we can automatically create components. We should use these wherever possible, as they significantly improve code maintainability, come with tests built in, and show the user exactly what the component should look like.
+Once you've done this log into your prismic account so you can sync with your repos
 
-`yarn sm:create`
+`prismic login`
 
-This will generate a new slice for you to work with, but will need editing before being usable
+Enter your email and password and you're good to go.
 
-### 3. Edit the component structure
+### 1. Clone the repo
 
-Start the SliceMachines development workspace to view all your current slices and make changes to them
+Create a new repo using [skyward-digital/next-starter-prismic](https://github.com/skyward-digital/next-starter-prismic) as your template - you can do this directly on github by clicking "use as template" and selecting where you want to create your cloned repo.
 
-`yarn sm`
+![](/docs/images/create-repo.png)
 
-Each component is different, so select the component you just created and edit the fields. If you do not need the default Title and Description, remove those.
+This will create an initial commit with this repo at its latest point.
 
-### 4. Mock Data
+You can now pull down your new repo and start making changes.
 
-Add mock data to all your fields at this point to make editing easier. This data is used for testing but we'll also be using it to build our component using Storybook.
+### 2. Create the Prismic Environment
 
-To add mock data - edit your field and click the "mock config" tab
+With the repo cloned, next you'll need to set up your prismic environment
 
-### 5. Save to Filesystem
+Using the prismic cli create a new repo
 
-After any changes, be sure to save your component to the filesystem. Be sure to do this after every change you make, as you'll need to do it to keep your slices in sync with prismic. This will generate the models and mock data for you to use in code.
+`prismic new` ???
 
-### 6. Design your component
+When prompted choose your project name
 
-Now we have content, we'll want to make our component look right. Start by opening the component in storybook - there are instructions on how to do this inside prismic slicemachines.
+TODO: This isn't complete, as it doesn't create all of the custom types we need in prismic and errors
 
-You'll see how your component now looks, and it'll be mostly unstyled, and missing any new fields you've added. This is an easy fix.
+Once the repo has been created change the apiEndpoint in `sm.json` to match your new prismic environment
 
-#### Add the new fields
+```sm.json
+{
+  "apiEndpoint": "https://your-prismic-repo.cdn.prismic.io/api/v2",
+  "libraries": [
+    ...
+}
+```
 
-Slicemachines is very generous and will give us the code we need to utilise the new slice fields we've created. In the top, click _show code snippets_ which will show you the code needed to output each field.
+### 3. Understanding the slicemachine
 
-You don't have to stick to using this code, but it's a very good starting point to get content outputting. Feel free to tidy up the code or make it more efficient once you've got things outputting.
+At the time of creating this, slicemachine is still in beta. Some features are not fully fleshed out, but it still provides a great way of integrating prismic into your application.
 
-#### Style your component
+#### Slices
 
-Now everything is outputting the way you'd like, you can style it too. Prismic will provide you with a little styling which you can remove. We typically use tailwind, so [refer to the docs for how to use that for styling components](https://tailwindcss.com/)
+These are your components that can be repeated throughout your project.
 
-To see the changes you are making, use Storybook (we opened it earlier). This will update as we make changes and we can see what our component looks like without relying on data in prismic.
+This project starts with two components, each with variations to give you different options.
 
-Be sure to change the code if you find the way Prismic outputs things by default is blocking you. They are guidelines, but you are not restricted by them.
+Feel free to add your own slices for your project
 
-Once done, head back to the slicemachine editor and take a screenshot of your changes so others can see what your component looks like (this also shows up in prismic)!
+Note: You can see how these slices look - this is thanks to slicemachines working together with storybook! (these will update as you make changes)
 
-#### Push to Prismic
+![](/docs/images/slices-example.png)
 
-After saving the component, you'll want to push your changes to Prismic. This will generate the new slice and allow it to be used, connecting the slice in code to the slice in Prismic.
+#### Custom types
 
-Now you'll want to head to prismic and add your newly created slice to your pages.
+These are the structure of your document. You can create static fields and slices here for your pages
 
-1. Go to Custom Types and select the page you want the slice to show on
-1. Add a slice, then select Shared Types and add your new component
-1. Save your changes
+Slices can link to custom types (relationships) and custom types can use slices
 
-Now when you add or edit a document of this custom type, your new component will show up!
+This gives you infinite possibilities for what you can create and how they link together
 
-## When slices don't work
+We've put together some pretty standard pages that you'll probably use across most of your projects
 
-Sometimes slice machines aren't the answer, and you will have to edit prismic in the traditional way.
+Custom types aren't always pages either, they can be other documents that are repeated throughout the site, like testimonials or SEO fields.
 
-Typically, this will be when you don't want to use slices. This could be for the header & footer, SEO metadata, product details, or other similarly static data.
+![](/docs/images/custom-types-example.png)
 
-In this case, simply build your components in prismic and link to them from the page, using a `component` instead of a `slice`. Check out the `Hero` component to see a static component in action
+#### Syncing with Prismic
 
-# Testing
+Remember that all changes you make are running on your local machine. There is no autosave, and changes won't automatically sync with prismic. Once you've made a change you will need to save it - this will generate the appropriate defaults in your code. Then you can push the changes to prismic which will match your prismic environment to that within slicemachines. This also acts as a backup if ever any changes are made accidentally in your prismic workspace, among other benefits.
 
-Every software needs testing, and a website is no exception. Fortunately, prismic + slicemachines makes this easy as it comes with storybook built in.
+### 4. Creating components as code
 
-Storybook is a way of visually testing and documenting components. Prismic does a good job of getting us started, but we may need to add more information.
+After creating your components with slicemachines and saving to the filesystem you'll see that a new folder will have been created within your project.
 
-Components which are outside of the slicemachine will also need their own stories created so that they can be tested. Again, see the `Hero` for an example of this.
+For slices, this will be at `/slices/[ComponentName]`
+For custom types this will be at `/customtypes/[TypeName]`
 
-TODO:
+By default, your customtypes will only contain json models for their associated types.
 
-- [ ] Chromatic (for showing visual changes in storybook)
-- [ ] Cypress (for page level testing)
-- [ ] Jest (for testing core functionality)
-- [ ] Typescript (for guaranteeing types work as expected)
-- [ ] BrowserStack/Percy integration for automatically testing across different devices (requires Cypress first)
+Slices on the other hand will each have a component file associated with them. This will need building upon to create your component. The default data will be included (title and description) but you can get additional code examples from inside the slicemachine.
 
-## Links & other resources
+![](/docs/images/custom-types-code.png)
 
-This project is extended from the [Prismic](https://prismic.io) + [Next.js](https://nextjs.org/) slicemachine starter. If you are unfamiliar with this project, I highly recommend checking that out first.
+If you have some really complex variations in your component, you can create a file for each component type with a custom mapping to pick the right one. See the CallToAction slice to see how this can work.
 
-**Check out the dedicated article to create your own boilerplate**
+### 5. Going one step further
 
-> [Learn how to use this boilerplate to build a project from scratch](https://prismic.io/docs/technologies/tutorial-series-introduction-nextjs)
+We've created some workflow steps (see the `.github` folder) that can be used to ensure changes work as expected when published. This will check the code for your predefined standards, we've set some defaults for linting & formatting, as well as ensuring the build completes successfully.
 
-**Learn more about using Prismic with Next.js**
-[Prismic + Next.js documentation](https://prismic.io/docs/technologies/home-prismic-and-nextjs).
+One way to take this even further is to create an automated testing workflow. Creating components via storybook is great but we can use these to ensure the changes we make are intentional using chromatic. Chromatic compares versions of your stories and looks for visual differences.
+
+You can create your chromatic environment here: https://www.chromatic.com/. Your project token can be found during setup, or by clickling Manage > Configure > Project Token
+
+Once your chromatic project is set up, you'll need to copy your secret key to 3 places
+
+- `.env.production` and `.env.development` within your project (for local builds)
+- Github Secrets for your project (for github builds)
+- Wherever your production builds happen (we use Netlify, but you might use Vercel or AWS)
+
+Your secret will need to look like this `CHROMATIC_PROJECT_TOKEN=your-chromatic-id`
 
 ## License
 
