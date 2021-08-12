@@ -11,8 +11,8 @@ export const Link = ({ href: link, disabled, children, ...rest }) => {
   if (typeof link === "string") {
     if (link[0] === "/") {
       return (
-        <NextLink href={link} {...rest}>
-          <a>{children}</a>
+        <NextLink href={link}>
+          <a {...rest}>{children}</a>
         </NextLink>
       );
     }
@@ -24,8 +24,13 @@ export const Link = ({ href: link, disabled, children, ...rest }) => {
     );
   }
 
+  //Unknown link
+  if (link.link_type === "Any") return null;
+
   //Prismic Link
   if (link.link_type === "Web") {
+    if (!link.url) return null;
+
     //Same page anchor links
     if (link.url.includes("://#")) {
       const anchor = link.url.split("://")[1];
@@ -45,8 +50,8 @@ export const Link = ({ href: link, disabled, children, ...rest }) => {
 
   if (link.link_type === "Document") {
     return (
-      <NextLink href={linkResolver(link)} {...rest}>
-        <a>{children}</a>
+      <NextLink href={PrismicLink.url(link, linkResolver)}>
+        <a {...rest}>{children}</a>
       </NextLink>
     );
   }
