@@ -42,7 +42,8 @@ export const getStaticProps = async ({ params }) => {
 
   //get all blog posts without prismic link
   const blogPosts = await Client().query(
-    Prismic.Predicates.at("document.type", "blogPost")
+    Prismic.Predicates.at("document.type", "blog_post")
+    // { fetchLinks: [...blogSliceFetchLinks] }   Passing the fetchLinks option into the query to provide nested data.
   );
 
   //return props in a more standard nextjs approach
