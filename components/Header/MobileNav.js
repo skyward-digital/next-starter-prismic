@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { RichText } from "prismic-reactjs";
 import { Link } from "../Link";
 import {
@@ -21,10 +22,14 @@ export const MobileNav = ({
           <div className="flex justify-between w-full mx-5 mt-2">
             {header_logo && (
               <Link href="/" aria-label="Link to homepage">
-                <img
-                  className="z-0 h-auto w-36 md:w-52"
+                <Image
                   src={header_logo.url}
                   alt={header_logo.alt}
+                  title={header_logo.alt}
+                  layout="fixed"
+                  width="210"
+                  height="60"
+                  className="z-0"
                 />
               </Link>
             )}
@@ -46,10 +51,13 @@ export const MobileNav = ({
                     className="my-auto"
                     aria-label="Link to homepage"
                   >
-                    <img
-                      className="w-36"
+                    <Image
                       src={header_logo.url}
                       alt={header_logo.alt}
+                      title={header_logo.alt}
+                      layout="fixed"
+                      width="144"
+                      height="40"
                     />
                   </Link>
                   {open && (

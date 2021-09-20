@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { RichText } from "prismic-reactjs";
 import { Link } from "../Link";
 
@@ -13,10 +14,14 @@ export const DesktopNav = ({
     <Link href="/" aria-label="Link to homepage">
       {header_logo && (
         <div className="h-16 text-left w-72">
-          <img
-            className="object-contain w-full h-full -mt-3 xl:w-80"
+          <Image
             src={header_logo.url}
             alt={header_logo.alt}
+            title={header_logo.alt}
+            layout="fixed"
+            width="320"
+            height="60"
+            className="object-contain -mt-3"
           />
         </div>
       )}

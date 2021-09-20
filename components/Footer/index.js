@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { RichText } from "prismic-reactjs";
 import { Socials } from "../Socials";
 // import { Link } from "../Link";
@@ -14,10 +15,14 @@ export const Footer = ({ data, logos, socials }) => {
       <div className="container">
         <div className="flex flex-wrap justify-between py-8 overflow-hidden lg:flex-row lg:flex-nowrap lg:justify-end">
           <div className="w-48 my-8 flex-0">
-            <img
-              className="object-contain h-12 -mt-3 xl:w-80"
+            <Image
               src={logos.header_logo.url}
               alt={logos.header_logo.alt}
+              title={logos.header_logo.alt}
+              layout="fixed"
+              width="48"
+              height="280"
+              className="object-contain -mt-3"
             />
             {RichText.render(footer_title)}
             {RichText.render(footer_text)}

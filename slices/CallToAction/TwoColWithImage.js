@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { RichText } from "prismic-reactjs";
 import { Link } from "../../components/Link";
 
@@ -36,7 +37,14 @@ const TwoColWithImage = ({
         </div>
         {image && (
           <div className="flex-1">
-            <img src={image.url} alt={image.alt} />
+            <Image
+              src={image.url}
+              alt={image.alt}
+              title={image.alt}
+              layout="fixed"
+              width="480"
+              height="200"
+            />
           </div>
         )}
       </div>

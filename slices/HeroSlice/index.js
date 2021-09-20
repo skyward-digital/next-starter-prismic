@@ -41,7 +41,14 @@ const HeroSlice = ({ slice: { primary } }) => {
           </div>
           {image && (
             <div className="max-w-xl">
-              <img src={image.url} alt={image.alt} />
+              <Image
+                src={image.url}
+                alt={image.alt}
+                title={image.alt}
+                layout="fixed"
+                width="480"
+                height="200"
+              />
             </div>
           )}
         </div>
