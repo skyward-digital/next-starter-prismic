@@ -1,0 +1,41 @@
+{
+  "id": "YRY8IxIAACkAFcJG",
+  "uid": null,
+  "url": null,
+  "type": "socials",
+  "href": "https://skyward.cdn.prismic.io/api/v2/documents/search?ref=YRrYTRIAACsA6DjR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YRY8IxIAACkAFcJG%22%29+%5D%5D",
+  "tags": [],
+  "first_publication_date": "2021-08-13T11:50:34+0000",
+  "last_publication_date": "2021-08-13T11:50:34+0000",
+  "slugs": ["socials"],
+  "linked_documents": [],
+  "lang": "en-gb",
+  "alternate_languages": [],
+  "data": {
+    "twitter": {
+      "link_type": "Web",
+      "url": "https://twitter.com/home",
+      "target": "_blank"
+    },
+    "linkedin": {
+      "link_type": "Web",
+      "url": "https://www.linkedin.com/company/skyward-agency/?viewAsMember=true",
+      "target": "_blank"
+    },
+    "instagram": {
+      "link_type": "Web",
+      "url": "https://www.instagram.com/skywardagency/",
+      "target": "_blank"
+    },
+    "github": {
+      "link_type": "Web",
+      "url": "https://github.com/skyward-digital",
+      "target": "_blank"
+    },
+    "dribbble": {
+      "link_type": "Web",
+      "url": "https://dribbble.com/skyward-digital",
+      "target": "_blank"
+    }
+  }
+}

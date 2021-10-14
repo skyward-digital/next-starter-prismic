@@ -3,39 +3,58 @@ import SliceZone from "next-slicezone";
 import { useGetStaticProps } from "next-slicezone/hooks";
 import resolver from "../sm-resolver.js";
 
-import { Layout } from "../components/Layout";
-import { Hero } from "../components/Hero";
+import { Layout, Contact } from "../components";
 
-const Contact = ({ slices, data, url, lang, layout }) => {
+const ContactPage = ({ slices, data, url, lang, layout }) => {
   const seo = {
-    metaTitle: data.metaTitle || layout.metaTitle,
-    metaDescription: data.metaDescription || layout.metaDescription,
-    metaImage: data.metaImage?.url || layout.metaImage?.url,
+    metaTitle: data.metaTitle || layout.seo?.data?.metaTitle,
+    metaDescription: data.metaDescription || layout.seo?.data?.metaDescription,
+    metaImage: data.metaImage.url || layout.seo?.data?.metaImage.url,
     url: url,
     article: false,
     lang: lang,
   };
 
-  const hero = {
-    title: data.hero_title,
-    // description: data.hero_description,
-    // primaryLink: data.hero_link,
-    // primaryLinkLabel: data.hero_link_label,
-  };
-
   return (
-    <Layout seo={seo} {...layout}>
-      <Hero {...hero} />
+    <Layout {...layout} seo={seo}>
+      <Contact
+        id="hero"
+        title={data.title}
+        description={data.description}
+        email={data.email}
+      />
       <SliceZone slices={slices} resolver={resolver} />
     </Layout>
   );
 };
 
-// Fetch content from prismic - previews but doesn't hot reload
-export const getStaticProps = useGetStaticProps({
-  client: Client(),
-  queryType: "single",
-  type: "contact",
-});
+export const getStaticProps = async ({ params }) => {
+  //Default Layout components reused across the site
+  const seo = (await Client().getSingle("defaultSeo")) || {};
+  const header = (await Client().getSingle("header")) || {};
+  const footer = (await Client().getSingle("footer")) || {};
+  const socials = (await Client().getSingle("socials")) || {};
 
-export default Contact;
+  const page = await useGetStaticProps({
+    client: Client(),
+    queryType: "single",
+    type: "contact",
+    // apiParams: {
+    //   fetchLinks: [],
+    // },
+  })({ params });
+
+  return {
+    props: {
+      layout: {
+        seo,
+        header,
+        footer,
+        socials,
+      },
+      ...page.props,
+    },
+  };
+};
+
+export default ContactPage;

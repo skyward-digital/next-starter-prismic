@@ -1,0 +1,40 @@
+import { Meta, Story, Preview, ArgsTable } from "@storybook/addon-docs";
+import { Footer } from "./";
+import mocks from "./mocks.json";
+
+<Meta
+  title="Globals/Footer"
+  component={Footer}
+  parameters={{
+    actions: { handles: ["click a"] },
+    chromatic: { viewports: [320, 1440] },
+  }}
+/>
+
+# Footer
+
+The `Footer` is a global component that is used on every page. It is added using the [Layout]() component and passed props from there
+
+It contains an optional Call To Action, similar to the [Call To Action](?path=/docs/components-calltoaction--default) component
+
+<Preview withToolbar>
+  <Story name="Footer" args={mocks.default}>
+    {(args) => <Footer {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="Footer" />
+
+## Footer without CTA
+
+It's also possible to display the footer without the Call To Action if needed
+
+This can be done by omitting the `ctaTitle` and `ctaDescription` props
+
+<Preview>
+  <Story name="Footer without CTA" args={mocks.withoutCTA}>
+    {(args) => <Footer {...args} />}
+  </Story>
+  <div />
+</Preview>

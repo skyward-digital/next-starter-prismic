@@ -1,7 +1,6 @@
 {
   "slices": {
-    "HeroSlice": {},
-    "CallToAction": {}
+    "HeroSlice": {}
   },
   "_cts": {
     "blogRoot": {},

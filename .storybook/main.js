@@ -3,8 +3,10 @@ const { getStoriesPaths } = require("slice-machine-ui/helpers/storybook");
 module.exports = {
   stories: [
     ...getStoriesPaths(),
-    "../slices/**/*.stories.[tj]s",
-    "../components/**/*.stories.[tj]s",
+    "../.slicemachine/assets/**/*.stories.@(js|jsx|ts|tsx|mdx)",
+    "../customtypes/**/*.stories.@(js|jsx|ts|tsx|mdx)",
+    "../slices/**/*.stories.@(js|jsx|ts|tsx|mdx)",
+    "../components/**/*.stories.@(js|jsx|ts|tsx|mdx)",
   ].map((storyPath) => storyPath.replace(/\\/g, "/")),
   addons: [
     "@storybook/addon-links",

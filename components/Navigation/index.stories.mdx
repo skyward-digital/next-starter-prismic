@@ -1,0 +1,38 @@
+import { Meta, Story, Preview, ArgsTable } from "@storybook/addon-docs";
+import { Changelog, ChangelogCard } from "./";
+import mocks from "./mocks.json";
+
+<Meta
+  title="Sections/Changelog"
+  component={Changelog}
+  parameters={{
+    actions: { handles: ["click a"] },
+    chromatic: { viewports: [320, 1440] },
+  }}
+/>
+
+# Changelog
+
+The `Footer` lists all the changes that happen on the Skyward website, both for historical reference and for sharing with the community
+
+<Preview withToolbar>
+  <Story name="Changelog" args={mocks.default}>
+    {(args) => <Changelog {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="Changelog" />
+
+# Changelog Card
+
+Each update in the changelog list is listed as a `Changelog Card`. This card shows all the details for a single update
+
+<Preview withToolbar>
+  <Story name="ChangelogCard" args={mocks.card}>
+    {(args) => <ChangelogCard {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="ChangelogCard" />

@@ -18,27 +18,16 @@ module.exports = {
     },
     extend: {
       colors: {
-        // primary: 'var(--color-primary)',
-        // secondary: 'var(--color-secondary)',
-        // accent: 'var(--color-accent)',
-        // highlight: 'var(--color-highlight)',
-        theme: "var(--color-theme)",
-        muted: "var(--color-muted)",
-        heading: "var(--color-heading)",
-        paragraph: "var(--color-paragraph)",
-        // 'code-1': 'var(--color-code-1)',
-        // 'code-2': 'var(--color-code-2)',
-        // 'code-3': 'var(--color-code-3)',
-        // 'code-4': 'var(--color-code-4)',
-      },
-      screens: {
-        "2xl": "1280px",
+        ...colors,
+        transparent: "transparent",
+        current: "currentColor",
+        //custom colours go here
       },
       zIndex: {
         "-10": "-10",
       },
       fontSize: {
-        "6xl": "4.25rem",
+        "6xl": "4rem",
       },
       inset: {
         "1/2": "50%",

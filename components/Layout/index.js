@@ -1,19 +1,18 @@
 import React from "react";
-import { Seo } from "../Seo";
+import { SocialProvider } from "../../context/SocialContext";
+import { Seo } from "../SEO";
 import { Header } from "../Header";
 import { Footer } from "../Footer";
 
 export const Layout = ({ seo, header, footer, socials, children }) => {
   return (
-    <div className="bg-gray-50">
-      <Seo {...seo} />
-      <Header {...header} />
-      <main>{children}</main>
-      <Footer
-        logos={{ header_logo: header?.data?.header_logo }}
-        socials={socials}
-        {...footer}
-      />
-    </div>
+    <SocialProvider socials={{ socials }}>
+      <div className="relative">
+        <Seo {...seo} />
+        <Header {...header.data} />
+        <main>{children}</main>
+        <Footer {...footer.data} />
+      </div>
+    </SocialProvider>
   );
 };

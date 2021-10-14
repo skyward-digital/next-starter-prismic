@@ -2,6 +2,7 @@
   "id": "socials",
   "label": "Socials",
   "repeatable": false,
+  "status": true,
   "json": {
     "Main": {
       "twitter": {
@@ -9,7 +10,7 @@
         "config": {
           "allowTargetBlank": true,
           "label": "Twitter",
-          "select": null
+          "select": "web"
         }
       },
       "linkedin": {
@@ -17,7 +18,7 @@
         "config": {
           "allowTargetBlank": true,
           "label": "LinkedIn",
-          "select": null
+          "select": "Web"
         }
       },
       "instagram": {
@@ -25,7 +26,7 @@
         "config": {
           "allowTargetBlank": true,
           "label": "Instagram",
-          "select": null
+          "select": "Web"
         }
       },
       "github": {
@@ -33,10 +34,18 @@
         "config": {
           "allowTargetBlank": true,
           "label": "Github",
-          "select": null
+          "select": "Web"
         }
+      },
+      "dribbble": {
+        "config": {
+          "label": "Dribbble",
+          "placeholder": "",
+          "select": "Web",
+          "allowTargetBlank": true
+        },
+        "type": "Link"
       }
     }
-  },
-  "status": true
+  }
 }

@@ -11,14 +11,34 @@
   @apply antialiased;
 }
 
-.prose h1 {
-  @apply font-extrabold text-6xl text-heading;
+body {
+  @apply text-gray-800 bg-gray-100 bg-opacity-60;
+}
+
+/* .prose h1 {
+  @apply text-6xl;
 }
 
 .prose h1 strong {
-  @apply font-extrabold bg-clip-text text-transparent bg-gradient-to-br from-orange-400 to-rose-400;
-}
+  @apply font-extrabold;
+} */
 
 html {
   scroll-behavior: smooth;
 }
+
+/* a:not(.btn) {
+  @apply underline font-bold transition duration-200;
+}
+
+a:not(.btn):not(.text-*) {
+  @apply text-gray-800;
+}
+
+a:not(.btn):not([class*="hover"]) {
+  @apply hover:text-tertiary-accent;
+}
+
+a:not(.btn):not([class*="focus"]) {
+  @apply focus:text-tertiary-accent;
+} */

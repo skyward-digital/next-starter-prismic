@@ -1,0 +1,20 @@
+{
+  "default": {
+    "id": "hero",
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Get in touch",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "We’ll learn a little bit about you and your project and get create a plan to start make improvements",
+        "spans": []
+      }
+    ],
+    "email": "sales@skyward.digital"
+  }
+}

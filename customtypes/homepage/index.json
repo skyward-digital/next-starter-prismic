@@ -5,32 +5,15 @@
   "status": true,
   "json": {
     "Main": {
-      "hero_title": {
-        "type": "StructuredText",
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
         "config": {
-          "single": "heading1",
-          "label": "Hero Title"
-        }
-      },
-      "hero_description": {
-        "type": "StructuredText",
-        "config": {
-          "single": "paragraph",
-          "label": "Hero Description"
-        }
-      },
-      "primary_link": {
-        "type": "Link",
-        "config": {
-          "label": "Primary Link",
-          "select": null
-        }
-      },
-      "primary_link_label": {
-        "type": "StructuredText",
-        "config": {
-          "single": "paragraph",
-          "label": "Primary Link Label"
+          "choices": {
+            "call_to_action": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     },

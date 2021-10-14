@@ -1,8 +1,23 @@
 .btn {
-  @apply inline-flex bg-gray-400 items-center justify-center gap-2 px-8 py-3 rounded-md font-semibold antialiased transition duration-200 ease-in-out no-underline;
+  @apply inline-flex items-center text-gray-500 justify-center gap-2 px-8 py-3 font-semibold antialiased transition duration-200 ease-in-out no-underline outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600;
 }
 
-.btn:hover,
-.btn:focus {
-  @apply bg-gray-200;
+.btn-primary {
+  @apply rounded-xl bg-rose-400 hover:bg-cyan-900 text-white;
+}
+
+.btn-secondary {
+  @apply rounded-xl bg-white hover:bg-rose-800 text-gray-800 hover:text-white;
+}
+
+.btn-dark {
+  @apply rounded-xl bg-gray-800 hover:bg-rose-800 text-white;
+}
+
+.btn-tertiary {
+  @apply hover:text-gray-800;
+}
+
+.btn-xl {
+  @apply px-7 py-3.5 text-base;
 }

@@ -1,35 +1,10 @@
 {
-  "id": "b23aad39-46a8-4d0e-af3c-702c5d68f6aa",
-  "uid": "dolore-fuga-non",
+  "id": "4305c3e2-7609-4427-b5fe-1d2e638a5c84",
+  "uid": "placeat-velit-adipisci",
   "type": "page",
   "data": {
-    "hero_title": [
-      {
-        "type": "heading1",
-        "text": "Deploy world-class deliverables",
-        "spans": []
-      }
-    ],
-    "hero_description": [
-      {
-        "type": "paragraph",
-        "text": "Non ex in excepteur excepteur dolor dolor consectetur nulla cupidatat laboris ex quis. Sint eu velit ad nisi ipsum exercitation mollit excepteur cillum elit minim id nulla excepteur laborum.",
-        "spans": []
-      }
-    ],
-    "primary_link": {
-      "link_type": "Web",
-      "url": "http://google.com"
-    },
-    "primary_link_label": [
-      {
-        "type": "paragraph",
-        "text": "Sit consectetur tempor aliqua id culpa quis mollit.",
-        "spans": []
-      }
-    ],
-    "metaTitle": "seize intuitive models",
-    "metaDescription": "disintermediate efficient web services",
+    "metaTitle": "disintermediate efficient mindshare",
+    "metaDescription": "monetize virtual functionalities",
     "metaImage": {
       "dimensions": {
         "width": 900,
@@ -37,7 +12,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
     }
   }
 }

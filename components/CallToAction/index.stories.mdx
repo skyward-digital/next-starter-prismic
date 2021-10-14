@@ -1,0 +1,104 @@
+import { Meta, Story, Preview, ArgsTable } from "@storybook/addon-docs";
+import {
+  DefaultCTA,
+  ImageCTA,
+  SmallCTA,
+  ApproachCTA,
+  PlatformsCTA,
+  TeamCTA,
+} from "./";
+import mocks from "./mocks.json";
+
+<Meta
+  title="Sections/Call to Action"
+  component={DefaultCTA}
+  parameters={{
+    actions: { handles: ["click a"] },
+    chromatic: { viewports: [320, 1440] },
+  }}
+/>
+
+# Call to Action
+
+The `Call to Action` is the primary way to grab your users attention and move them to the next stage of their user journey
+
+They can come in many forms depending on the situation. This is the most common version.
+
+<Preview withToolbar>
+  <Story name="Default" args={mocks.default}>
+    {(args) => <DefaultCTA {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="Default" />
+
+## With Image
+
+A simple 2 col CTA that allows an image
+
+<Preview withToolbar>
+  <Story name="With Image" args={mocks.withImage}>
+    {(args) => <ImageCTA {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="With Image" />
+
+## Small
+
+The Small Call to Action is to be used to follow up another section where a CTA might not fit naturally within that section.
+
+A good example might be [Features](http://localhost:8888/?path=/docs/sections-features--2-col)
+
+<Preview withToolbar>
+  <Story name="Small" args={mocks.default}>
+    {(args) => <SmallCTA {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="Small" />
+
+## Approach
+
+Sometimes it makes sense to provide additional information to go with the Call to Action. In this case, we use it to display
+our approach, which are shown like features but have costings built in
+
+<Preview withToolbar>
+  <Story name="Approach" args={mocks.approach}>
+    {(args) => <ApproachCTA {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="Approach" />
+
+# Platforms
+
+A special CTA used for showing all the different platforms we work with. The design is completely custom and it doesn't have
+
+Platforms can be set from within the CMS by creating custom "Platforms". We expect platforms to have one of these types `"Frontend Framework", "Marketing CMS", "Ecommerce"` so they can be correctly sorted in this component
+
+<Preview withToolbar>
+  <Story name="Platforms" args={mocks.platforms}>
+    {(args) => <PlatformsCTA {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="Platforms" />
+
+# Team
+
+Showcase the team members who worked on a project, service, feature or something else
+
+<Preview withToolbar>
+  <Story name="Team" args={mocks.team}>
+    {(args) => <TeamCTA {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="Team" />

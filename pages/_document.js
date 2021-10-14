@@ -1,11 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { createResolver } from "next-slicezone/resolver";
 
-import { apiEndpoint } from "./../prismic-configuration"; // import the endpoint name from where it's defined
-const prismicRepoName = /([a-zA-Z0-9-]+)?(\.cdn)?\.prismic\.io/.exec(
-  apiEndpoint
-)[1]; //Regex to get repo ID
-
 export default class extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -17,10 +12,12 @@ export default class extends Document {
     return (
       <Html>
         <Head>
-          <script
-            async
-            defer
-            src={`//static.cdn.prismic.io/prismic.js?repo=${prismicRepoName}&new=true`}
+          {/* Google fonts import */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap"
+            rel="stylesheet"
           />
         </Head>
         <body>

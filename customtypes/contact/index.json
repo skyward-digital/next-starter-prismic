@@ -2,15 +2,33 @@
   "id": "contact",
   "label": "Contact",
   "repeatable": false,
+  "status": true,
   "json": {
     "Main": {
-      "hero_title": {
-        "type": "StructuredText",
+      "title": {
         "config": {
-          "single": "heading1,strong",
-          "label": "Hero Title",
-          "placeholder": "Hero title..."
-        }
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        },
+        "type": "StructuredText"
+      },
+      "description": {
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+        },
+        "type": "StructuredText"
+      },
+      "email": {
+        "config": {
+          "label": "Email",
+          "placeholder": ""
+        },
+        "type": "Text"
       }
     },
     "SEO": {
@@ -37,6 +55,5 @@
         }
       }
     }
-  },
-  "status": true
+  }
 }

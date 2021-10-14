@@ -45,6 +45,17 @@
           "single": "paragraph",
           "label": "Secondary Button Label"
         }
+      },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "navigation": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     },
     "Banner": {

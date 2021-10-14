@@ -1,28 +1,24 @@
 import React from "react";
 
 //Variations
-import Simple from "./Simple";
-import SimpleLarge from "./SimpleLarge";
-import SimpleWithVideo from "./SimpleWithVideo";
-import TwoCol from "./TwoCol";
-import TwoColWithImage from "./TwoColWithImage";
+import { DefaultCTA, SmallCTA, ImageCTA } from "../../components/CallToAction";
 
-const CallToAction = ({ slice: { primary, items, variation } }) => {
+const CallToAction = ({ slice: { primary, items, variation }, i }) => {
   const componentMap = {
-    "default-slice": Simple,
-    simpleLarge: SimpleLarge,
-    simpleWithVideo: SimpleWithVideo,
-    twoColumn: TwoCol,
-    twoColumnWithImage: TwoColWithImage,
+    "default-slice": DefaultCTA,
+    withImage: ImageCTA,
+    small: SmallCTA,
   };
 
   const VariableComponent = componentMap[variation];
 
-  return (
-    <section>
-      <VariableComponent {...primary} items={items} />
-    </section>
-  );
+  return <VariableComponent id={`${i}-cta-slice`} {...primary} items={items} />;
 };
 
 export default CallToAction;
+
+// export const ctaTeamFetchLinks = [
+//   "teamMember.name",
+//   "teamMember.avatar",
+//   "teamMember.position",
+// ];

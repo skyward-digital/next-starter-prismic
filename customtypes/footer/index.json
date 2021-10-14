@@ -5,28 +5,83 @@
   "status": true,
   "json": {
     "Main": {
-      "footer_title": {
+      "logo": {
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "text": {
         "type": "StructuredText",
         "config": {
-          "single": "heading2",
-          "label": "Footer title"
+          "label": "Text",
+          "placeholder": "A short summary about the company",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,hyperlink"
         }
       },
-      "footer_text": {
-        "type": "StructuredText",
+      "links": {
         "config": {
-          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Links",
+          "placeholder": "",
+          "fields": {
+            "link": {
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": false
+              },
+              "type": "Link"
+            },
+            "linkLabel": {
+              "config": {
+                "label": "Link Label",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          }
+        },
+        "type": "Group"
+      }
+    },
+    "CTA": {
+      "ctaTitle": {
+        "config": {
+          "label": "CTA Title",
+          "placeholder": "",
           "allowTargetBlank": true,
-          "label": "Footer text"
-        }
+          "single": "heading2"
+        },
+        "type": "StructuredText"
       },
-      "footer_newsletter": {
-        "type": "StructuredText",
+      "ctaDescription": {
         "config": {
-          "multi": "paragraph,strong,em,hyperlink",
+          "label": "CTA Description",
+          "placeholder": "",
           "allowTargetBlank": true,
-          "label": "Footer newsletter"
-        }
+          "single": "paragraph,strong,em,hyperlink"
+        },
+        "type": "StructuredText"
+      },
+      "ctaLink": {
+        "config": {
+          "label": "CTA Link",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": false
+        },
+        "type": "Link"
+      },
+      "ctaLinkLabel": {
+        "config": {
+          "label": "CTA Link Label",
+          "placeholder": ""
+        },
+        "type": "Text"
       }
     }
   }

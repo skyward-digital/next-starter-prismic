@@ -1,35 +1,10 @@
 {
-  "id": "84f23863-5877-4f2f-b019-c78df76eea7f",
-  "uid": "hic-quod-et",
+  "id": "267fa5be-4710-4757-bcf3-4979d3e036d4",
+  "uid": "totam-esse-veniam",
   "type": "homepage",
   "data": {
-    "hero_title": [
-      {
-        "type": "heading1",
-        "text": "Innovate scalable infomediaries",
-        "spans": []
-      }
-    ],
-    "hero_description": [
-      {
-        "type": "paragraph",
-        "text": "Pariatur nostrud aliquip velit nisi commodo minim tempor ullamco officia fugiat.",
-        "spans": []
-      }
-    ],
-    "primary_link": {
-      "link_type": "Web",
-      "url": "https://prismic.io"
-    },
-    "primary_link_label": [
-      {
-        "type": "paragraph",
-        "text": "Enim labore ullamco minim eiusmod eu nostrud reprehenderit aute eu cupidatat laboris nostrud velit. Culpa nisi veniam ad ullamco voluptate adipisicing pariatur ut proident officia proident. Id mollit dolore id exercitation sint ullamco qui.",
-        "spans": []
-      }
-    ],
-    "metaTitle": "streamline revolutionary action-items",
-    "metaDescription": "harness front-end mindshare",
+    "metaTitle": "evolve dynamic e-services",
+    "metaDescription": "synthesize revolutionary web-readiness",
     "metaImage": {
       "dimensions": {
         "width": 900,
@@ -37,7 +12,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
     }
   }
 }

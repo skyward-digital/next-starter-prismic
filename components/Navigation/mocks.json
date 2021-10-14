@@ -1,0 +1,187 @@
+{
+  "default": {
+    "updates": [
+      {
+        "id": "YSFlbRMAACoACbyh",
+        "uid": "1.2.0-changelog",
+        "url": null,
+        "type": "changelog-status",
+        "href": "https://skyward.cdn.prismic.io/api/v2/documents/search?ref=YSJjOxMAACsADf-3&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YSFlbRMAACoACbyh%22%29+%5D%5D",
+        "tags": [],
+        "first_publication_date": "2021-08-22T13:23:06+0000",
+        "last_publication_date": "2021-08-22T14:46:19+0000",
+        "slugs": ["added-changelog", "changelog"],
+        "linked_documents": [],
+        "lang": "en-gb",
+        "alternate_languages": [],
+        "data": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Added Changelog",
+              "spans": []
+            }
+          ],
+          "type": "Feature",
+          "releaseDate": "2021-08-22",
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "We've now added a changelog to keep track of changes we make to the site. This will help others understand how we grow our own website as well as others and also give us a reference to look back on internally, especially when we're performing analysis (to see exact release dates).",
+              "spans": []
+            }
+          ],
+          "major": 1,
+          "minor": 2,
+          "patch": 0
+        }
+      },
+      {
+        "id": "YSFhABMAACcACaj3",
+        "uid": "1.1.0-benefits-slice",
+        "url": null,
+        "type": "changelog-status",
+        "href": "https://skyward.cdn.prismic.io/api/v2/documents/search?ref=YSJjOxMAACsADf-3&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YSFhABMAACcACaj3%22%29+%5D%5D",
+        "tags": [],
+        "first_publication_date": "2021-08-22T13:23:06+0000",
+        "last_publication_date": "2021-08-22T13:23:06+0000",
+        "slugs": ["benefits-slice"],
+        "linked_documents": [],
+        "lang": "en-gb",
+        "alternate_languages": [],
+        "data": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Benefits slice",
+              "spans": []
+            }
+          ],
+          "type": "Feature",
+          "releaseDate": "2021-08-21",
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "Today we added the new Benefit Slice component to the website! This slice allows us to show benefits in an eye-catching way. It's currently being used on the homepage showing the benefits of the Jamstack but in the future, this could be repurposed for other means.",
+              "spans": []
+            },
+            {
+              "type": "image",
+              "url": "https://images.prismic.io/skyward/f39fd0fa-1b96-460b-937a-ebc2fa02b675_Screenshot+2021-08-21+at+21.26.52.png?auto=compress,format",
+              "alt": "Benefits slice shown on skyward.digital",
+              "copyright": null,
+              "dimensions": {
+                "width": 3584,
+                "height": 2032
+              }
+            }
+          ],
+          "major": 1,
+          "minor": 1,
+          "patch": 0
+        }
+      },
+      {
+        "id": "YSFjXxMAACoACbN5",
+        "uid": "1.0.1-updates-contact-form",
+        "url": null,
+        "type": "changelog-status",
+        "href": "https://skyward.cdn.prismic.io/api/v2/documents/search?ref=YSJjOxMAACsADf-3&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YSFjXxMAACoACbN5%22%29+%5D%5D",
+        "tags": [],
+        "first_publication_date": "2021-08-22T13:23:06+0000",
+        "last_publication_date": "2021-08-22T13:23:06+0000",
+        "slugs": ["updates-contact-form"],
+        "linked_documents": [],
+        "lang": "en-gb",
+        "alternate_languages": [],
+        "data": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Updates Contact Form",
+              "spans": []
+            }
+          ],
+          "type": "Improvement",
+          "releaseDate": "2021-08-19",
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "A minor change to add more fields to our contact form. Though these fields are not strictly necessary, behind the scenes we're using zapier to capture potential enquiries and feed them into our pipeline software. Having these additional fields (company and website) allow us to do a little more research before our initial calls and makes the process smoother!",
+              "spans": []
+            }
+          ],
+          "major": 1,
+          "minor": 0,
+          "patch": 1
+        }
+      },
+      {
+        "id": "YSFkIxMAAC0ACbbq",
+        "uid": "1.0.0-launch",
+        "url": null,
+        "type": "changelog-status",
+        "href": "https://skyward.cdn.prismic.io/api/v2/documents/search?ref=YSJjOxMAACsADf-3&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YSFkIxMAAC0ACbbq%22%29+%5D%5D",
+        "tags": [],
+        "first_publication_date": "2021-08-22T13:23:06+0000",
+        "last_publication_date": "2021-08-22T13:23:06+0000",
+        "slugs": ["launch-"],
+        "linked_documents": [],
+        "lang": "en-gb",
+        "alternate_languages": [],
+        "data": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Launch 🚀",
+              "spans": []
+            }
+          ],
+          "type": "Feature",
+          "releaseDate": "2021-08-18",
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "Say hello to the new skyward website! Right now it's just a small single-page website, but as we've been active for a few months now we thought it was important to actually get ourselves online.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Look forward to lots of upcoming changes in the near future - we've got a lot planned!",
+              "spans": []
+            }
+          ],
+          "major": 1,
+          "minor": 0,
+          "patch": 0
+        }
+      }
+    ]
+  },
+  "card": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Launch 🚀",
+        "spans": []
+      }
+    ],
+    "type": "Feature",
+    "releaseDate": "2021-08-18",
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Say hello to the new skyward website! Right now it's just a small single-page website, but as we've been active for a few months now we thought it was important to actually get ourselves online.",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Look forward to lots of upcoming changes in the near future - we've got a lot planned!",
+        "spans": []
+      }
+    ],
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

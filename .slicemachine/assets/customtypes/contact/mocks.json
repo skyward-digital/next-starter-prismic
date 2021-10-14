@@ -1,0 +1,33 @@
+{
+  "id": "c47c9043-a05d-4acd-a313-006bdeb7d131",
+  "uid": "dolorem-illum-delectus",
+  "type": "contact",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Drive cross-platform interfaces",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Minim aliqua tempor qui nisi. Ut commodo tempor proident officia laborum Lorem non exercitation elit.",
+        "spans": []
+      }
+    ],
+    "email": "maximize e-business supply-chains",
+    "metaTitle": "maximize cross-media deliverables",
+    "metaDescription": "streamline transparent methodologies",
+    "metaImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+    }
+  }
+}

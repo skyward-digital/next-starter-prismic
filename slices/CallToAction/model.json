@@ -17,7 +17,7 @@
             "label": "Title",
             "placeholder": "This is where it all begins...",
             "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading1,heading2"
           }
         },
         "description": {
@@ -33,8 +33,8 @@
           "config": {
             "label": "Primary Link",
             "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
+            "select": null,
+            "allowTargetBlank": true
           },
           "type": "Link"
         },
@@ -49,8 +49,8 @@
           "config": {
             "label": "Secondary Link",
             "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
+            "select": null,
+            "allowTargetBlank": true
           },
           "type": "Link"
         },
@@ -65,8 +65,8 @@
       "items": {}
     },
     {
-      "id": "simpleLarge",
-      "name": "Simple Large",
+      "id": "small",
+      "name": "Small",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "CallToAction",
@@ -77,186 +77,47 @@
             "label": "Title",
             "placeholder": "This is where it all begins...",
             "allowTargetBlank": true,
-            "single": "heading2"
-          }
-        },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Description",
-            "placeholder": "A nice description of your feature",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,em,hyperlink"
-          }
-        },
-        "primaryLink": {
-          "config": {
-            "label": "Primary Link",
-            "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
-          },
-          "type": "Link"
-        },
-        "primaryLinkLabel": {
-          "config": {
-            "label": "Primary Link Label",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "secondaryLink": {
-          "config": {
-            "label": "Secondary Link",
-            "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
-          },
-          "type": "Link"
-        },
-        "secondaryLinkLabel": {
-          "config": {
-            "label": "Secondary Link Label",
-            "placeholder": ""
-          },
-          "type": "Text"
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "simpleWithVideo",
-      "name": "Simple with Video",
-      "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "CallToAction",
-      "primary": {
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
-          }
-        },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Description",
-            "placeholder": "A nice description of your feature",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,em,hyperlink"
-          }
-        },
-        "video": {
-          "config": {
-            "label": "Video",
-            "placeholder": ""
-          },
-          "type": "Embed"
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "twoColumn",
-      "name": "Two Column",
-      "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "CallToAction",
-      "primary": {
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading2"
-          }
-        },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Description",
-            "placeholder": "A nice description of your feature",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,em,hyperlink"
-          }
-        },
-        "primaryLink": {
-          "config": {
-            "label": "Primary Link",
-            "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
-          },
-          "type": "Link"
-        },
-        "primaryLinkLabel": {
-          "config": {
-            "label": "Primary Link Label",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "secondaryLink": {
-          "config": {
-            "label": "Secondary Link",
-            "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
-          },
-          "type": "Link"
-        },
-        "secondaryLinkLabel": {
-          "config": {
-            "label": "Secondary Link Label",
-            "placeholder": ""
-          },
-          "type": "Text"
-        }
-      },
-      "items": {
-        "title": {
-          "config": {
-            "label": "Title",
-            "placeholder": "",
-            "allowTargetBlank": false,
             "single": "heading3"
-          },
-          "type": "StructuredText"
+          }
         },
-        "description": {
+        "primaryLink": {
           "config": {
-            "label": "Description",
+            "label": "Primary Link",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,em,hyperlink"
-          },
-          "type": "StructuredText"
-        },
-        "link": {
-          "config": {
-            "label": "Link",
-            "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
+            "select": null,
+            "allowTargetBlank": true
           },
           "type": "Link"
         },
-        "linkLabel": {
+        "primaryLinkLabel": {
           "config": {
-            "label": "Link Label",
+            "label": "Primary Link Label",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "secondaryLink": {
+          "config": {
+            "label": "Secondary Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "secondaryLinkLabel": {
+          "config": {
+            "label": "Secondary Link Label",
             "placeholder": ""
           },
           "type": "Text"
         }
-      }
+      },
+      "items": {}
     },
     {
-      "id": "twoColumnWithImage",
-      "name": "Two Column with Image",
+      "id": "withImage",
+      "name": "With Image",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "CallToAction",
@@ -267,7 +128,7 @@
             "label": "Title",
             "placeholder": "This is where it all begins...",
             "allowTargetBlank": true,
-            "single": "heading2"
+            "single": "heading1,heading2"
           }
         },
         "description": {
@@ -283,8 +144,8 @@
           "config": {
             "label": "Primary Link",
             "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
+            "select": null,
+            "allowTargetBlank": true
           },
           "type": "Link"
         },
@@ -299,8 +160,8 @@
           "config": {
             "label": "Secondary Link",
             "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
+            "select": null,
+            "allowTargetBlank": true
           },
           "type": "Link"
         },

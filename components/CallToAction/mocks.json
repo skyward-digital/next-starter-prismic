@@ -1,0 +1,827 @@
+{
+  "default": {
+    "id": "2-cta-slice",
+    "title": [
+      {
+        "type": "heading2",
+        "text": "Fast websites aren't just about speed",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Website performance is fundamental to your users experience, Google ranking and much more. By ignoring performance, you're wasting a lot of potential.",
+        "spans": []
+      }
+    ],
+    "primaryLink": {
+      "link_type": "Web",
+      "url": "https://#contactForm"
+    },
+    "primaryLinkLabel": "Hire us today",
+    "secondaryLink": {
+      "link_type": "Web",
+      "url": "https://#contactForm"
+    },
+    "secondaryLinkLabel": "What is Jamstack?"
+  },
+  "withImage": {
+    "id": "0-cta-slice",
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Streamline your business by creating a smarter strategy",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "We'll help you optimise your businesses online presence by understanding the core of your business, what help it needs and what's blocking you from growing - and then help you fix it.",
+        "spans": []
+      }
+    ],
+    "primaryLink": {
+      "id": "YVblfBEAACoATMn3",
+      "type": "contact",
+      "tags": [],
+      "slug": "contact",
+      "lang": "en-gb",
+      "first_publication_date": "2021-10-01T10:39:59+0000",
+      "last_publication_date": "2021-10-07T11:26:14+0000",
+      "link_type": "Document",
+      "isBroken": false
+    },
+    "primaryLinkLabel": "Start improving your strategy",
+    "secondaryLink": {
+      "link_type": "Any"
+    },
+    "secondaryLinkLabel": "How it works",
+    "image": {
+      "dimensions": {
+        "width": 905,
+        "height": 664
+      },
+      "alt": "Abstract illustration showing a breakdown of a planning process ",
+      "copyright": null,
+      "url": "https://skyward.cdn.prismic.io/skyward/578ba117-bf46-45d5-a32e-567eba1265e0_Planning-illustration.svg"
+    }
+  },
+  "approach": {
+    "id": "2-cta-slice",
+    "title": [
+      {
+        "type": "heading2",
+        "text": "Fast websites aren't just about speed",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Website performance is fundamental to your users experience, Google ranking and much more. By ignoring performance, you're wasting a lot of potential.",
+        "spans": []
+      }
+    ],
+    "primaryLink": {
+      "link_type": "Web",
+      "url": "https://#contactForm"
+    },
+    "primaryLinkLabel": "Hire us today",
+    "secondaryLink": {
+      "link_type": "Web",
+      "url": "https://#contactForm"
+    },
+    "secondaryLinkLabel": "What is Jamstack?",
+
+    "items": [
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Strategise",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "We'll help you turn your ideas into a plan of action to ensure you take the best steps forward for your businesses online needs",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://#contactForm"
+        },
+        "linkLabel": "Start working the right way",
+        "additionalContent": [
+          {
+            "type": "paragraph",
+            "text": "From £4450",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Create",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "We'll handle the UX design and technical implementation to guarantee your website starts off the right way ",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://#contactForm"
+        },
+        "linkLabel": "Get a website built to scale",
+        "additionalContent": [
+          {
+            "type": "paragraph",
+            "text": "From £9750",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "title": [
+          {
+            "type": "heading3",
+            "text": "Improve",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "We'll analyse your product over time and improve both the experience for your team and your customers.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://#contactForm"
+        },
+        "linkLabel": "Create your long-term growth plan",
+        "additionalContent": [
+          {
+            "type": "paragraph",
+            "text": "From £3950 per month",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  },
+  "platforms": {
+    "id": "0-hero-slice",
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Fast, reliable, headless websites",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "We combine the best Jamstack tools to design your perfect website that’s built for the future",
+        "spans": []
+      }
+    ],
+    "primaryLink": {
+      "link_type": "Web",
+      "url": "https://#slice1"
+    },
+    "primaryLinkLabel": "Hire us today",
+    "secondaryLink": {
+      "link_type": "Web",
+      "url": "https://#1-services-slice"
+    },
+    "secondaryLinkLabel": "See our Services",
+    "platformsTitle": [
+      {
+        "type": "heading3",
+        "text": "Choose your platforms",
+        "spans": []
+      }
+    ],
+    "platformsDescription": [
+      {
+        "type": "paragraph",
+        "text": "Mix and match however you like. Not sure what works best for you?\nGet in touch and ask our team",
+        "spans": []
+      }
+    ],
+    "items": [
+      {
+        "platform": {
+          "id": "YVR2gREAACsAl2or",
+          "type": "platform",
+          "tags": [],
+          "slug": "next",
+          "lang": "en-gb",
+          "first_publication_date": "2021-09-30T13:00:14+0000",
+          "last_publication_date": "2021-09-30T13:00:14+0000",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Next",
+                "spans": []
+              }
+            ],
+            "type": "Frontend Framework",
+            "logo": {
+              "dimensions": {
+                "width": 82,
+                "height": 40
+              },
+              "alt": "Next.js Logo",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/9e9852eb-9ffa-488b-a543-74d77eefe450_Next.svg"
+            },
+            "image": {
+              "dimensions": {
+                "width": 494,
+                "height": 240
+              },
+              "alt": "Abstract Nextjs homepage reinterpretation",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/c3085317-be74-42bf-99a1-4dc2b338d712_NextJSIllustration.svg"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "platform": {
+          "id": "YVR59REAAC0Al3pE",
+          "type": "platform",
+          "tags": [],
+          "slug": "gatsby",
+          "lang": "en-gb",
+          "first_publication_date": "2021-09-30T13:00:14+0000",
+          "last_publication_date": "2021-09-30T13:00:14+0000",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Gatsby",
+                "spans": []
+              }
+            ],
+            "type": "Frontend Framework",
+            "logo": {
+              "dimensions": {
+                "width": 122,
+                "height": 32
+              },
+              "alt": "Gatsby Logo",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/3eba5afb-707d-48ce-9ce9-73ba18bcad5b_Gatsby.svg"
+            },
+            "image": {
+              "dimensions": {
+                "width": 494,
+                "height": 240
+              },
+              "alt": "Abstract Gatsby homepage reinterpretation",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/9d8c20fc-fbf3-45cf-8746-3d9d86129d80_GatsbyIllustration.svg"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "platform": {
+          "id": "YVR6FREAAC4Al3rm",
+          "type": "platform",
+          "tags": [],
+          "slug": "dato-cms",
+          "lang": "en-gb",
+          "first_publication_date": "2021-09-30T13:00:14+0000",
+          "last_publication_date": "2021-09-30T13:00:14+0000",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Dato CMS",
+                "spans": []
+              }
+            ],
+            "type": "Marketing CMS",
+            "logo": {
+              "dimensions": {
+                "width": 105,
+                "height": 32
+              },
+              "alt": "Dato CMS logo",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/a52b5976-c6cf-46ec-9300-e30a8d7167ee_Dato.svg"
+            },
+            "image": {
+              "dimensions": {
+                "width": 494,
+                "height": 240
+              },
+              "alt": "Abstract Dato homepage reinterpretation",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/ebedc83b-5a20-44cf-9d1a-3ca0adbce629_DatoIllustration.svg"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "platform": {
+          "id": "YVR6PBEAAC8Al3uw",
+          "type": "platform",
+          "tags": [],
+          "slug": "prismic",
+          "lang": "en-gb",
+          "first_publication_date": "2021-09-30T13:00:14+0000",
+          "last_publication_date": "2021-09-30T13:00:14+0000",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Prismic",
+                "spans": []
+              }
+            ],
+            "type": "Marketing CMS",
+            "logo": {
+              "dimensions": {
+                "width": 97,
+                "height": 26
+              },
+              "alt": "Prismic Logo",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/ba6f2187-8631-4bbf-ba71-bff6544d5056_Prismic.svg"
+            },
+            "image": {
+              "dimensions": {
+                "width": 491,
+                "height": 236
+              },
+              "alt": "Abstract Prismic homepage reinterpretation",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/2b24d8ea-6b0a-4842-9669-742478e7f001_PrismicIllustration.svg"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "platform": {
+          "id": "YVR6WREAACoAl3w_",
+          "type": "platform",
+          "tags": [],
+          "slug": "sanity",
+          "lang": "en-gb",
+          "first_publication_date": "2021-09-30T13:00:14+0000",
+          "last_publication_date": "2021-09-30T13:00:14+0000",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Sanity",
+                "spans": []
+              }
+            ],
+            "type": "Marketing CMS",
+            "logo": {
+              "dimensions": {
+                "width": 106,
+                "height": 22
+              },
+              "alt": "Sanity.io Logo",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/57214a1d-d798-47a3-8945-6b53de205445_Sanity.svg"
+            },
+            "image": {
+              "dimensions": {
+                "width": 494,
+                "height": 240
+              },
+              "alt": "Abstract Sanity homepage reinterpretation",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/f0671290-743b-41ae-aee7-348d84a1ff0c_SanityIllustration.svg"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "platform": {
+          "id": "YVR6cREAACkAl3y1",
+          "type": "platform",
+          "tags": [],
+          "slug": "contentful",
+          "lang": "en-gb",
+          "first_publication_date": "2021-09-30T13:00:14+0000",
+          "last_publication_date": "2021-09-30T13:00:14+0000",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Contentful",
+                "spans": []
+              }
+            ],
+            "type": "Marketing CMS",
+            "logo": {
+              "dimensions": {
+                "width": 156,
+                "height": 32
+              },
+              "alt": "Contentful Logo",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/199e6d4e-40a8-491e-a21f-1e7a8d89310a_Contentful.svg"
+            },
+            "image": {
+              "dimensions": {
+                "width": 491,
+                "height": 243
+              },
+              "alt": "Abstract Contentful homepage reinterpretation",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/5c416259-97b3-4521-b729-7e0e7843a673_ContentfulIllustration.svg"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "platform": {
+          "id": "YVR6rBEAAC0Al33q",
+          "type": "platform",
+          "tags": [],
+          "slug": "shopify",
+          "lang": "en-gb",
+          "first_publication_date": "2021-09-30T13:00:14+0000",
+          "last_publication_date": "2021-09-30T13:00:14+0000",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Shopify",
+                "spans": []
+              }
+            ],
+            "type": "Ecommerce",
+            "logo": {
+              "dimensions": {
+                "width": 113,
+                "height": 32
+              },
+              "alt": "Shopify Logo",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/c5088b3f-0578-499e-8826-5bbadf2b4ad8_Shopify.svg"
+            },
+            "image": {
+              "dimensions": {
+                "width": 491,
+                "height": 243
+              },
+              "alt": "Abstract Shopify homepage reinterpretation",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/eb341d13-cfd8-41d0-aafb-5f83bd518267_ShopifyIllustration.svg"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "platform": {
+          "id": "YVR6zhEAACoAl36N",
+          "type": "platform",
+          "tags": [],
+          "slug": "big-commerce",
+          "lang": "en-gb",
+          "first_publication_date": "2021-09-30T13:00:14+0000",
+          "last_publication_date": "2021-09-30T13:00:14+0000",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Big Commerce",
+                "spans": []
+              }
+            ],
+            "type": "Ecommerce",
+            "logo": {
+              "dimensions": {
+                "width": 133,
+                "height": 30
+              },
+              "alt": "BigCommerce Logo",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/7ad2eb6f-14de-4ad8-b88c-b186cf560a1f_Bigcommerce.svg"
+            },
+            "image": {
+              "dimensions": {
+                "width": 491,
+                "height": 241
+              },
+              "alt": "Abstract BigCommerce homepage reinterpretation",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/222bc2bb-176a-43f8-8555-d2d8f72a9fa4_BigcommerceIllustration.svg"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "platform": {
+          "id": "YVR69REAACsAl39S",
+          "type": "platform",
+          "tags": [],
+          "slug": "commerce-layer",
+          "lang": "en-gb",
+          "first_publication_date": "2021-09-30T13:00:14+0000",
+          "last_publication_date": "2021-09-30T13:00:14+0000",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Commerce Layer",
+                "spans": []
+              }
+            ],
+            "type": "Ecommerce",
+            "logo": {
+              "dimensions": {
+                "width": 161,
+                "height": 26
+              },
+              "alt": "Commerce Layer Logo\n",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/e153f1e4-3c20-47fc-969a-5302d9fda2f6_Commercelayer.svg"
+            },
+            "image": {
+              "dimensions": {
+                "width": 491,
+                "height": 237
+              },
+              "alt": "Abstract Commerce Layer homepage reinterpretation",
+              "copyright": null,
+              "url": "https://skyward.cdn.prismic.io/skyward/93919870-b245-477f-afd8-4b72141626a1_Commerce+LayerIllustration.svg"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      }
+    ]
+  },
+  "team": {
+    "id": "1-cta-slice",
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Meet the Skyward team",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "The amazing people who build the future for your business ",
+        "spans": []
+      }
+    ],
+    "primaryLink": {
+      "id": "YVblfBEAACoATMn3",
+      "type": "contact",
+      "tags": [],
+      "slug": "contact",
+      "lang": "en-gb",
+      "first_publication_date": "2021-10-01T10:39:59+0000",
+      "last_publication_date": "2021-10-01T10:39:59+0000",
+      "link_type": "Document",
+      "isBroken": false
+    },
+    "primaryLinkLabel": "Hire us for your next project",
+    "secondaryLink": {
+      "link_type": "Any"
+    },
+    "secondaryLinkLabel": null,
+    "items": [
+      {
+        "teamMember": {
+          "id": "YVbbNBEAACwATJtf",
+          "type": "teamMember",
+          "tags": [],
+          "slug": "dan-spratling",
+          "lang": "en-gb",
+          "first_publication_date": "2021-10-01T10:50:59+0000",
+          "last_publication_date": "2021-10-01T10:50:59+0000",
+          "uid": "dan-spratling",
+          "data": {
+            "name": [
+              {
+                "type": "heading1",
+                "text": "Dan Spratling",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 256,
+                "height": 256
+              },
+              "alt": "Dan Spratling\n",
+              "copyright": null,
+              "url": "https://images.prismic.io/skyward/059af3b5-fec1-4ebf-8bb1-cb3f1ebb2bcf_Dan+Spratling.png?auto=compress,format"
+            },
+            "position": [
+              {
+                "type": "paragraph",
+                "text": "Founder & CEO",
+                "spans": []
+              }
+            ]
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "teamMember": {
+          "id": "YVbbaxEAACsATJxq",
+          "type": "teamMember",
+          "tags": [],
+          "slug": "katie-mccade",
+          "lang": "en-gb",
+          "first_publication_date": "2021-10-01T10:50:59+0000",
+          "last_publication_date": "2021-10-01T10:50:59+0000",
+          "uid": "katie-mccade",
+          "data": {
+            "name": [
+              {
+                "type": "heading1",
+                "text": "Katie McCade",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 256,
+                "height": 256
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/skyward/472ba75f-2a3b-4e32-8599-b0c159caeee4_Katie+McCade.png?auto=compress,format"
+            },
+            "position": [
+              {
+                "type": "paragraph",
+                "text": "Operations & Project Manager",
+                "spans": []
+              }
+            ]
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "teamMember": {
+          "id": "YVbbxBEAACwATJ4c",
+          "type": "teamMember",
+          "tags": [],
+          "slug": "sarah-shook",
+          "lang": "en-gb",
+          "first_publication_date": "2021-10-01T10:50:59+0000",
+          "last_publication_date": "2021-10-01T10:50:59+0000",
+          "uid": "sarah-shook",
+          "data": {
+            "name": [
+              {
+                "type": "heading1",
+                "text": "Sarah Shook",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 256,
+                "height": 256
+              },
+              "alt": "Sarah Shook",
+              "copyright": null,
+              "url": "https://images.prismic.io/skyward/ffe905eb-bed5-482d-82e4-9c4589a95e08_Sarah+Shook.png?auto=compress,format"
+            },
+            "position": [
+              {
+                "type": "paragraph",
+                "text": "Frontend Developer",
+                "spans": []
+              }
+            ]
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "teamMember": {
+          "id": "YVbcCxEAACoATJ9p",
+          "type": "teamMember",
+          "tags": [],
+          "slug": "louie-richardson",
+          "lang": "en-gb",
+          "first_publication_date": "2021-10-01T10:50:59+0000",
+          "last_publication_date": "2021-10-01T10:50:59+0000",
+          "uid": "louie-richardson",
+          "data": {
+            "name": [
+              {
+                "type": "heading1",
+                "text": "Louie Richardson",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 256,
+                "height": 256
+              },
+              "alt": "Louie Richardson",
+              "copyright": null,
+              "url": "https://images.prismic.io/skyward/fa2c2f2e-5440-45a2-9b98-9239bd36b4b3_Louie+Richardson.png?auto=compress,format"
+            },
+            "position": [
+              {
+                "type": "paragraph",
+                "text": "Junior Frontend Developer",
+                "spans": []
+              }
+            ]
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      },
+      {
+        "teamMember": {
+          "id": "YVbcyxEAAC0ATKLf",
+          "type": "teamMember",
+          "tags": [],
+          "slug": "david-dooley",
+          "lang": "en-gb",
+          "first_publication_date": "2021-10-01T10:50:59+0000",
+          "last_publication_date": "2021-10-01T10:50:59+0000",
+          "uid": "david-dooley",
+          "data": {
+            "name": [
+              {
+                "type": "heading1",
+                "text": "David Dooley",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 256,
+                "height": 256
+              },
+              "alt": "David Dooley",
+              "copyright": null,
+              "url": "https://images.prismic.io/skyward/806b8e82-e535-4af9-b45b-e8a8b20107c6_David+Dooley.png?auto=compress,format"
+            },
+            "position": [
+              {
+                "type": "paragraph",
+                "text": "Design",
+                "spans": []
+              }
+            ]
+          },
+          "link_type": "Document",
+          "isBroken": false
+        }
+      }
+    ]
+  }
+}

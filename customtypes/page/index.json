@@ -5,13 +5,6 @@
   "status": true,
   "json": {
     "Page": {
-      "hero_title": {
-        "type": "StructuredText",
-        "config": {
-          "single": "heading1",
-          "label": "Hero Title"
-        }
-      },
       "uid": {
         "type": "UID",
         "config": {
@@ -19,25 +12,15 @@
           "placeholder": "The unique identifier for the page (slug)..."
         }
       },
-      "hero_description": {
-        "type": "StructuredText",
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
         "config": {
-          "single": "paragraph",
-          "label": "Hero Description"
-        }
-      },
-      "primary_link": {
-        "type": "Link",
-        "config": {
-          "label": "Primary Link",
-          "select": null
-        }
-      },
-      "primary_link_label": {
-        "type": "StructuredText",
-        "config": {
-          "single": "paragraph",
-          "label": "Primary Link Label"
+          "choices": {
+            "call_to_action": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     },
