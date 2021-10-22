@@ -33,6 +33,7 @@
     "@prismicio/client": "^5.1.0",
     "@tailwindcss/line-clamp": "^0.2.2",
     "@tailwindcss/typography": "^0.4.1",
+    "lazysizes": "^5.3.2",
     "next": "^11.1.2",
     "next-sitemap": "^1.6.157",
     "next-slicezone": "^0.1.2",
