@@ -1,6 +1,5 @@
 import "../styles/index.css";
 
-import React from "react";
 import NextApp from "next/app";
 import Script from "next/script";
 

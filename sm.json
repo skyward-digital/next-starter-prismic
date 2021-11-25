@@ -1,8 +1,6 @@
 {
   "apiEndpoint": "https://next-marketing-starter.cdn.prismic.io/api/v2",
-  "libraries": [
-    "@/slices"
-  ],
+  "libraries": ["@/slices"],
   "_latest": "0.1.0",
   "storybook": "http://localhost:8888"
 }

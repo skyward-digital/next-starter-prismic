@@ -24,13 +24,13 @@ export const Router = {
     //   type: "blogCategory",
     //   path: "/blog/:uid",
     // },
-    {
-      type: "blogPost",
-      path: "/blog/:category/:uid",
-      resolvers: {
-        category: "category", // id of the content relationship in the article mask
-      },
-    },
+    // {
+    //   type: "blogPost",
+    //   path: "/blog/:category/:uid",
+    //   resolvers: {
+    //     category: "category", // id of the content relationship in the article mask
+    //   },
+    // },
   ],
   href: (type) => {
     const route = Router.routes.find((r) => r.type === type);

@@ -5,6 +5,11 @@ import resolver from "../sm-resolver.js";
 
 import { Layout } from "../components";
 
+/**
+ * Our General page layout
+ * With clever slice creation, this should cover most of the different page types
+ * Routing could be handled either via document creation (repeated slices) or tagging, depending on use case
+ */
 const Page = ({ slices, data, url, lang, layout }) => {
   const seo = {
     metaTitle: data.metaTitle || layout.seo?.data?.metaTitle,
@@ -22,13 +27,14 @@ const Page = ({ slices, data, url, lang, layout }) => {
   );
 };
 
-// Fetch content from prismic - previews but doesn't hot reload
 export const getStaticProps = async ({ params }) => {
   //Default Layout components reused across the site
-  const seo = (await Client().getSingle("defaultSeo")) || {};
-  const header = (await Client().getSingle("header")) || {};
-  const footer = (await Client().getSingle("footer")) || {};
-  const socials = (await Client().getSingle("socials")) || {};
+  const layout = {
+    seo: (await Client().getSingle("defaultSeo")) || {},
+    header: (await Client().getSingle("header")) || {},
+    footer: (await Client().getSingle("footer")) || {},
+    socials: (await Client().getSingle("socials")) || {},
+  };
 
   const page = await useGetStaticProps({
     client: Client(),
@@ -42,12 +48,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      layout: {
-        seo,
-        header,
-        footer,
-        socials,
-      },
+      layout,
       ...page.props,
     },
   };

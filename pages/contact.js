@@ -30,10 +30,12 @@ const ContactPage = ({ slices, data, url, lang, layout }) => {
 
 export const getStaticProps = async ({ params }) => {
   //Default Layout components reused across the site
-  const seo = (await Client().getSingle("defaultSeo")) || {};
-  const header = (await Client().getSingle("header")) || {};
-  const footer = (await Client().getSingle("footer")) || {};
-  const socials = (await Client().getSingle("socials")) || {};
+  const layout = {
+    seo: (await Client().getSingle("defaultSeo")) || {},
+    header: (await Client().getSingle("header")) || {},
+    footer: (await Client().getSingle("footer")) || {},
+    socials: (await Client().getSingle("socials")) || {},
+  };
 
   const page = await useGetStaticProps({
     client: Client(),
@@ -46,12 +48,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      layout: {
-        seo,
-        header,
-        footer,
-        socials,
-      },
+      layout,
       ...page.props,
     },
   };

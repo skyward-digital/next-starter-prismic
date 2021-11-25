@@ -6,8 +6,8 @@ export const linkResolver = (doc) => {
   if (doc.type === "contact") return `/contact`;
 
   //Uses the route resolver instead
-  if (doc.type === "blogCategory") return `/blog/${doc.uid}`;
-  if (doc.type === "blogPost") return null;
+  // if (doc.type === "blogCategory") return `/blog/${doc.uid}`;
+  // if (doc.type === "blogPost") return null;
 
   return "/";
 };

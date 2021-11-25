@@ -1,5 +1,3 @@
-import React from "react";
-
 //Variations
 import { DefaultCTA, SmallCTA, ImageCTA } from "../../components/CallToAction";
 

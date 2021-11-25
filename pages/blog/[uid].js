@@ -1,38 +1,32 @@
 import { Client } from "../../../prismic-configuration";
+import SliceZone from "next-slicezone";
 import { useGetStaticProps, useGetStaticPaths } from "next-slicezone/hooks";
+import resolver from "../../../sm-resolver.js";
 
 import { Layout } from "../../../components/Layout";
-import { Article } from "../../../components/Article";
-import { ArticleHero } from "../../../components/ArticleHero";
+import { Hero } from "../../../components/Hero";
 
-const BlogPost = ({ data, url, lang, layout }) => {
+const BlogPost = ({ slices, data, url, lang, layout }) => {
   const seo = {
     metaTitle: data.metaTitle || layout.metaTitle,
     metaDescription: data.metaDescription || layout.metaDescription,
     metaImage: data.metaImage?.url || layout.metaImage?.url,
     url: url,
-    article: false,
+    article: true,
     lang: lang,
   };
 
   const hero = {
     title: data.title,
-    grandparentLink: "/blog",
-    grandparentLinkLabel: "Blog",
-    parentLink: data.category,
-    parentLinkLabel: data.category.data.title,
-  };
-
-  const article = {
-    featuredImage: data.featuredImage,
-    publishDate: data.publishDate,
-    article: data.articleContent,
+    // description: data.hero_description,
+    // primaryLink: data.hero_link,
+    // primaryLinkLabel: data.hero_link_label,
   };
 
   return (
     <Layout seo={seo} {...layout}>
-      <ArticleHero {...hero} />
-      <Article {...article} />
+      <Hero {...hero} />
+      <SliceZone slices={slices} resolver={resolver} />;
     </Layout>
   );
 };
@@ -44,8 +38,8 @@ export const getStaticProps = useGetStaticProps({
   apiParams({ params }) {
     return {
       uid: params.uid,
-      //fetchLinks gets data related via fields - blogPost.data.category.data.title
-      fetchLinks: ["blogCategory.title"],
+      //fetchlinks gets nested
+      fetchLinks: ["blog_category.title"],
     };
   },
 });
@@ -56,7 +50,6 @@ export const getStaticPaths = useGetStaticPaths({
   formatPath: (prismicDocument) => {
     return {
       params: {
-        category: prismicDocument.data.category.uid,
         uid: prismicDocument.uid,
       },
     };

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -9,10 +9,10 @@ import {
   faDribbble,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "../Link";
-import { SocialContext } from "../../context/SocialContext";
+import { GlobalContext } from "../../context/GlobalContext";
 
 export const Socials = (props) => {
-  const { socials } = useContext(SocialContext);
+  const { socials } = useContext(GlobalContext);
 
   return (
     <div {...props}>

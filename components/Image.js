@@ -44,6 +44,7 @@ export const Image = ({
   const src = updateImgixParams(url, {
     w: width,
     h: height,
+    fit: "crop", //Todo: we could allow this to be adjustable in code
   });
 
   // const sizes = ["md:50vw", "lg:66vw", width];
@@ -98,7 +99,7 @@ const FinalImage = ({
 /* figure out what our image aspect ratio is based on dimensions */
 const calcFromAspectRatio = (dimension, aspectRatio) => {
   if (!dimension) return null;
-  return dimension * aspectRatio;
+  return Math.ceil(dimension * aspectRatio);
 };
 
 /* A function we use to update our imgix params within the url string */

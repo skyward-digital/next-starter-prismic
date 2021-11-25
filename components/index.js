@@ -6,3 +6,4 @@ export { Image } from "./Image";
 export { Layout } from "./Layout";
 export { Link } from "./Link";
 export { Socials } from "./Socials";
+export { Seo } from "./SEO";

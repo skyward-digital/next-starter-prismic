@@ -1,0 +1,93 @@
+{
+  "logos": {
+    "id": "YUB-tRAAACIA6BNc",
+    "uid": null,
+    "url": null,
+    "type": "logos",
+    "href": "https://azure-first.cdn.prismic.io/api/v2/documents/search?ref=YUChOBAAACIA6LD1&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YUB-tRAAACIA6BNc%22%29+%5D%5D",
+    "tags": [],
+    "first_publication_date": "2021-09-14T10:51:36+0000",
+    "last_publication_date": "2021-09-14T10:51:36+0000",
+    "slugs": ["logos"],
+    "linked_documents": [],
+    "lang": "en-us",
+    "alternate_languages": [],
+    "data": {
+      "icon": {
+        "dimensions": {
+          "width": 32,
+          "height": 30
+        },
+        "alt": "Azure First Logo Icon",
+        "copyright": null,
+        "url": "https://azure-first.cdn.prismic.io/azure-first/5ef0bb0c-b66b-4bee-a7f9-1bcb33471ecc_Azure+First+Icon.svg"
+      },
+      "logo": {
+        "dimensions": {
+          "width": 160,
+          "height": 28
+        },
+        "alt": "Azure First logo",
+        "copyright": null,
+        "url": "https://azure-first.cdn.prismic.io/azure-first/c5038e4d-60e2-42c9-8678-7a83eeedbb8d_Azure+First+Logo.svg"
+      },
+      "parentCompanyLogo": {
+        "dimensions": {
+          "width": 470,
+          "height": 107
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://images.prismic.io/azure-first/637a5b7a-ed8e-4c92-9f4a-d25be5ef6904_5e4fd127dca002ab4d52b079_Techfabric+dark.png?auto=compress,format"
+      },
+      "parentCompanyLogoText": [
+        {
+          "type": "paragraph",
+          "text": "Euismod tellus habitasse",
+          "spans": []
+        }
+      ]
+    }
+  },
+  "socials": {
+    "id": "YRY8IxIAACkAFcJG",
+    "uid": null,
+    "url": null,
+    "type": "socials",
+    "href": "https://skyward.cdn.prismic.io/api/v2/documents/search?ref=YRrYTRIAACsA6DjR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YRY8IxIAACkAFcJG%22%29+%5D%5D",
+    "tags": [],
+    "first_publication_date": "2021-08-13T11:50:34+0000",
+    "last_publication_date": "2021-08-13T11:50:34+0000",
+    "slugs": ["socials"],
+    "linked_documents": [],
+    "lang": "en-gb",
+    "alternate_languages": [],
+    "data": {
+      "twitter": {
+        "link_type": "Web",
+        "url": "https://twitter.com/home",
+        "target": "_blank"
+      },
+      "linkedin": {
+        "link_type": "Web",
+        "url": "https://www.linkedin.com/company/skyward-agency/?viewAsMember=true",
+        "target": "_blank"
+      },
+      "instagram": {
+        "link_type": "Web",
+        "url": "https://www.instagram.com/skywardagency/",
+        "target": "_blank"
+      },
+      "github": {
+        "link_type": "Web",
+        "url": "https://github.com/skyward-digital",
+        "target": "_blank"
+      },
+      "dribbble": {
+        "link_type": "Web",
+        "url": "https://dribbble.com/skyward-digital",
+        "target": "_blank"
+      }
+    }
+  }
+}
