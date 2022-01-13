@@ -1,4 +1,4 @@
-import { createClient, linkResolver } from "../../prismic-configuration";
+import { createClient, linkResolver } from "../../prismic";
 
 export default async (req, res) => {
   const { token: ref } = req.query;

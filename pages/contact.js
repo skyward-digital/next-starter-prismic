@@ -1,4 +1,4 @@
-import { createClient } from "../prismic-configuration";
+import { createClient } from "../prismic";
 import { SliceZone } from "@prismicio/react";
 import resolver from "../sm-resolver.js";
 

@@ -1,5 +1,5 @@
 import { SliceZone } from "@prismicio/react";
-import { createClient } from "../prismic-configuration";
+import { createClient } from "../prismic";
 import resolver from "../sm-resolver.js";
 
 import { Layout } from "../components";

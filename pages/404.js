@@ -1,4 +1,4 @@
-import { createClient } from "../prismic-configuration";
+import { createClient } from "../prismic";
 // import { useGetStaticProps } from "next-slicezone/hooks";
 
 import { Layout, Link } from "../components";

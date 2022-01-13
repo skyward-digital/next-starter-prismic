@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Link as PrismicLink } from "prismic-reactjs";
+import { asLink } from "@prismicio/helpers";
 import { linkResolver } from "../utils/linkResolver";
 
 export const Link = ({
@@ -58,7 +58,7 @@ export const Link = ({
 
     return (
       <a
-        href={PrismicLink.url(link, linkResolver)}
+        href={asLink(link, linkResolver)}
         target={target ?? "_blank"}
         className={className}
         {...rest}
@@ -71,7 +71,7 @@ export const Link = ({
 
   if (link.link_type === "Document") {
     return (
-      <NextLink href={PrismicLink.url(link, linkResolver)}>
+      <NextLink href={asLink(link, linkResolver)}>
         <a className={className} {...rest}>
           {children}
         </a>
@@ -82,7 +82,7 @@ export const Link = ({
   if (link.link_type === "Image") {
     return (
       <a
-        href={PrismicLink.url(link, linkResolver)}
+        href={asLink(link, linkResolver)}
         className={className}
         {...rest}
         rel="noopener noreferrer"

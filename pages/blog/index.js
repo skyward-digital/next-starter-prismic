@@ -1,4 +1,4 @@
-import { createClient } from "../../prismic-configuration";
+import { createClient } from "../../prismic";
 
 import { Layout } from "../../components/Layout";
 // import { ArticleHero } from "../../components/ArticleHero";
