@@ -70,8 +70,8 @@
     "prettier": "^2.3.2",
     "prismic-cli": "^4.2.0",
     "shx": "^0.3.3",
-    "slice-machine-ui": "^0.1.0",
-    "sm-commons": "^0.0.23",
+    "slice-machine-ui": "^0.1.2",
+    "sm-commons": "^0.0.24",
     "tailwindcss": "^2.2.7"
   }
 }
