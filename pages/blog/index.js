@@ -4,7 +4,14 @@ import { Layout } from "../../components/Layout";
 // import { ArticleHero } from "../../components/ArticleHero";
 // import { BlogFeed } from "../../components/BlogFeed";
 
-const BlogRoot = ({ data, posts, url, lang, layout, blogCategories }) => {
+const BlogRoot = ({
+  data,
+  // posts,
+  url,
+  lang,
+  layout,
+  // blogCategories
+}) => {
   const seo = {
     metaTitle: data?.metaTitle || layout.metaTitle,
     metaDescription: data?.metaDescription || layout.metaDescription,
@@ -14,9 +21,9 @@ const BlogRoot = ({ data, posts, url, lang, layout, blogCategories }) => {
     lang: lang,
   };
 
-  const hero = {
-    title: data?.title,
-  };
+  // const hero = {
+  //   title: data?.title,
+  // };
 
   return (
     <Layout seo={seo} {...layout}>
