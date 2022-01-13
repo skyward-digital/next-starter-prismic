@@ -1,4 +1,4 @@
-import { RichText } from "prismic-reactjs";
+import { PrismicRichText, PrismicText } from "@prismicio/react";
 import { Link } from "../Link";
 import { Menu } from "@headlessui/react";
 
@@ -11,7 +11,7 @@ export const NavItemWithSubnav = ({
     {/* Desktop view */}
     <Menu>
       <Menu.Button className="flex-none hidden text-lg font-semibold text-gray-500 lg:block hover:text-gray-900 transition duration-200 hover:underline">
-        {RichText.asText(title)}
+        <PrismicText field={title} />
       </Menu.Button>
       <Menu.Items className="absolute z-50 p-6 bg-white shadow-lg grid gap-3 w-max rounded-xl top-16 transform left-1/2 -translate-x-1/2">
         {items.map((item, index) => (
@@ -21,7 +21,7 @@ export const NavItemWithSubnav = ({
               href={item.link}
               className="font-semibold text-gray-500 hover:underline hover:text-gray-900 transition duration-200"
             >
-              <RichText render={item.title} />
+              <PrismicRichText field={item.title} />
             </Link>
             {/* )} */}
           </Menu.Item>
@@ -32,7 +32,7 @@ export const NavItemWithSubnav = ({
     {/* Mobile view */}
     <div className="lg:hidden grid">
       <span className="flex-none text-lg font-semibold text-gray-800 transition duration-200 hover:underline">
-        {RichText.asText(title)}
+        <PrismicText field={title} />
       </span>
       <span className="p-6 pb-0 grid gap-4 w-max">
         {items.map((item, index) => (
@@ -41,7 +41,7 @@ export const NavItemWithSubnav = ({
             href={item.link}
             className="font-semibold text-gray-500 "
           >
-            <RichText render={item.title} />
+            <PrismicRichText field={item.title} />
           </Link>
         ))}
       </span>

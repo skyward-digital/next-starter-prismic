@@ -1,4 +1,4 @@
-import { Client } from "../../../prismic-configuration";
+import { createClient } from "../../../prismic-configuration";
 import { useGetStaticProps, useGetStaticPaths } from "next-slicezone/hooks";
 
 import { Layout } from "../../../components/Layout";
@@ -39,7 +39,7 @@ const BlogPost = ({ data, url, lang, layout }) => {
 
 // Fetch content from prismic - previews but doesn't hot reload
 export const getStaticProps = useGetStaticProps({
-  client: Client(),
+  client: createClient(),
   type: "blogPost",
   apiParams({ params }) {
     return {
@@ -51,7 +51,7 @@ export const getStaticProps = useGetStaticProps({
 });
 
 export const getStaticPaths = useGetStaticPaths({
-  client: Client(),
+  client: createClient(),
   type: "blogPost",
   formatPath: (prismicDocument) => {
     return {

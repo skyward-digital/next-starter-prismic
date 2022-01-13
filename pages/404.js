@@ -1,5 +1,5 @@
-import { Client } from "../prismic-configuration";
-import { useGetStaticProps } from "next-slicezone/hooks";
+import { createClient } from "../prismic-configuration";
+// import { useGetStaticProps } from "next-slicezone/hooks";
 
 import { Layout, Link } from "../components";
 
@@ -31,19 +31,16 @@ const NotFound = ({ lang, layout }) => {
 };
 
 // Fetch content from prismic - previews but doesn't hot reload
-export const getStaticProps = async ({ params }) => {
-  //Default Layout components reused across the site
-  const seo = (await Client().getSingle("defaultSeo")) || {};
-  const header = (await Client().getSingle("header")) || {};
-  const footer = (await Client().getSingle("footer")) || {};
-  const socials = (await Client().getSingle("socials")) || {};
+export const getStaticProps = async ({ previewData }) => {
+  const client = createClient({ previewData });
 
-  //We get the homepage currently, but only for lang
-  const page = await useGetStaticProps({
-    client: Client(),
-    queryType: "single",
-    type: "homepage",
-  })({ params });
+  // Default Layout components reused across the site
+  // If a singleton document is missing, `getStaticProps` will throw a NotFoundError.
+  const seo = await client.getSingle("defaultSeo");
+  const header = await client.getSingle("header");
+  const footer = await client.getSingle("footer");
+  const socials = await client.getSingle("socials");
+  const page = await client.getSingle("homepage");
 
   return {
     props: {
@@ -53,7 +50,7 @@ export const getStaticProps = async ({ params }) => {
         footer,
         socials,
       },
-      ...page.props,
+      ...page,
     },
   };
 };

@@ -1,9 +1,8 @@
-import Prismic from "prismic-javascript";
+import * as prismic from "@prismicio/client";
 
 import smConfig from "./sm.json";
 
 export { linkResolver } from "./utils/linkResolver";
-export { Link as customLink } from "./components/Link";
 
 if (!smConfig.apiEndpoint) {
   console.warn(
@@ -13,33 +12,40 @@ if (!smConfig.apiEndpoint) {
 
 export const apiEndpoint = smConfig.apiEndpoint;
 
-// -- Access Token if the repository is not public
-// Generate a token in your dashboard and configure it here if your repository is private
-export const accessToken = "";
+// export const createClient = (req = null, options = {}) => {
+export const createClient = ({ req, previewData, options } = {}) => {
+  const client = prismic.createClient(apiEndpoint, {
+    // If your repo is private, add an access token
+    accessToken: "",
 
-export const Router = {
-  routes: [
-    { type: "page", path: "/:uid" },
-    // {
-    //   type: "blogCategory",
-    //   path: "/blog/:uid",
-    // },
-    {
-      type: "blogPost",
-      path: "/blog/:category/:uid",
-      resolvers: {
-        category: "category", // id of the content relationship in the article mask
+    // This defines how you will structure URL paths in your project.
+    // Update the types to match the Custom Types in your project, and edit
+    // the paths to match the routing in your project.
+    //
+    // If you are not using a router in your project, you can change this
+    // to an empty array or remove the option entirely.
+    routes: [
+      { type: "page", path: "/:uid" },
+      // {
+      //   type: "blogCategory",
+      //   path: "/blog/:uid",
+      // },
+      {
+        type: "blogPost",
+        path: "/blog/:category/:uid",
+        resolvers: {
+          category: "category", // id of the content relationship in the article mask
+        },
       },
-    },
-  ],
-  href: (type) => {
-    const route = Router.routes.find((r) => r.type === type);
-    return route && route.href;
-  },
-};
+    ],
+    ...options,
+  });
 
-export const Client = (req = null, options = {}) =>
-  Prismic.client(
-    apiEndpoint,
-    Object.assign({ routes: Router.routes }, options)
-  );
+  if (req) {
+    client.enableAutoPreviewsFromReq(req);
+  } else if (previewData) {
+    client.queryContentFromRef(previewData.ref);
+  }
+
+  return client;
+};

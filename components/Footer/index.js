@@ -1,4 +1,4 @@
-import { RichText } from "prismic-reactjs";
+import { PrismicRichText } from "@prismicio/react";
 import { Socials } from "../Socials";
 import { Link } from "../Link";
 
@@ -19,13 +19,13 @@ export const Footer = ({
           <div className="max-w-3xl mx-auto mt-16 mb-32 text-center">
             {ctaTitle && (
               <div className="mb-6 text-4xl font-extrabold leading-none tracking-tight md:text-5xl">
-                <RichText render={ctaTitle} />
+                <PrismicRichText field={ctaTitle} />
               </div>
             )}
 
             {ctaDescription && (
               <div className="mb-6 text-lg">
-                <RichText render={ctaDescription} />
+                <PrismicRichText field={ctaDescription} />
               </div>
             )}
 
@@ -63,7 +63,7 @@ export const Footer = ({
               )}
               {text && (
                 <div className="w-80">
-                  <RichText render={text} />
+                  <PrismicRichText field={text} />
                 </div>
               )}
             </div>

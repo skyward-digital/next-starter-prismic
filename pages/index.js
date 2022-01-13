@@ -1,11 +1,10 @@
-import { Client } from "../prismic-configuration";
-import SliceZone from "next-slicezone";
-import { useGetStaticProps } from "next-slicezone/hooks";
+import { SliceZone } from "@prismicio/react";
+import { createClient } from "../prismic-configuration";
 import resolver from "../sm-resolver.js";
 
 import { Layout } from "../components";
 
-const Homepage = ({ slices, data, url, lang, layout }) => {
+const Homepage = ({ data, url, lang, layout }) => {
   const seo = {
     metaTitle: data.metaTitle || layout.seo?.data?.metaTitle,
     metaDescription: data.metaDescription || layout.seo?.data?.metaDescription,
@@ -17,26 +16,21 @@ const Homepage = ({ slices, data, url, lang, layout }) => {
 
   return (
     <Layout {...layout} seo={seo}>
-      <SliceZone slices={slices} resolver={resolver} />
+      <SliceZone slices={data.slices} resolver={resolver} />
     </Layout>
   );
 };
 
-export const getStaticProps = async ({ params }) => {
-  //Default Layout components reused across the site
-  const seo = (await Client().getSingle("defaultSeo")) || {};
-  const header = (await Client().getSingle("header")) || {};
-  const footer = (await Client().getSingle("footer")) || {};
-  const socials = (await Client().getSingle("socials")) || {};
+export const getStaticProps = async ({ previewData }) => {
+  const client = createClient({ previewData });
 
-  const page = await useGetStaticProps({
-    client: Client(),
-    queryType: "single",
-    type: "homepage",
-    // apiParams: {
-    //   fetchLinks: [],
-    // },
-  })({ params });
+  // Default Layout components reused across the site
+  // If a singleton document is missing, `getStaticProps` will throw a PrismicError.
+  const seo = await client.getSingle("defaultSeo");
+  const header = await client.getSingle("header");
+  const footer = await client.getSingle("footer");
+  const socials = await client.getSingle("socials");
+  const page = await client.getSingle("homepage");
 
   return {
     props: {
@@ -46,7 +40,7 @@ export const getStaticProps = async ({ params }) => {
         footer,
         socials,
       },
-      ...page.props,
+      ...page,
     },
   };
 };
