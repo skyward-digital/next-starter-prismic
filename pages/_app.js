@@ -1,10 +1,9 @@
-import "../styles/index.css";
-
-import React from "react";
 import NextApp from "next/app";
-import Script from "next/script";
+import { PrismicToolbar } from "@prismicio/react";
 
-import { apiEndpoint } from "./../prismic-configuration"; // import the endpoint name from where it's defined
+import "../styles/index.css";
+import { apiEndpoint } from "./../prismic"; // import the endpoint name from where it's defined
+
 const prismicRepoName = /([a-zA-Z0-9-]+)?(\.cdn)?\.prismic\.io/.exec(
   apiEndpoint
 )[1]; //Regex to get repo ID
@@ -15,10 +14,7 @@ export default class MyApp extends NextApp {
     return (
       <>
         {/* Prismic Preview */}
-        <Script
-          strategy="lazyOnload"
-          src={`//static.cdn.prismic.io/prismic.js?repo=${prismicRepoName}&new=true`}
-        />
+        <PrismicToolbar repositoryName={prismicRepoName} />
 
         {/* Analytics */}
         {/* <Script strategy="lazyOnload">

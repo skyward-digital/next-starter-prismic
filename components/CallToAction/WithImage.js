@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText } from "prismic-reactjs";
+import { PrismicRichText } from "@prismicio/react";
 import { Link } from "../Link";
 import { Image } from "../Image";
 
@@ -18,11 +18,11 @@ export const ImageCTA = ({
       <div className="items-center text-center grid lg:grid-cols-2 lg:text-left gap-24">
         <div>
           <div className="mb-6 text-5xl font-extrabold leading-none tracking-tight md:text-6xl">
-            <RichText render={title} />
+            <PrismicRichText field={title} />
           </div>
 
           <div className="mb-6 text-xl text-gray-800">
-            <RichText render={description} />
+            <PrismicRichText field={description} />
           </div>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4">

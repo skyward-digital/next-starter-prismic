@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText } from "prismic-reactjs";
+import { PrismicRichText } from "@prismicio/react";
 import { Link } from "../Link";
 
 export const SmallCTA = ({
@@ -14,7 +14,7 @@ export const SmallCTA = ({
     <div className="container">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-6 text-2xl font-extrabold leading-none tracking-tight">
-          <RichText render={title} />
+          <PrismicRichText field={title} />
         </div>
         <div className="flex flex-wrap justify-center gap-4">
           <Link href={primaryLink} className="btn btn-primary btn-xl">

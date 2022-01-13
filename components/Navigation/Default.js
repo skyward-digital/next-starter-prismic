@@ -1,4 +1,4 @@
-import { RichText } from "prismic-reactjs";
+import { PrismicRichText } from "@prismicio/react";
 import { Link } from "../Link";
 
 export const NavItem = ({ title, link }) => (
@@ -6,6 +6,6 @@ export const NavItem = ({ title, link }) => (
     href={link}
     className="flex-none text-lg font-semibold text-gray-800 lg:text-gray-500 hover:text-gray-900 transition duration-200 hover:underline"
   >
-    <RichText render={title} />
+    <PrismicRichText field={title} />
   </Link>
 );

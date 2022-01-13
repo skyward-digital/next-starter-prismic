@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText } from "prismic-reactjs";
+import { PrismicRichText } from "@prismicio/react";
 import { ContactForm } from "./ContactForm";
 import { Socials } from "../Socials";
 
@@ -9,11 +9,11 @@ export const DefaultContact = ({ id, title, description, email }) => (
       <div className="flex flex-col items-center justify-center lg:flex-row">
         <div className="max-w-xl mb-12 text-center lg:text-left">
           <div className="mb-6 text-5xl font-extrabold leading-none tracking-tight md:text-6xl">
-            <RichText render={title} />
+            <PrismicRichText field={title} />
           </div>
 
           <div className="mb-6 text-lg">
-            <RichText render={description} />
+            <PrismicRichText field={description} />
           </div>
 
           <div className="flex items-center justify-center mb-6 lg:justify-start">
