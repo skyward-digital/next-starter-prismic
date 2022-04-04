@@ -1,0 +1,100 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "call_to_action",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Embrace efficient web services",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Dolore reprehenderit veniam in officia sint anim dolor aute anim anim irure anim aliqua dolore. Sunt culpa excepteur ad. Ad quis pariatur consequat elit tempor sint magna sunt laboris est aliquip esse enim.",
+          "spans": []
+        }
+      ],
+      "primaryLink": {
+        "link_type": "Web",
+        "url": "https://prismic.io"
+      },
+      "primaryLinkLabel": "disintermediate scalable paradigms",
+      "secondaryLink": {
+        "link_type": "Web",
+        "url": "https://prismic.io"
+      },
+      "secondaryLinkLabel": "empower visionary paradigms"
+    }
+  },
+  {
+    "variation": "small",
+    "name": "Small",
+    "slice_type": "call_to_action",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading3",
+          "text": "Integrate next-generation architectures",
+          "spans": []
+        }
+      ],
+      "primaryLink": {
+        "link_type": "Web",
+        "url": "http://google.com"
+      },
+      "primaryLinkLabel": "transform bricks-and-clicks e-services",
+      "secondaryLink": {
+        "link_type": "Web",
+        "url": "http://twitter.com"
+      },
+      "secondaryLinkLabel": "maximize B2B functionalities"
+    }
+  },
+  {
+    "variation": "withImage",
+    "name": "With Image",
+    "slice_type": "call_to_action",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Strategize end-to-end platforms",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Occaecat et consectetur irure aliquip commodo esse aliquip nulla voluptate quis fugiat excepteur do enim aute. Voluptate est proident esse consectetur.",
+          "spans": []
+        }
+      ],
+      "primaryLink": {
+        "link_type": "Web",
+        "url": "http://twitter.com"
+      },
+      "primaryLinkLabel": "enable proactive eyeballs",
+      "secondaryLink": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      },
+      "secondaryLinkLabel": "disintermediate clicks-and-mortar initiatives",
+      "image": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
+      }
+    }
+  }
+]

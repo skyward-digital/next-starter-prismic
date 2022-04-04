@@ -1,19 +1,19 @@
-import { Client } from "../prismic-configuration";
-import SliceZone from "next-slicezone";
-import { useGetStaticProps } from "next-slicezone/hooks";
-import resolver from "../sm-resolver.js";
+import { SliceZone } from "@prismicio/react";
+import { createClient } from "../prismic";
+import { getLayoutProps, getSeoProps } from "../utils/fetchData";
 
 import { Layout, Contact } from "../components";
+import { components } from "../slices";
 
-const ContactPage = ({ slices, data, url, lang, layout }) => {
-  const seo = {
-    metaTitle: data.metaTitle || layout.seo?.data?.metaTitle,
-    metaDescription: data.metaDescription || layout.seo?.data?.metaDescription,
-    metaImage: data.metaImage.url || layout.seo?.data?.metaImage.url,
-    url: url,
-    article: false,
-    lang: lang,
-  };
+import {
+  serviceFetchLinks,
+  ctaPlatformFetchLinks,
+  ctaTeamFetchLinks,
+  featuresWithTestimonialFetchLinks,
+} from "../slices/fetchLinks";
+
+const ContactPage = ({ data, url, lang, layout }) => {
+  const seo = getSeoProps({ ...data, url, lang });
 
   return (
     <Layout {...layout} seo={seo}>
@@ -23,33 +23,28 @@ const ContactPage = ({ slices, data, url, lang, layout }) => {
         description={data.description}
         email={data.email}
       />
-      <SliceZone slices={slices} resolver={resolver} />
+      <SliceZone slices={data.slices} components={components} />
     </Layout>
   );
 };
 
-export const getStaticProps = async ({ params }) => {
-  //Default Layout components reused across the site
-  const layout = {
-    seo: (await Client().getSingle("defaultSeo")) || {},
-    header: (await Client().getSingle("header")) || {},
-    footer: (await Client().getSingle("footer")) || {},
-    socials: (await Client().getSingle("socials")) || {},
-  };
+export const getStaticProps = async ({ ...context }) => {
+  const client = createClient({ context });
+  const layout = await getLayoutProps({ context });
 
-  const page = await useGetStaticProps({
-    client: Client(),
-    queryType: "single",
-    type: "contact",
-    // apiParams: {
-    //   fetchLinks: [],
-    // },
-  })({ params });
+  const fetchLinks = [
+    ...serviceFetchLinks,
+    ...ctaPlatformFetchLinks,
+    ...ctaTeamFetchLinks,
+    ...featuresWithTestimonialFetchLinks,
+  ];
+
+  const page = await client.getSingle("contact", { fetchLinks });
 
   return {
     props: {
       layout,
-      ...page.props,
+      ...page,
     },
   };
 };

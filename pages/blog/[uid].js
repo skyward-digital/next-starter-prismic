@@ -1,59 +1,55 @@
-import { Client } from "../../../prismic-configuration";
-import SliceZone from "next-slicezone";
-import { useGetStaticProps, useGetStaticPaths } from "next-slicezone/hooks";
-import resolver from "../../../sm-resolver.js";
-
-import { Layout } from "../../../components/Layout";
-import { Hero } from "../../../components/Hero";
+import { SliceZone } from "@prismicio/react";
+import * as prismic from "@prismicio/client";
+import { createClient } from "../../prismic";
+import { getLayoutProps, getSeoProps } from "../../utils/fetchData";
+import { Layout } from "../../components";
+import { components } from "../../slices/general";
+// import { calculateReadTime } from "../../utils/calculateReadTime";
 
 const BlogPost = ({ slices, data, url, lang, layout }) => {
-  const seo = {
-    metaTitle: data.metaTitle || layout.metaTitle,
-    metaDescription: data.metaDescription || layout.metaDescription,
-    metaImage: data.metaImage?.url || layout.metaImage?.url,
-    url: url,
-    article: true,
-    lang: lang,
-  };
-
-  const hero = {
-    title: data.title,
-    // description: data.hero_description,
-    // primaryLink: data.hero_link,
-    // primaryLinkLabel: data.hero_link_label,
-  };
+  const seo = getSeoProps({ ...data, url, lang, article: true });
 
   return (
     <Layout seo={seo} {...layout}>
-      <Hero {...hero} />
-      <SliceZone slices={slices} resolver={resolver} />;
+      <SliceZone slices={slices} components={components} />;
     </Layout>
   );
 };
 
 // Fetch content from prismic - previews but doesn't hot reload
-export const getStaticProps = useGetStaticProps({
-  client: Client(),
-  type: "blogPost",
-  apiParams({ params }) {
-    return {
-      uid: params.uid,
-      //fetchlinks gets nested
-      fetchLinks: ["blog_category.title"],
-    };
-  },
-});
+export const getStaticProps = async ({ params, ...context }) => {
+  const client = createClient({ context });
+  const layout = await getLayoutProps({ context });
 
-export const getStaticPaths = useGetStaticPaths({
-  client: Client(),
-  type: "blogPost",
-  formatPath: (prismicDocument) => {
-    return {
-      params: {
-        uid: prismicDocument.uid,
-      },
-    };
-  },
-});
+  const page = await client.getByUID("blogPost", params.uid, {
+    fetchLinks: [
+      "teamMember.name",
+      "teamMember.position",
+      "teamMember.avatar",
+      // "teamMember.socials",
+    ],
+  });
+
+  return {
+    props: {
+      layout,
+      ...page,
+    },
+  };
+};
+
+export const getStaticPaths = async () => {
+  const client = createClient();
+
+  const documents = await client.get({
+    predicates: [prismic.predicate.at("document.type", "blogPost")],
+  });
+
+  const paths = await documents.results.map((document) => ({
+    params: { uid: document.uid },
+  }));
+
+  return { paths, fallback: false };
+};
 
 export default BlogPost;

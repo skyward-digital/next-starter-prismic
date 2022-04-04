@@ -10,7 +10,7 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "call_to_action": {
+            "hero": {
               "type": "SharedSlice"
             }
           }

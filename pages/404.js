@@ -1,17 +1,15 @@
-import { Client } from "../prismic-configuration";
-import { useGetStaticProps } from "next-slicezone/hooks";
-
+import { createClient } from "../prismic";
+import { getLayoutProps, getSeoProps } from "../utils/fetchData";
 import { Layout, Link } from "../components";
 
 const NotFound = ({ lang, layout }) => {
-  const seo = {
+  const seo = getSeoProps({
     metaTitle: "404 - Page not found",
     metaDescription: "",
     metaImage: "",
     url: "/404",
-    article: false,
-    lang: lang,
-  };
+    lang,
+  });
 
   return (
     <Layout seo={seo} {...layout}>
@@ -31,29 +29,16 @@ const NotFound = ({ lang, layout }) => {
 };
 
 // Fetch content from prismic - previews but doesn't hot reload
-export const getStaticProps = async ({ params }) => {
-  //Default Layout components reused across the site
-  const seo = (await Client().getSingle("defaultSeo")) || {};
-  const header = (await Client().getSingle("header")) || {};
-  const footer = (await Client().getSingle("footer")) || {};
-  const socials = (await Client().getSingle("socials")) || {};
+export const getStaticProps = async ({ ...context }) => {
+  const client = createClient({ context });
+  const layout = await getLayoutProps({ context });
 
-  //We get the homepage currently, but only for lang
-  const page = await useGetStaticProps({
-    client: Client(),
-    queryType: "single",
-    type: "homepage",
-  })({ params });
+  const page = await client.getSingle("homepage");
 
   return {
     props: {
-      layout: {
-        seo,
-        header,
-        footer,
-        socials,
-      },
-      ...page.props,
+      layout,
+      ...page,
     },
   };
 };

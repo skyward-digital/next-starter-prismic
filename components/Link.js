@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Link as PrismicLink } from "prismic-reactjs";
+import { asLink as prismicLink } from "@prismicio/helpers";
 import { linkResolver } from "../utils/linkResolver";
 
 export const Link = ({ href, disabled, ...props }) => {
@@ -51,23 +51,17 @@ export const Link = ({ href, disabled, ...props }) => {
     }
 
     /* External Links */
-    return (
-      <ExternalLink href={PrismicLink.url(href, linkResolver)} {...props} />
-    );
+    return <ExternalLink href={prismicLink(href, linkResolver)} {...props} />;
   }
 
   /* Docs links */
   if (href.link_type === "Document") {
-    return (
-      <InternalLink href={PrismicLink.url(href, linkResolver)} {...props} />
-    );
+    return <InternalLink href={prismicLink(href, linkResolver)} {...props} />;
   }
 
   /* Media links */
   if (href.link_type === "Image") {
-    return (
-      <ExternalLink href={PrismicLink.url(href, linkResolver)} {...props} />
-    );
+    return <ExternalLink href={prismicLink(href, linkResolver)} {...props} />;
   }
 
   /**

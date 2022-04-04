@@ -1,21 +1,35 @@
-import { Client, linkResolver } from "../../prismic-configuration";
+import { linkResolver, createClient } from "../../prismic";
 
 export default async (req, res) => {
-  const { token: ref, documentId } = req.query;
-  const redirectUrl = await Client(req)
-    .getPreviewResolver(ref, documentId)
-    .resolve(linkResolver, "/");
+  const client = createClient({ req });
 
-  if (!redirectUrl) {
-    return res.status(401).json({ message: "Invalid token" });
+  await setPreviewData({ req, res });
+
+  await redirectToPreviewURL({ req, res, client, linkResolver });
+};
+
+const setPreviewData = async ({ req, res }) => {
+  if (req.query.token) {
+    const { token: ref } = req.query;
+    res.setPreviewData({ ref });
+  }
+};
+
+const redirectToPreviewURL = async ({ req, res, client, linkResolver }) => {
+  if (isPrismicNextQuery(req.query)) {
+    const { documentId, token } = req.query;
+    const previewUrl = await client.resolvePreviewURL({
+      linkResolver,
+      defaultURL: "/",
+      documentID: documentId,
+      previewToken: token,
+    });
+
+    res.redirect(previewUrl);
   }
 
-  res.setPreviewData({ ref });
-
-  res.write(
-    `<!DOCTYPE html><html><head><meta http-equiv="Refresh" content="0; url=${redirectUrl}" />
-    <script>window.location.href = '${redirectUrl}'</script>
-    </head>`
-  );
-  res.end();
+  res.redirect("/");
 };
+
+const isPrismicNextQuery = (query) =>
+  typeof query.documentId === "string" && typeof query.token === "string";

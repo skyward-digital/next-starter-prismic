@@ -13,5 +13,8 @@
     "page": {},
     "socials": {},
     "defaultSeo": {}
+  },
+  "slices/general": {
+    "Hero": {}
   }
 }

@@ -1,25 +1,25 @@
-import { RichText as PrismicRichText, Elements } from "prismic-reactjs";
+import { Element, PrismicText, PrismicRichText } from "@prismicio/react";
 import { Link, Image } from ".";
 
 /**
  * A wrapper for prismic rich text that provides more functionality
  * Wraps with div automatically for props passing, and removes component entirely if render fails without requiring checks in each component
  */
-export const RichText = ({ render, asText, as, ...props }) => {
+export const RichText = ({ field, stripFormatting = false, as, ...props }) => {
   /* Return a plain text version of our rich text field */
-  if (asText) {
+  if (stripFormatting) {
     return (
       <Wrapper as={as} {...props}>
-        {PrismicRichText.asText(asText)}
+        <PrismicText field={field} />
       </Wrapper>
     );
   }
 
   /* Return our rich text as expected */
-  if (Array.isArray(render) && render.length) {
+  if (Array.isArray(field) && field.length) {
     return (
       <Wrapper as={as} {...props}>
-        <PrismicRichText render={render} htmlSerializer={htmlSerializer} />
+        <PrismicRichText field={field} components={components} />
       </Wrapper>
     );
   }
@@ -32,18 +32,18 @@ export const RichText = ({ render, asText, as, ...props }) => {
  * Adjusts our HTML with custom functions
  * See docs on Prismic: https://prismic.io/docs/technologies/advanced-rich-text-templating-nextjs
  */
-const htmlSerializer = (type, element, children) => {
-  // if (type === Elements.heading1) {
+const components = (type, element, children) => {
+  // if (type === Element.heading1) {
   //   return <h1 id='anchor'>{children}</h1>
   // }
 
   // Use our Image component to better optimize RichText images
-  if (type === Elements.image) {
+  if (type === Element.image) {
     return <Image src={element.url} alt={element.alt || ""} />;
   }
 
   // Use our link component to optimally link to internal and external documents
-  if (type === Elements.hyperlink) {
+  if (type === Element.hyperlink) {
     return (
       <Link
         href={element.data.url || element.data}
