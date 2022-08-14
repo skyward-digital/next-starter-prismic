@@ -1,0 +1,610 @@
+{
+  "posts": [
+    {
+      "id": "YlAVFRIAACkAS2WU",
+      "uid": "how-ux-ads-value-to-your-business-and-customers",
+      "url": null,
+      "type": "blogPost",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlAVFRIAACkAS2WU%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T10:57:43+0000",
+      "last_publication_date": "2022-04-10T16:20:42+0000",
+      "slugs": [
+        "how-ux-can-add-value-to-your-business-and-your-customers",
+        "when-to-rebuild-your-website-2",
+        "when-to-rebuild-your-website"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "How UX can add value to your business and your customers",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Great UX is more than just a great interface. Investing in user experience results in happier customers, quicker conversions and increased innovation.",
+            "spans": []
+          }
+        ],
+        "publishDate": "2022-03-07",
+        "author": {
+          "id": "YlC16xIAAC4ATiKb",
+          "type": "teamMember",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "tasmin-lofthouse",
+          "first_publication_date": "2022-04-08T22:24:27+0000",
+          "last_publication_date": "2022-04-08T22:24:27+0000",
+          "uid": "tasmin-lofthouse1",
+          "data": {
+            "name": [
+              {
+                "type": "paragraph",
+                "text": "Tasmin Lofthouse",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 256,
+                "height": 256
+              },
+              "alt": "Tasmin Lofthouse - Copywriter & Marketing",
+              "copyright": null,
+              "url": "https://images.prismic.io/v2-skyward-rebuild/f5d71ceb-2663-42c8-bd64-5e6c4520e5d5_TasminLofthouse.jpg?auto=compress,format"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "category": {
+          "id": "YlLJmhIAAC4AV1ai",
+          "type": "blogCategory",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "user-experience",
+          "first_publication_date": "2022-04-10T12:12:13+0000",
+          "last_publication_date": "2022-04-10T12:12:13+0000",
+          "uid": "user-experience",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "User Experience",
+                "spans": []
+              }
+            ]
+          },
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "featuredImage": {
+          "dimensions": {
+            "width": 5848,
+            "height": 3899
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/97fb220f-ac21-4109-9fe1-8c4ff167b4e8_domenico-loia-hGV2TfOh0ns-unsplash.jpg?auto=compress,format"
+        },
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlAVLxIAACoAS2Xw",
+      "uid": "what-is-jamstack",
+      "url": null,
+      "type": "blogPost",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlAVLxIAACoAS2Xw%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T10:58:06+0000",
+      "last_publication_date": "2022-04-10T16:14:01+0000",
+      "slugs": [
+        "what-is-the-jamstack",
+        "when-to-rebuild-your-website-3",
+        "when-to-rebuild-your-website-2"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "What is the Jamstack?",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Outdated websites can be harmful to your business's bottom line, but when is the right time to rebuild?",
+            "spans": []
+          }
+        ],
+        "publishDate": "2022-02-04",
+        "author": {
+          "id": "YlCooBIAACwATedH",
+          "type": "teamMember",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "dan-spratling",
+          "first_publication_date": "2022-04-08T21:27:00+0000",
+          "last_publication_date": "2022-04-08T21:27:00+0000",
+          "uid": "dan-spratling",
+          "data": {
+            "name": [
+              {
+                "type": "paragraph",
+                "text": "Dan Spratling",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 256,
+                "height": 256
+              },
+              "alt": "Dan Spratling - Founder & CEO",
+              "copyright": null,
+              "url": "https://images.prismic.io/v2-skyward-rebuild/d5f0cb5a-a9ee-4eb1-a271-8bdf656b22c8_DanSpratling.jpg?auto=compress,format"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "category": {
+          "id": "YlLIvRIAAC4AV1Kr",
+          "type": "blogCategory",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "jamstack",
+          "first_publication_date": "2022-04-10T12:08:35+0000",
+          "last_publication_date": "2022-04-10T12:08:35+0000",
+          "uid": "jamstack",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Jamstack",
+                "spans": []
+              }
+            ]
+          },
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "featuredImage": {
+          "dimensions": {
+            "width": 5848,
+            "height": 3899
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/97fb220f-ac21-4109-9fe1-8c4ff167b4e8_domenico-loia-hGV2TfOh0ns-unsplash.jpg?auto=compress,format"
+        },
+        "metaTitle": "What is the Jamstack?",
+        "metaDescription": "Jamstack is a modern web development architecture that makes websites faster, more secure and easier to scale through the use of JavaScript, APIs and Markup",
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlAVQhIAACoAS2ZO",
+      "uid": "when-should-you-rebuild-your-website",
+      "url": null,
+      "type": "blogPost",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlAVQhIAACoAS2ZO%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T10:58:26+0000",
+      "last_publication_date": "2022-04-10T18:48:42+0000",
+      "slugs": [
+        "when-should-you-rebuild-your-website",
+        "when-to-rebuild-your-website-4",
+        "when-to-rebuild-your-website-3"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "When should you rebuild your website?",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Outdated websites can be harmful to your business's bottom line, but when is the right time to replace your website ",
+            "spans": []
+          }
+        ],
+        "publishDate": "2021-11-26",
+        "author": {
+          "id": "YlCooBIAACwATedH",
+          "type": "teamMember",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "dan-spratling",
+          "first_publication_date": "2022-04-08T21:27:00+0000",
+          "last_publication_date": "2022-04-08T21:27:00+0000",
+          "uid": "dan-spratling",
+          "data": {
+            "name": [
+              {
+                "type": "paragraph",
+                "text": "Dan Spratling",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 256,
+                "height": 256
+              },
+              "alt": "Dan Spratling - Founder & CEO",
+              "copyright": null,
+              "url": "https://images.prismic.io/v2-skyward-rebuild/d5f0cb5a-a9ee-4eb1-a271-8bdf656b22c8_DanSpratling.jpg?auto=compress,format"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "category": {
+          "id": "YlLJUhIAACoAV1VW",
+          "type": "blogCategory",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "strategy",
+          "first_publication_date": "2022-04-10T12:11:00+0000",
+          "last_publication_date": "2022-04-10T12:11:00+0000",
+          "uid": "strategy",
+          "data": {
+            "title": [
+              {
+                "type": "heading1",
+                "text": "Strategy",
+                "spans": []
+              }
+            ]
+          },
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "featuredImage": {
+          "dimensions": {
+            "width": 5848,
+            "height": 3899
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/97fb220f-ac21-4109-9fe1-8c4ff167b4e8_domenico-loia-hGV2TfOh0ns-unsplash.jpg?auto=compress,format"
+        },
+        "metaTitle": "When should you rebuild your website?",
+        "metaDescription": "Outdated websites can be harmful to your business's bottom line, but when is the right time to replace your website",
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlAUwxIAACwAS2TL",
+      "uid": "when-to-rebuild-your-website",
+      "url": null,
+      "type": "blogPost",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlAUwxIAACwAS2TL%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T10:57:17+0000",
+      "last_publication_date": "2022-04-08T22:03:28+0000",
+      "slugs": ["when-to-rebuild-your-website"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "When to rebuild your website",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Outdated websites can be harmful to your business's bottom line, but when is the right time to rebuild?",
+            "spans": []
+          }
+        ],
+        "publishDate": "2022-04-08",
+        "author": {
+          "id": "YlCo_xIAACwATej9",
+          "type": "teamMember",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "david-dooley",
+          "first_publication_date": "2022-04-08T21:28:34+0000",
+          "last_publication_date": "2022-04-08T21:30:32+0000",
+          "uid": "david-dooley",
+          "data": {
+            "name": [
+              {
+                "type": "paragraph",
+                "text": "David Dooley",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 256,
+                "height": 256
+              },
+              "alt": "David Dooley - UI/UX Designer",
+              "copyright": null,
+              "url": "https://images.prismic.io/v2-skyward-rebuild/62ba236e-cd8e-4de1-a1e6-ec6047e7f0be_DavidDooley.jpg?auto=compress,format"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "category": {
+          "link_type": "Document"
+        },
+        "featuredImage": {
+          "dimensions": {
+            "width": 5848,
+            "height": 3899
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/97fb220f-ac21-4109-9fe1-8c4ff167b4e8_domenico-loia-hGV2TfOh0ns-unsplash.jpg?auto=compress,format"
+        },
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "YlLIvRIAAC4AV1Kr",
+      "uid": "jamstack",
+      "url": null,
+      "type": "blogCategory",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlLIvRIAAC4AV1Kr%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-10T12:08:35+0000",
+      "last_publication_date": "2022-04-10T12:08:35+0000",
+      "slugs": ["jamstack"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "Jamstack",
+            "spans": []
+          }
+        ],
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlLJUhIAACoAV1VW",
+      "uid": "strategy",
+      "url": null,
+      "type": "blogCategory",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlLJUhIAACoAV1VW%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-10T12:11:00+0000",
+      "last_publication_date": "2022-04-10T12:11:00+0000",
+      "slugs": ["strategy"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "Strategy",
+            "spans": []
+          }
+        ],
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlLJZhIAAC8AV1Wz",
+      "uid": "technologies",
+      "url": null,
+      "type": "blogCategory",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlLJZhIAAC8AV1Wz%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-10T12:11:21+0000",
+      "last_publication_date": "2022-04-10T12:11:21+0000",
+      "slugs": ["technologies"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "Technologies",
+            "spans": []
+          }
+        ],
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlLI2hIAACgAV1Mw",
+      "uid": "project-management",
+      "url": null,
+      "type": "blogCategory",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlLI2hIAACgAV1Mw%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-10T12:09:02+0000",
+      "last_publication_date": "2022-04-10T12:09:02+0000",
+      "slugs": ["project-management"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "Project Management",
+            "spans": []
+          }
+        ],
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlLJmhIAAC4AV1ai",
+      "uid": "user-experience",
+      "url": null,
+      "type": "blogCategory",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlLJmhIAAC4AV1ai%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-10T12:12:13+0000",
+      "last_publication_date": "2022-04-10T12:12:13+0000",
+      "slugs": ["user-experience"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "User Experience",
+            "spans": []
+          }
+        ],
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlLJfBIAACkAV1YZ",
+      "uid": "performance",
+      "url": null,
+      "type": "blogCategory",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlLJfBIAACkAV1YZ%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-10T12:11:44+0000",
+      "last_publication_date": "2022-04-10T12:11:44+0000",
+      "slugs": ["performance"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "Performance",
+            "spans": []
+          }
+        ],
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlLJGxIAACgAV1Rb",
+      "uid": "testing-reliability",
+      "url": null,
+      "type": "blogCategory",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlLJGxIAACgAV1Rb%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-10T12:10:08+0000",
+      "last_publication_date": "2022-04-10T12:10:08+0000",
+      "slugs": ["testing--reliability"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "Testing & Reliability",
+            "spans": []
+          }
+        ],
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlLJOBIAACoAV1Tb",
+      "uid": "analytics--data",
+      "url": null,
+      "type": "blogCategory",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlLJOBIAACoAV1Tb%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-10T12:10:36+0000",
+      "last_publication_date": "2022-04-10T12:10:36+0000",
+      "slugs": ["analytics--data"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "Analytics & Data",
+            "spans": []
+          }
+        ],
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlLI-BIAACkAV1O8",
+      "uid": "internationalization",
+      "url": null,
+      "type": "blogCategory",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlMmihIAACoAWPWr&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlLI-BIAACkAV1O8%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-10T12:09:31+0000",
+      "last_publication_date": "2022-04-10T12:09:31+0000",
+      "slugs": ["internationalization"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "Internationalization",
+            "spans": []
+          }
+        ],
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    }
+  ]
+}

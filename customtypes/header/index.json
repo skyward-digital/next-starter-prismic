@@ -5,7 +5,7 @@
   "status": true,
   "json": {
     "Logos": {
-      "header_logo": {
+      "logo": {
         "type": "Image",
         "config": {
           "constraint": {
@@ -18,53 +18,34 @@
       }
     },
     "Navigation": {
-      "primary_button_link": {
-        "type": "Link",
+      "navigation": {
+        "type": "Group",
         "config": {
-          "label": "Primary Button Link",
-          "select": null
-        }
-      },
-      "primary_button_label": {
-        "type": "StructuredText",
-        "config": {
-          "single": "paragraph",
-          "label": "Primary Button Label"
-        }
-      },
-      "secondary_button_link": {
-        "type": "Link",
-        "config": {
-          "label": "Secondary Button Link",
-          "select": null
-        }
-      },
-      "secondary_button_label": {
-        "type": "StructuredText",
-        "config": {
-          "single": "paragraph",
-          "label": "Secondary Button Label"
+          "label": "Navigation",
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "linkLabel": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label",
+                "placeholder": ""
+              }
+            }
+          }
         }
       },
       "slices1": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
-          "choices": {
-            "navigation": {
-              "type": "SharedSlice"
-            }
-          }
-        }
-      }
-    },
-    "Banner": {
-      "banner_text": {
-        "type": "StructuredText",
-        "config": {
-          "single": "paragraph,strong,em,hyperlink",
-          "allowTargetBlank": true,
-          "label": "Text"
+          "choices": {}
         }
       }
     }

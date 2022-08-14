@@ -1,0 +1,36 @@
+{
+  "id": "1-CallToAction",
+  "title": [
+    {
+      "type": "heading2",
+      "text": "A gloriously global team of freelancers",
+      "spans": []
+    }
+  ],
+  "description": [
+    {
+      "type": "paragraph",
+      "text": "Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers them to do great work. Sound good?",
+      "spans": []
+    }
+  ],
+  "primaryLink": {
+    "link_type": "Web",
+    "url": "https://#"
+  },
+  "primaryLinkLabel": "Join in",
+  "secondaryLink": {
+    "link_type": "Web",
+    "url": "https://#"
+  },
+  "secondaryLinkLabel": "Get Started",
+  "image": {
+    "dimensions": {
+      "width": 576,
+      "height": 496
+    },
+    "alt": null,
+    "copyright": null,
+    "url": "https://images.prismic.io/v2-skyward-rebuild/ca460620-13d4-43cb-ab62-bece7a363cb2_Contents.png?auto=compress,format"
+  }
+}

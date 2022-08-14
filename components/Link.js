@@ -1,96 +1,104 @@
 import NextLink from "next/link";
-import { asLink } from "@prismicio/helpers";
-import { linkResolver } from "../utils/linkResolver";
+import { asLink as prismicLink } from "@prismicio/helpers";
+import { linkResolver } from "../prismic";
 
-export const Link = ({
-  href: link,
-  target,
-  disabled,
-  children,
-  className,
-  ...rest
-}) => {
+export const Link = ({ href, disabled, ...props }) => {
+  // Set up our link
+  // const link = href?.link_type === 'Document' ? linkResolver(href) : href?.url ? href.url : '/'
+
+  /**
+   * DISABLED LINKS
+   */
   if (disabled) {
-    return <span {...rest}>{children}</span>;
+    return <span {...props} />;
   }
 
-  //Standard link
-  if (typeof link === "string") {
-    if (link[0] === "/") {
-      return (
-        <NextLink href={link}>
-          <a className={className} {...rest}>
-            {children}
-          </a>
-        </NextLink>
+  /**
+   * STRING LINKS
+   */
+  if (typeof href === "string") {
+    /* String link is relative */
+    if (href[0] === "/") {
+      return <InternalLink href={href} {...props} />;
+    }
+
+    /* String link is anchor */
+    if (href[0] === "#") {
+      return href.url ? (
+        <a href={href.url.split("://")[1]} {...props} />
+      ) : (
+        <a href={href} {...props} />
       );
     }
 
-    return (
-      <a
-        href={link}
-        target={target ?? "_blank"}
-        className={className}
-        {...rest}
-        rel="noopener noreferrer"
-      >
-        {children}
-      </a>
-    );
+    /* String link is external */
+    return <ExternalLink href={href} {...props} />;
   }
 
-  //Unknown link
-  if (link.link_type === "Any") return null;
+  /**
+   * UNKNOWN LINKS
+   */
+  if (href.link_type === "Any") return null;
 
-  //Prismic Link
-  if (link.link_type === "Web") {
-    if (!link.url) return null;
+  /**
+   * PRISMIC LINKS
+   */
 
-    //Same page anchor links
-    if (link.url.includes("://#")) {
-      const anchor = link.url.split("://")[1];
-      return (
-        <a href={anchor} className={className} {...rest}>
-          {children}
-        </a>
-      );
+  /* Web links */
+  if (href.link_type === "Web") {
+    /* Empty web link */
+    if (!href.url) return <>{props.children}</>;
+
+    /* Same page anchors */
+    if (href.url.includes("://#")) {
+      return <a href={href.url.split("://")[1]} {...props} />;
     }
 
-    return (
-      <a
-        href={asLink(link, linkResolver)}
-        target={target ?? "_blank"}
-        className={className}
-        {...rest}
-        rel="noopener noreferrer"
-      >
-        {children}
-      </a>
-    );
+    /* External Links */
+    return <ExternalLink href={prismicLink(href, linkResolver)} {...props} />;
   }
 
-  if (link.link_type === "Document") {
-    return (
-      <NextLink href={asLink(link, linkResolver)}>
-        <a className={className} {...rest}>
-          {children}
-        </a>
-      </NextLink>
-    );
+  /* Docs links */
+  if (href.link_type === "Document") {
+    return <InternalLink href={prismicLink(href, linkResolver)} {...props} />;
   }
 
-  if (link.link_type === "Image") {
-    return (
-      <a
-        href={asLink(link, linkResolver)}
-        className={className}
-        {...rest}
-        rel="noopener noreferrer"
-      >
-        {children}
-      </a>
-    );
+  /* Media links */
+  if (href.link_type === "Image") {
+    return <ExternalLink href={prismicLink(href, linkResolver)} {...props} />;
   }
 
-  return null;
+  /* Any other prismic link type */
+  if (typeof href.type === "string") {
+    return <InternalLink href={prismicLink(href, linkResolver)} {...props} />;
+  }
+
+  /**
+   * Catch all
+   */
+  return <>{props.children}</>;
 };
+
+/**
+ * Internal Link - uses Next/Link to quickly load other internal pages
+ */
+const InternalLink = ({ href, children, ...props }) => (
+  <NextLink href={href}>
+    <a {...props}>{children}</a>
+  </NextLink>
+);
+
+/**
+ * External Link - uses standard a tags and defaults to proper external link settings
+ */
+const ExternalLink = ({
+  href,
+  target = "_blank",
+  rel = "noopener noreferrer",
+  children,
+  ...props
+}) => (
+  <a href={href} target={target} rel={rel} {...props}>
+    {children}
+  </a>
+);

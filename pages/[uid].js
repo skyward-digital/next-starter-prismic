@@ -1,47 +1,44 @@
 import { SliceZone } from "@prismicio/react";
-import * as prismicH from "@prismicio/helpers";
 import { createClient } from "../prismic";
-import resolver from "../sm-resolver.js";
-import { linkResolver } from "../utils/linkResolver";
-
+import {
+  getLayoutProps,
+  getSeoProps,
+  getRecentPosts,
+} from "../utils/fetchData";
 import { Layout } from "../components";
+import { components } from "../slices/general";
+import { fetchLinks } from "../slices/general/fetchLinks";
 
-const Page = ({ data, url, lang, layout }) => {
-  const seo = {
-    metaTitle: data.metaTitle || layout.seo?.data?.metaTitle,
-    metaDescription: data.metaDescription || layout.seo?.data?.metaDescription,
-    metaImage: data.metaImage.url || layout.seo?.data?.metaImage.url,
-    url: url,
-    article: false,
-    lang: lang,
-  };
+const Page = ({ data, url, lang, layout, provider }) => {
+  const seo = getSeoProps({
+    page: data,
+    url,
+    lang,
+    // fallback: layout.defaultSeo.data,
+  });
 
   return (
-    <Layout {...layout} seo={seo}>
-      <SliceZone slices={data.slices} resolver={resolver} />
+    <Layout {...layout} seo={seo} provider={provider}>
+      <SliceZone slices={data.slices} components={components} />
     </Layout>
   );
 };
 
-// Fetch content from prismic - previews but doesn't hot reload
 export const getStaticProps = async ({ params, previewData }) => {
   const client = createClient({ previewData });
+  const layout = await getLayoutProps({ client });
+  const recentPosts = await getRecentPosts({ client });
 
-  // Default Layout components reused across the site
-  // If a singleton document is missing, `getStaticProps` will throw a PrismicError.
-  const seo = await client.getSingle("defaultSeo");
-  const header = await client.getSingle("header");
-  const footer = await client.getSingle("footer");
-  const socials = await client.getSingle("socials");
-  const page = await client.getByUID("page", params.uid);
+  const page = await client.getByUID("page", params.uid, {
+    fetchLinks,
+  });
 
   return {
     props: {
-      layout: {
-        seo,
-        header,
-        footer,
-        socials,
+      layout,
+      provider: {
+        recentPosts,
+        // activeTeamMembers,
       },
       ...page,
     },
@@ -51,12 +48,17 @@ export const getStaticProps = async ({ params, previewData }) => {
 export const getStaticPaths = async () => {
   const client = createClient();
 
-  const pages = await client.getAllByType("page");
+  const documents = await client.getAllByType("page");
 
-  return {
-    paths: pages.map((page) => prismicH.asLink(page, linkResolver)),
-    fallback: false,
-  };
+  // const documents = await client.get({
+  //   predicates: [prismic.predicate.at("document.type", "page")],
+  // });
+
+  const paths = await documents.map((document) => ({
+    params: { uid: document.uid },
+  }));
+
+  return { paths, fallback: false };
 };
 
 export default Page;

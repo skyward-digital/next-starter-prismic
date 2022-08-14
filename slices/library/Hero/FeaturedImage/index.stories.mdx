@@ -1,0 +1,25 @@
+import { Meta, Story, Preview, ArgsTable } from "@storybook/addon-docs";
+import Component from "./";
+import mocks from "./mocks.json";
+
+<Meta
+  title="Slices - General/Hero/FeaturedImage"
+  component={Component}
+  parameters={{
+    actions: { handles: ["click a"] },
+    chromatic: { viewports: [320, 1440] },
+  }}
+/>
+
+# Featured Image Hero
+
+Could we make the theme here a content relationship that allows the user to select an option from the CMS, which would be able to handle light & dark modes
+
+<Preview withToolbar>
+  <Story name="FeaturedImage" args={mocks}>
+    {(args) => <Component {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="FeaturedImage" />

@@ -1,0 +1,136 @@
+{
+  "id": "call_to_action",
+  "type": "SharedSlice",
+  "name": "CallToAction",
+  "description": "CallToAction",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CallToAction",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "primaryLink": {
+          "config": {
+            "label": "Primary Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "primaryLinkLabel": {
+          "config": {
+            "label": "Primary Link Label",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "secondaryLink": {
+          "config": {
+            "label": "Secondary Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "secondaryLinkLabel": {
+          "config": {
+            "label": "Secondary Link Label",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "splitWithImage",
+      "name": "Split with Image",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CallToAction",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "primaryLink": {
+          "config": {
+            "label": "Primary Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "primaryLinkLabel": {
+          "config": {
+            "label": "Primary Link Label",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "secondaryLink": {
+          "config": {
+            "label": "Secondary Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "secondaryLinkLabel": {
+          "config": {
+            "label": "Secondary Link Label",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "image": {
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

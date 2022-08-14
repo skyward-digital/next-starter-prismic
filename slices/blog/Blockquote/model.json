@@ -1,0 +1,36 @@
+{
+  "id": "blockquote",
+  "type": "SharedSlice",
+  "name": "Blockquote",
+  "description": "Blockquote",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Blockquote",
+      "primary": {
+        "quote": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Quote",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "author": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Author",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

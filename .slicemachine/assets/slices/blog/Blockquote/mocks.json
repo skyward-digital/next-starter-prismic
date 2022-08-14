@@ -1,0 +1,26 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "quote": [
+        {
+          "type": "heading3",
+          "text": "Express",
+          "spans": []
+        }
+      ],
+      "author": [
+        {
+          "type": "paragraph",
+          "text": "Eu nisi duis do sint nostrud. Ipsum deserunt reprehenderit ipsum esse ex velit nulla labore. Aliquip non laborum dolor eu et eu velit ipsum elit sint duis minim nisi non enim.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "blockquote"
+  }
+]

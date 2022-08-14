@@ -1,0 +1,29 @@
+{
+  "image": {
+    "dimensions": {
+      "width": 5848,
+      "height": 3899
+    },
+    "alt": null,
+    "copyright": null,
+    "url": "https://images.prismic.io/v2-skyward-rebuild/97fb220f-ac21-4109-9fe1-8c4ff167b4e8_domenico-loia-hGV2TfOh0ns-unsplash.jpg?auto=compress,format"
+  },
+  "caption": [
+    {
+      "type": "paragraph",
+      "text": "Sourced from Unsplash",
+      "spans": [
+        {
+          "start": 13,
+          "end": 21,
+          "type": "hyperlink",
+          "data": {
+            "link_type": "Web",
+            "url": "https://unsplash.com/",
+            "target": "_blank"
+          }
+        }
+      ]
+    }
+  ]
+}

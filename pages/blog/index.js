@@ -1,62 +1,62 @@
 import { createClient } from "../../prismic";
+import {
+  getLayoutProps,
+  getSeoProps,
+  getAllPosts,
+  getAllCategories,
+} from "../../utils/fetchData";
+import { Layout, BlogList, RichText } from "../../components";
+import { fetchLinks } from "../../slices/general/fetchLinks";
 
-import { Layout } from "../../components/Layout";
-// import { ArticleHero } from "../../components/ArticleHero";
-// import { BlogFeed } from "../../components/BlogFeed";
-
-const BlogRoot = ({
-  data,
-  // posts,
-  url,
-  lang,
-  layout,
-  // blogCategories
-}) => {
-  const seo = {
-    metaTitle: data?.metaTitle || layout.metaTitle,
-    metaDescription: data?.metaDescription || layout.metaDescription,
-    metaImage: data?.metaImage?.url || layout.metaImage?.url,
-    url: url,
-    article: true,
-    lang: lang,
-  };
-
-  // const hero = {
-  //   title: data?.title,
-  // };
+const Blog = ({ data, url, lang, layout, provider, posts, categories }) => {
+  const seo = getSeoProps({
+    page: data,
+    url,
+    lang,
+    // defaultSeo: layout.defaultSeo.data,
+  });
 
   return (
-    <Layout seo={seo} {...layout}>
-      {/* <ArticleHero {...hero} /> */}
-      {/* <BlogFeed posts={posts} categories={blogCategories} /> */}
+    <Layout {...layout} seo={seo} provider={provider}>
+      <div className="container text-center">
+        <RichText
+          field={data.title}
+          plainText
+          as="h1"
+          className="text-5xl mb-4"
+        />
+        <RichText
+          field={data.description}
+          plainText
+          as="p"
+          className="text-2xl mb-4"
+        />
+      </div>
+
+      <BlogList posts={posts} categories={categories} />
     </Layout>
   );
 };
 
 export const getStaticProps = async ({ previewData }) => {
   const client = createClient({ previewData });
+  const layout = await getLayoutProps({ client });
+  const posts = await getAllPosts({ client });
+  const categories = await getAllCategories({ client });
 
-  const seo = await client.getSingle("defaultSeo");
-  const header = await client.getSingle("header");
-  const footer = await client.getSingle("footer");
-  const socials = await client.getSingle("socials");
+  const page = await client.getSingle("blogRoot", {
+    fetchLinks,
+  });
 
-  const blogRoot = await client.getSingle("blogRoot");
-  const blogPosts = await client.getAllByType("blog_post");
-
-  //return props in a more standard nextjs approach
   return {
     props: {
-      layout: {
-        seo,
-        header,
-        footer,
-        socials,
-      },
-      posts: blogPosts,
-      ...blogRoot,
+      layout,
+      provider: {},
+      ...page,
+      posts,
+      categories,
     },
   };
 };
 
-export default BlogRoot;
+export default Blog;

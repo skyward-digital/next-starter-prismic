@@ -1,0 +1,102 @@
+{
+  "id": "newsletter",
+  "type": "SharedSlice",
+  "name": "Newsletter",
+  "description": "Newsletter",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Newsletter",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,em,hyperlink,strong"
+          }
+        },
+        "placeholder": {
+          "config": {
+            "label": "Input Placeholder",
+            "placeholder": "Newsletter form placeholder text"
+          },
+          "type": "Text"
+        },
+        "submitLabel": {
+          "config": {
+            "label": "Submit Label",
+            "placeholder": "Newsletter form submit button"
+          },
+          "type": "Text"
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "withImage",
+      "name": "With Image",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Newsletter",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,em,hyperlink,strong"
+          }
+        },
+        "placeholder": {
+          "config": {
+            "label": "Input Placeholder",
+            "placeholder": "Newsletter form placeholder text"
+          },
+          "type": "Text"
+        },
+        "submitLabel": {
+          "config": {
+            "label": "Submit Label",
+            "placeholder": "Newsletter form submit button"
+          },
+          "type": "Text"
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

@@ -1,0 +1,627 @@
+{
+  "logos": {
+    "id": "YUB-tRAAACIA6BNc",
+    "uid": null,
+    "url": null,
+    "type": "logos",
+    "href": "https://azure-first.cdn.prismic.io/api/v2/documents/search?ref=YUChOBAAACIA6LD1&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YUB-tRAAACIA6BNc%22%29+%5D%5D",
+    "tags": [],
+    "first_publication_date": "2021-09-14T10:51:36+0000",
+    "last_publication_date": "2021-09-14T10:51:36+0000",
+    "slugs": ["logos"],
+    "linked_documents": [],
+    "lang": "en-us",
+    "alternate_languages": [],
+    "data": {
+      "icon": {
+        "dimensions": {
+          "width": 32,
+          "height": 30
+        },
+        "alt": "Azure First Logo Icon",
+        "copyright": null,
+        "url": "https://azure-first.cdn.prismic.io/azure-first/5ef0bb0c-b66b-4bee-a7f9-1bcb33471ecc_Azure+First+Icon.svg"
+      },
+      "logo": {
+        "dimensions": {
+          "width": 160,
+          "height": 28
+        },
+        "alt": "Azure First logo",
+        "copyright": null,
+        "url": "https://azure-first.cdn.prismic.io/azure-first/c5038e4d-60e2-42c9-8678-7a83eeedbb8d_Azure+First+Logo.svg"
+      },
+      "parentCompanyLogo": {
+        "dimensions": {
+          "width": 470,
+          "height": 107
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://images.prismic.io/azure-first/637a5b7a-ed8e-4c92-9f4a-d25be5ef6904_5e4fd127dca002ab4d52b079_Techfabric+dark.png?auto=compress,format"
+      },
+      "parentCompanyLogoText": [
+        {
+          "type": "paragraph",
+          "text": "Euismod tellus habitasse",
+          "spans": []
+        }
+      ]
+    }
+  },
+  "socials": {
+    "id": "YRY8IxIAACkAFcJG",
+    "uid": null,
+    "url": null,
+    "type": "socials",
+    "href": "https://skyward.cdn.prismic.io/api/v2/documents/search?ref=YRrYTRIAACsA6DjR&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YRY8IxIAACkAFcJG%22%29+%5D%5D",
+    "tags": [],
+    "first_publication_date": "2021-08-13T11:50:34+0000",
+    "last_publication_date": "2021-08-13T11:50:34+0000",
+    "slugs": ["socials"],
+    "linked_documents": [],
+    "lang": "en-gb",
+    "alternate_languages": [],
+    "data": {
+      "twitter": {
+        "link_type": "Web",
+        "url": "https://twitter.com/home",
+        "target": "_blank"
+      },
+      "linkedin": {
+        "link_type": "Web",
+        "url": "https://www.linkedin.com/company/skyward-agency/?viewAsMember=true",
+        "target": "_blank"
+      },
+      "instagram": {
+        "link_type": "Web",
+        "url": "https://www.instagram.com/skywardagency/",
+        "target": "_blank"
+      },
+      "github": {
+        "link_type": "Web",
+        "url": "https://github.com/skyward-digital",
+        "target": "_blank"
+      },
+      "dribbble": {
+        "link_type": "Web",
+        "url": "https://dribbble.com/skyward-digital",
+        "target": "_blank"
+      }
+    }
+  },
+
+  "recentPosts": [
+    {
+      "id": "YlAUwxIAACwAS2TL",
+      "uid": "when-to-rebuild-your-website",
+      "url": null,
+      "type": "blogPost",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlAezRIAACoAS5Ck&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlAUwxIAACwAS2TL%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T10:57:17+0000",
+      "last_publication_date": "2022-04-08T11:06:10+0000",
+      "slugs": ["when-to-rebuild-your-website"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "When to rebuild your website",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Outdated websites can be harmful to your business's bottom line, but when is the right time to rebuild?",
+            "spans": []
+          }
+        ],
+        "publishDate": "2022-04-08",
+        "author": {
+          "id": "YlAU4BIAAC8AS2Ut",
+          "type": "author",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "dan-spratling",
+          "first_publication_date": "2022-04-08T10:56:37+0000",
+          "last_publication_date": "2022-04-08T10:56:37+0000",
+          "uid": "dan-spratling",
+          "data": {
+            "name": [
+              {
+                "type": "paragraph",
+                "text": "Dan Spratling",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 3548,
+                "height": 3010
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/v2-skyward-rebuild/39b419e9-6b9b-479f-b5b6-7d9aea71b173_Brian-Bristol.jpeg?auto=compress,format"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "category": {
+          "link_type": "Document"
+        },
+        "featuredImage": {
+          "dimensions": {
+            "width": 5848,
+            "height": 3899
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/97fb220f-ac21-4109-9fe1-8c4ff167b4e8_domenico-loia-hGV2TfOh0ns-unsplash.jpg?auto=compress,format"
+        },
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlAVFRIAACkAS2WU",
+      "uid": "when-to-rebuild-your-website1",
+      "url": null,
+      "type": "blogPost",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlAezRIAACoAS5Ck&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlAVFRIAACkAS2WU%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T10:57:43+0000",
+      "last_publication_date": "2022-04-08T11:05:53+0000",
+      "slugs": [
+        "when-to-rebuild-your-website-2",
+        "when-to-rebuild-your-website"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "When to rebuild your website 2",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Outdated websites can be harmful to your business's bottom line, but when is the right time to rebuild?",
+            "spans": []
+          }
+        ],
+        "publishDate": "2022-03-01",
+        "author": {
+          "id": "YlAU4BIAAC8AS2Ut",
+          "type": "author",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "dan-spratling",
+          "first_publication_date": "2022-04-08T10:56:37+0000",
+          "last_publication_date": "2022-04-08T10:56:37+0000",
+          "uid": "dan-spratling",
+          "data": {
+            "name": [
+              {
+                "type": "paragraph",
+                "text": "Dan Spratling",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 3548,
+                "height": 3010
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/v2-skyward-rebuild/39b419e9-6b9b-479f-b5b6-7d9aea71b173_Brian-Bristol.jpeg?auto=compress,format"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "category": {
+          "link_type": "Document"
+        },
+        "featuredImage": {
+          "dimensions": {
+            "width": 5848,
+            "height": 3899
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/97fb220f-ac21-4109-9fe1-8c4ff167b4e8_domenico-loia-hGV2TfOh0ns-unsplash.jpg?auto=compress,format"
+        },
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    },
+    {
+      "id": "YlAVLxIAACoAS2Xw",
+      "uid": "when-to-rebuild-your-website11",
+      "url": null,
+      "type": "blogPost",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlAezRIAACoAS5Ck&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlAVLxIAACoAS2Xw%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T10:58:06+0000",
+      "last_publication_date": "2022-04-08T11:05:37+0000",
+      "slugs": [
+        "when-to-rebuild-your-website-3",
+        "when-to-rebuild-your-website-2"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "title": [
+          {
+            "type": "heading1",
+            "text": "When to rebuild your website 3",
+            "spans": []
+          }
+        ],
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Outdated websites can be harmful to your business's bottom line, but when is the right time to rebuild?",
+            "spans": []
+          }
+        ],
+        "publishDate": "2022-01-01",
+        "author": {
+          "id": "YlAU4BIAAC8AS2Ut",
+          "type": "author",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "dan-spratling",
+          "first_publication_date": "2022-04-08T10:56:37+0000",
+          "last_publication_date": "2022-04-08T10:56:37+0000",
+          "uid": "dan-spratling",
+          "data": {
+            "name": [
+              {
+                "type": "paragraph",
+                "text": "Dan Spratling",
+                "spans": []
+              }
+            ],
+            "avatar": {
+              "dimensions": {
+                "width": 3548,
+                "height": 3010
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/v2-skyward-rebuild/39b419e9-6b9b-479f-b5b6-7d9aea71b173_Brian-Bristol.jpeg?auto=compress,format"
+            }
+          },
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "category": {
+          "link_type": "Document"
+        },
+        "featuredImage": {
+          "dimensions": {
+            "width": 5848,
+            "height": 3899
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/97fb220f-ac21-4109-9fe1-8c4ff167b4e8_domenico-loia-hGV2TfOh0ns-unsplash.jpg?auto=compress,format"
+        },
+        "metaTitle": null,
+        "metaDescription": null,
+        "metaImage": {}
+      }
+    }
+  ],
+
+  "activeTeamMembers": [
+    {
+      "id": "YlCooBIAACwATedH",
+      "uid": "dan-spratling",
+      "url": null,
+      "type": "teamMember",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlC2HBIAACsATiOC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlCooBIAACwATedH%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T21:27:00+0000",
+      "last_publication_date": "2022-04-08T21:27:00+0000",
+      "slugs": ["dan-spratling"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "name": [
+          {
+            "type": "paragraph",
+            "text": "Dan Spratling",
+            "spans": []
+          }
+        ],
+        "avatar": {
+          "dimensions": {
+            "width": 256,
+            "height": 256
+          },
+          "alt": "Dan Spratling - Founder & CEO",
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/d5f0cb5a-a9ee-4eb1-a271-8bdf656b22c8_DanSpratling.jpg?auto=compress,format"
+        },
+        "bio": [],
+        "position": [
+          {
+            "type": "paragraph",
+            "text": "Founder & CEO",
+            "spans": []
+          }
+        ],
+        "employmentType": false,
+        "active": true
+      }
+    },
+    {
+      "id": "YlCowBIAAC8ATefZ",
+      "uid": "sarah-shook",
+      "url": null,
+      "type": "teamMember",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlC2HBIAACsATiOC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlCowBIAAC8ATefZ%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T21:27:34+0000",
+      "last_publication_date": "2022-04-08T21:27:34+0000",
+      "slugs": ["sarah-shook"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "name": [
+          {
+            "type": "paragraph",
+            "text": "Sarah Shook",
+            "spans": []
+          }
+        ],
+        "avatar": {
+          "dimensions": {
+            "width": 256,
+            "height": 256
+          },
+          "alt": "Sarah Shook - Developer",
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/9cd2413c-b566-430a-ae0a-a7eee9cb8a29_SarahShook.jpg?auto=compress,format"
+        },
+        "bio": [],
+        "position": [
+          {
+            "type": "paragraph",
+            "text": "Developer",
+            "spans": []
+          }
+        ],
+        "employmentType": true,
+        "active": true
+      }
+    },
+    {
+      "id": "YlCo_xIAACwATej9",
+      "uid": "david-dooley",
+      "url": null,
+      "type": "teamMember",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlC2HBIAACsATiOC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlCo_xIAACwATej9%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T21:28:34+0000",
+      "last_publication_date": "2022-04-08T21:30:32+0000",
+      "slugs": ["david-dooley"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "name": [
+          {
+            "type": "paragraph",
+            "text": "David Dooley",
+            "spans": []
+          }
+        ],
+        "avatar": {
+          "dimensions": {
+            "width": 256,
+            "height": 256
+          },
+          "alt": "David Dooley - UI/UX Designer",
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/62ba236e-cd8e-4de1-a1e6-ec6047e7f0be_DavidDooley.jpg?auto=compress,format"
+        },
+        "bio": [],
+        "position": [
+          {
+            "type": "paragraph",
+            "text": "UI/UX Designer",
+            "spans": []
+          }
+        ],
+        "employmentType": true,
+        "active": true
+      }
+    },
+    {
+      "id": "YlCqfRIAACwATe-2",
+      "uid": "natalia-polizel",
+      "url": null,
+      "type": "teamMember",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlC2HBIAACsATiOC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlCqfRIAACwATe-2%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T21:34:56+0000",
+      "last_publication_date": "2022-04-08T21:34:56+0000",
+      "slugs": ["natalia-polizel"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "name": [
+          {
+            "type": "heading1",
+            "text": "Natalia Polizel",
+            "spans": []
+          }
+        ],
+        "avatar": {
+          "dimensions": {
+            "width": 512,
+            "height": 512
+          },
+          "alt": "Natalia Polizel - Project Manager",
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/1ab71710-8726-43bc-8914-72a1e217e067_NataliaPolizel.jpeg?auto=compress,format"
+        },
+        "bio": [],
+        "position": [
+          {
+            "type": "paragraph",
+            "text": "Project Manager",
+            "spans": []
+          }
+        ],
+        "employmentType": false,
+        "active": true
+      }
+    },
+    {
+      "id": "YlC12xIAAC8ATiJQ",
+      "uid": "kim-gillick1",
+      "url": null,
+      "type": "teamMember",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlC2HBIAACsATiOC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlC12xIAAC8ATiJQ%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T22:24:26+0000",
+      "last_publication_date": "2022-04-08T22:24:26+0000",
+      "slugs": ["kim-gillick"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "name": [
+          {
+            "type": "paragraph",
+            "text": "Kim Gillick",
+            "spans": []
+          }
+        ],
+        "avatar": {
+          "dimensions": {
+            "width": 256,
+            "height": 256
+          },
+          "alt": "Kim Gillick - Copywriter",
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/5447c9e5-adb7-443d-a36c-9a175c7b53ec_KimGillick.jpg?auto=compress,format"
+        },
+        "bio": [],
+        "position": [
+          {
+            "type": "paragraph",
+            "text": "Copywriter & Content Strategy",
+            "spans": []
+          }
+        ],
+        "employmentType": true,
+        "active": true
+      }
+    },
+    {
+      "id": "YlC1-xIAACsATiLl",
+      "uid": "louie-richardson2",
+      "url": null,
+      "type": "teamMember",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlC2HBIAACsATiOC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlC1-xIAACsATiLl%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T22:24:27+0000",
+      "last_publication_date": "2022-04-08T22:24:27+0000",
+      "slugs": ["louie-richardson"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "name": [
+          {
+            "type": "paragraph",
+            "text": "Louie Richardson",
+            "spans": []
+          }
+        ],
+        "avatar": {
+          "dimensions": {
+            "width": 256,
+            "height": 256
+          },
+          "alt": "Louie Richardson - Developer",
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/84cd53ad-bd5f-407e-88ab-bf8a24126d52_LouieRichardson.jpg?auto=compress,format"
+        },
+        "bio": [],
+        "position": [
+          {
+            "type": "paragraph",
+            "text": "Developer",
+            "spans": []
+          }
+        ],
+        "employmentType": true,
+        "active": true
+      }
+    },
+    {
+      "id": "YlC16xIAAC4ATiKb",
+      "uid": "tasmin-lofthouse1",
+      "url": null,
+      "type": "teamMember",
+      "href": "https://v2-skyward-rebuild.cdn.prismic.io/api/v2/documents/search?ref=YlC2HBIAACsATiOC&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YlC16xIAAC4ATiKb%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2022-04-08T22:24:27+0000",
+      "last_publication_date": "2022-04-08T22:24:27+0000",
+      "slugs": ["tasmin-lofthouse"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [],
+      "data": {
+        "name": [
+          {
+            "type": "paragraph",
+            "text": "Tasmin Lofthouse",
+            "spans": []
+          }
+        ],
+        "avatar": {
+          "dimensions": {
+            "width": 256,
+            "height": 256
+          },
+          "alt": "Tasmin Lofthouse - Copywriter & Marketing",
+          "copyright": null,
+          "url": "https://images.prismic.io/v2-skyward-rebuild/f5d71ceb-2663-42c8-bd64-5e6c4520e5d5_TasminLofthouse.jpg?auto=compress,format"
+        },
+        "bio": [],
+        "position": [
+          {
+            "type": "paragraph",
+            "text": "Copywriter & Marketing",
+            "spans": []
+          }
+        ],
+        "employmentType": true,
+        "active": true
+      }
+    }
+  ]
+}

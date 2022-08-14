@@ -6,10 +6,32 @@
   "json": {
     "Main": {
       "title": {
-        "type": "StructuredText",
         "config": {
-          "single": "heading1",
-          "label": "Title"
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        },
+        "type": "StructuredText"
+      },
+      "description": {
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em"
+        },
+        "type": "StructuredText"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "newsletter": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     },

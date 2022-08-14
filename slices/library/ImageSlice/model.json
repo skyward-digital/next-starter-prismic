@@ -1,0 +1,61 @@
+{
+  "id": "image_slice",
+  "type": "SharedSlice",
+  "name": "ImageSlice",
+  "description": "ImageSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Cover",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ImageSlice",
+      "primary": {
+        "image": {
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "twoColumn",
+      "name": "Two Column",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ImageSlice",
+      "primary": {
+        "smallImage": {
+          "config": {
+            "label": "Small Image",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "largeImage": {
+          "config": {
+            "label": "Large Image",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "reversed": {
+          "config": {
+            "label": "Reversed",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

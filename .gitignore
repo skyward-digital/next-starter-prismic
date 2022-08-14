@@ -15,10 +15,9 @@ storybook-static
 /.next/
 /out/
 
-# env
-.env.development
-.env.staging
-.env.production
+# Automatically generated sitemap & robots
+/public/sitemap*.xml
+/public/robots.txt
 
 # production
 /build
@@ -37,6 +36,12 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.env.development
+.env.staging
+.env.production
 
 # vercel
 .vercel
+
+# Sentry
+.sentryclirc

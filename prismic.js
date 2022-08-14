@@ -1,51 +1,69 @@
 import * as prismic from "@prismicio/client";
+import * as prismicH from "@prismicio/helpers";
+import * as prismicNext from "@prismicio/next";
+import sm from "./sm.json";
 
-import smConfig from "./sm.json";
+export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint);
 
-export { linkResolver } from "./utils/linkResolver";
+/**
+ * The project's Prismic Link Resolver. This function determines the URL for a given Prismic document.
+ *
+ * @type {prismicH.LinkResolverFunction}
+ */
+export const linkResolver = (doc) => {
+  // Root
+  if (!doc) return "/";
 
-if (!smConfig.apiEndpoint) {
-  console.warn(
-    "Looks like Slice Machine hasn't been bootstraped already.\nCheck the `Getting Started` section of the README file :)"
-  );
-}
+  // Error
+  if (doc.isBroken) return "/not-found";
 
-export const apiEndpoint = smConfig.apiEndpoint;
+  // Pages
+  if (doc.type === "page") return `/${doc.uid}`;
+  if (doc.type === "contact") return `/contact`;
 
-// export const createClient = (req = null, options = {}) => {
-export const createClient = ({ req, previewData, options } = {}) => {
-  const client = prismic.createClient(apiEndpoint, {
+  // Blog
+  if (doc.type === "blogRoot") return `/blog`;
+  if (doc.type === "blogPost") return `/blog/${doc.uid}`;
+  // if (doc.type === "blogCategory") return `/blog/category/${doc.uid}`;
+
+  // Fallback
+  return "/";
+};
+
+// This factory function allows smooth preview setup
+export function createClient(
+  config = {
     // If your repo is private, add an access token
-    accessToken: "",
-
+    // accessToken: "",
     // This defines how you will structure URL paths in your project.
     // Update the types to match the Custom Types in your project, and edit
     // the paths to match the routing in your project.
     //
     // If you are not using a router in your project, you can change this
     // to an empty array or remove the option entirely.
-    routes: [
-      { type: "page", path: "/:uid" },
-      // {
-      //   type: "blogCategory",
-      //   path: "/blog/:uid",
-      // },
-      {
-        type: "blogPost",
-        path: "/blog/:category/:uid",
-        resolvers: {
-          category: "category", // id of the content relationship in the article mask
-        },
-      },
-    ],
-    ...options,
+    // routes: [
+    //   { type: "page", path: "/:uid" },
+    //   // {
+    //   //   type: "blogCategory",
+    //   //   path: "/blog/:uid",
+    //   // },
+    //   {
+    //     type: "blogPost",
+    //     path: "/blog/:category/:uid",
+    //     resolvers: {
+    //       category: "category", // id of the content relationship in the article mask
+    //     },
+    //   },
+    // ],
+  }
+) {
+  const client = prismic.createClient(sm.apiEndpoint, config);
+
+  prismicNext.enableAutoPreviews({
+    client,
+    previewData: config.previewData,
+    req: config.req,
   });
 
-  if (req) {
-    client.enableAutoPreviewsFromReq(req);
-  } else if (previewData) {
-    client.queryContentFromRef(previewData.ref);
-  }
-
   return client;
-};
+}

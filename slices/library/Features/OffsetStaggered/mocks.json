@@ -1,0 +1,79 @@
+{
+  "id": "1-features-slice",
+  "sectionTitle": [
+    {
+      "type": "paragraph",
+      "text": "Websites & apps",
+      "spans": []
+    }
+  ],
+  "title": [
+    {
+      "type": "heading2",
+      "text": "We create websites and web apps",
+      "spans": []
+    }
+  ],
+  "description": [
+    {
+      "type": "paragraph",
+      "text": "We partner with companies to create digital experiences that people remember. We’re customer-obsessed in a helpful kind of way.",
+      "spans": []
+    }
+  ],
+  "primaryLink": {
+    "link_type": "Web",
+    "url": "https://#"
+  },
+  "primaryLinkLabel": "Learn more",
+  "items": [
+    {
+      "title": [
+        {
+          "type": "heading3",
+          "text": "User-first",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "We get up close and personal with your users, designing with their needs at heart.",
+          "spans": []
+        }
+      ]
+    },
+    {
+      "title": [
+        {
+          "type": "heading3",
+          "text": "Seamless",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Websites and web apps built on robust design systems, meaning you won’t need designers and developers to make future changes. ",
+          "spans": []
+        }
+      ]
+    },
+    {
+      "title": [
+        {
+          "type": "heading3",
+          "text": "Customisable",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Designs created with growth in mind. Easily scale and update experiences as your business grows. ",
+          "spans": []
+        }
+      ]
+    }
+  ]
+}

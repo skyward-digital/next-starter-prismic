@@ -27,21 +27,39 @@
           "allowTargetBlank": true,
           "label": "Description"
         }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "blockquote": {
+              "type": "SharedSlice"
+            },
+            "content": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     },
     "Details": {
-      "publish_date": {
+      "publishDate": {
         "type": "Date",
         "config": {
-          "label": "Publish Date"
+          "label": "Publish Date",
+          "placeholder": ""
         }
       },
       "author": {
         "type": "Link",
         "config": {
-          "select": "document",
-          "customtypes": ["author"],
           "label": "Author",
+          "select": "document",
+          "customtypes": ["teamMember"],
           "placeholder": "Who wrote this"
         }
       },
@@ -54,12 +72,12 @@
           "placeholder": "Which category is most relevant?"
         }
       },
-      "featured_image": {
+      "featuredImage": {
         "type": "Image",
         "config": {
+          "label": "Featured Image",
           "constraint": {},
-          "thumbnails": [],
-          "label": "Featured Image"
+          "thumbnails": []
         }
       }
     },

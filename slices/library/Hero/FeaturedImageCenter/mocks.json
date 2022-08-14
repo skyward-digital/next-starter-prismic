@@ -1,0 +1,36 @@
+{
+  "id": "0-hero",
+  "title": [
+    {
+      "type": "heading1",
+      "text": "Build brilliant experiences for your customers ",
+      "spans": []
+    }
+  ],
+  "description": [
+    {
+      "type": "paragraph",
+      "text": "We’ve done the math: Really helpful websites & apps = Happy customers + business growth",
+      "spans": []
+    }
+  ],
+  "primaryLink": {
+    "link_type": "Web",
+    "url": "https://#"
+  },
+  "primaryLinkLabel": "Let’s build it",
+  "secondaryLink": {
+    "link_type": "Web",
+    "url": "https://#"
+  },
+  "secondaryLinkLabel": "Get to know us",
+  "featuredImage": {
+    "dimensions": {
+      "width": 1216,
+      "height": 608
+    },
+    "alt": null,
+    "copyright": null,
+    "url": "https://images.prismic.io/v2-skyward-rebuild/d9cdeec0-15b2-43ae-8a99-627e7e4df5f3_Content.png?auto=compress,format"
+  }
+}

@@ -1,17 +1,18 @@
 import { createClient } from "../prismic";
-// import { useGetStaticProps } from "next-slicezone/hooks";
-
+import { getLayoutProps, getSeoProps } from "../utils/fetchData";
 import { Layout, Link } from "../components";
 
 const NotFound = ({ lang, layout }) => {
-  const seo = {
-    metaTitle: "404 - Page not found",
-    metaDescription: "",
-    metaImage: "",
+  const seo = getSeoProps({
+    page: {
+      metaTitle: "404 - Page not found",
+      metaDescription: "",
+      metaImage: "",
+    },
     url: "/404",
-    article: false,
-    lang: lang,
-  };
+    lang,
+    // fallback: layout.defaultSeo.data,
+  });
 
   return (
     <Layout seo={seo} {...layout}>
@@ -33,23 +34,13 @@ const NotFound = ({ lang, layout }) => {
 // Fetch content from prismic - previews but doesn't hot reload
 export const getStaticProps = async ({ previewData }) => {
   const client = createClient({ previewData });
+  const layout = await getLayoutProps({ client });
 
-  // Default Layout components reused across the site
-  // If a singleton document is missing, `getStaticProps` will throw a NotFoundError.
-  const seo = await client.getSingle("defaultSeo");
-  const header = await client.getSingle("header");
-  const footer = await client.getSingle("footer");
-  const socials = await client.getSingle("socials");
   const page = await client.getSingle("homepage");
 
   return {
     props: {
-      layout: {
-        seo,
-        header,
-        footer,
-        socials,
-      },
+      layout,
       ...page,
     },
   };

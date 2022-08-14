@@ -1,0 +1,31 @@
+{
+  "id": "1-Team",
+  "title": [
+    {
+      "type": "heading2",
+      "text": "Let’s get acquainted",
+      "spans": []
+    }
+  ],
+  "description": [
+    {
+      "type": "paragraph",
+      "text": "Over there in Texas is Sarah. She’s listening to some smooth classical tunes while coding something spectacular. And high up in the mountains in Mexico (closer than us all to the best coffee) is David. He’s designing the coolest things you’ve ever seen, making everything POP! Kim’s in Greece writing words sure to make us laugh, make us cry, make us buy ALL the things and be happy about it too. Somewhere in Lancashire, Tasmin’s eating cake in absolute silence because that’s when the content muse comes to her. She’s converting so many customers it’ll make your head spin. Louie’s in Bristol but he’s too busy to come to the phone right now. He’s in what he calls his “Code Cloud” (*sniggers*) building web and app products that can do all the things you never thought possible.",
+      "spans": [
+        {
+          "start": 686,
+          "end": 695,
+          "type": "em"
+        }
+      ]
+    }
+  ],
+  "primaryLink": {
+    "link_type": "Any"
+  },
+  "primaryLinkLabel": null,
+  "secondaryLink": {
+    "link_type": "Any"
+  },
+  "secondaryLinkLabel": null
+}

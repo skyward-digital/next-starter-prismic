@@ -1,45 +1,34 @@
 {
-  "id": "b6f8caea-1d0a-4a24-8e25-838b5571a266",
-  "uid": "voluptas-quia-ipsa",
+  "id": "mock-doc-id",
+  "url": null,
   "type": "header",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
   "data": {
-    "header_logo": {
+    "logo": {
       "dimensions": {
-        "width": null,
-        "height": null
+        "width": 900,
+        "height": 500
       },
-      "alt": "Placeholder image",
+      "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=null&h=null&fit=crop"
+      "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0"
     },
-    "primary_button_link": {
-      "link_type": "Web",
-      "url": "http://twitter.com"
-    },
-    "primary_button_label": [
+    "navigation": [
       {
-        "type": "paragraph",
-        "text": "Aliquip reprehenderit aliquip cupidatat esse reprehenderit ipsum consectetur ullamco nulla consectetur dolor exercitation deserunt. Ea occaecat ex sit ea ullamco culpa deserunt reprehenderit nulla ut. Ut laborum aute sint sunt elit irure culpa ea dolore velit.",
-        "spans": []
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "linkLabel": "root"
       }
     ],
-    "secondary_button_link": {
-      "link_type": "Web",
-      "url": "http://twitter.com"
-    },
-    "secondary_button_label": [
-      {
-        "type": "paragraph",
-        "text": "Ex labore consequat fugiat est. Lorem ut labore cupidatat deserunt. Sint sit minim amet qui nostrud excepteur eu.",
-        "spans": []
-      }
-    ],
-    "banner_text": [
-      {
-        "type": "paragraph",
-        "text": "Labore sunt incididunt minim amet commodo labore excepteur.",
-        "spans": []
-      }
-    ]
+    "slices1": []
   }
 }

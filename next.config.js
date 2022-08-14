@@ -1,4 +1,7 @@
 const withTM = require("next-transpile-modules")(["next-slicezone"]);
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
 
 const nextConfig = {
   // To enable image optimization for image hosted on external website
@@ -25,4 +28,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withTM(nextConfig);
+module.exports = withBundleAnalyzer(withTM(nextConfig));

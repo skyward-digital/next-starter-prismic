@@ -1,28 +1,32 @@
-import NextApp from "next/app";
-import { PrismicToolbar } from "@prismicio/react";
-
+import "@fontsource/inter/latin-300.css";
+import "@fontsource/inter/latin-400.css";
+import "@fontsource/inter/latin-700.css";
 import "../styles/index.css";
-import { apiEndpoint } from "./../prismic"; // import the endpoint name from where it's defined
 
-const prismicRepoName = /([a-zA-Z0-9-]+)?(\.cdn)?\.prismic\.io/.exec(
-  apiEndpoint
-)[1]; //Regex to get repo ID
+// import Script from "next/script";
+import { Link } from "../components";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { PrismicProvider, PrismicToolbar } from "@prismicio/react";
+import { PrismicPreview } from "@prismicio/next";
+import { linkResolver, repositoryName } from "../prismic";
 
-export default class MyApp extends NextApp {
-  render() {
-    const { Component, pageProps, props } = this.props;
-    return (
-      <>
-        {/* Prismic Preview */}
-        <PrismicToolbar repositoryName={prismicRepoName} />
+export default function App({ Component, pageProps }) {
+  const queryClient = new QueryClient();
 
-        {/* Analytics */}
-        {/* <Script strategy="lazyOnload">
-          Analytics tag goes here
-        </Script> */}
+  return (
+    <PrismicProvider
+      linkResolver={linkResolver}
+      internalLinkComponent={({ href, ...props }) => (
+        <Link href={href} {...props} />
+      )}
+    >
+      <PrismicPreview repositoryName={repositoryName}>
+        <QueryClientProvider client={queryClient}>
+          <Component {...pageProps} />
+        </QueryClientProvider>
+      </PrismicPreview>
 
-        <Component {...pageProps} {...props} />
-      </>
-    );
-  }
+      <PrismicToolbar repositoryName={repositoryName} />
+    </PrismicProvider>
+  );
 }

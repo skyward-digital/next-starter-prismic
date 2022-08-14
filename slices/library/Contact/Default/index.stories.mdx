@@ -1,0 +1,27 @@
+import { Meta, Story, Preview, ArgsTable } from "@storybook/addon-docs";
+import Component from "./";
+import mocks from "./mocks.json";
+
+<Meta
+  title="Slices - General/Contact"
+  component={Component}
+  parameters={{
+    actions: { handles: ["click a"] },
+    chromatic: { viewports: [320, 1440] },
+  }}
+/>
+
+# Contact
+
+The `Contact` is the primary way to grab your users attention and move them to the next stage of their user journey
+
+They can come in many forms depending on the situation. This is the most common version.
+
+<Preview withToolbar>
+  <Story name="Contact" args={mocks}>
+    {(args) => <Component {...args} />}
+  </Story>
+  <div />
+</Preview>
+
+<ArgsTable story="Contact" />

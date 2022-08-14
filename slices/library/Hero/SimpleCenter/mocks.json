@@ -1,0 +1,28 @@
+{
+  "title": [
+    {
+      "type": "heading1",
+      "text": "Build brilliant experiences for your customers ",
+      "spans": []
+    }
+  ],
+  "description": [
+    {
+      "type": "paragraph",
+      "text": "We’ve done the math: Really helpful websites & apps = Happy customers + business growth",
+      "spans": []
+    }
+  ],
+  "primaryLink": {
+    "link_type": "Web",
+    "url": "https://#"
+  },
+  "primaryLinkLabel": "Let’s build it",
+  "secondaryLink": {
+    "link_type": "Web",
+    "url": "https://#"
+  },
+  "secondaryLinkLabel": "Get to know us",
+  "lightTheme": null,
+  "themeDark": null
+}

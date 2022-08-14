@@ -1,0 +1,26 @@
+{
+  "id": "testimonials",
+  "type": "SharedSlice",
+  "name": "Testimonials",
+  "description": "Testimonials",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Testimonials",
+      "primary": {
+        "testimonial": {
+          "config": {
+            "label": "Testimonial",
+            "customtypes": ["testimonial"],
+            "select": "document"
+          },
+          "type": "Link"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

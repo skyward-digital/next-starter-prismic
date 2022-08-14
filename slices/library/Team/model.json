@@ -1,0 +1,68 @@
+{
+  "id": "team",
+  "type": "SharedSlice",
+  "name": "Team",
+  "description": "Team",
+  "variations": [
+    {
+      "id": "grid",
+      "name": "Grid",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Team",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "primaryLink": {
+          "config": {
+            "label": "Primary Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "primaryLinkLabel": {
+          "config": {
+            "label": "Primary Link Label",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "secondaryLink": {
+          "config": {
+            "label": "Secondary Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "secondaryLinkLabel": {
+          "config": {
+            "label": "Secondary Link Label",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

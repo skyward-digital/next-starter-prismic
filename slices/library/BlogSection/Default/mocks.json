@@ -1,0 +1,17 @@
+{
+  "id": "7-BlogSection",
+  "title": [
+    {
+      "type": "heading2",
+      "text": "We’ve had some thoughts",
+      "spans": []
+    }
+  ],
+  "description": [
+    {
+      "type": "paragraph",
+      "text": "Look: Here’s where we share ideas, stories and opinions from the design, UX and development world we live in.",
+      "spans": []
+    }
+  ]
+}
