@@ -5,7 +5,7 @@ import {
   getSeoProps,
   getRecentPosts,
 } from "../../utils/fetchData";
-import { Layout } from "../../components";
+import { Layout } from "../../components/Layout";
 import { BlogPage, blogPageFetchLinks } from "../../components/BlogPage";
 
 const BlogPost = ({

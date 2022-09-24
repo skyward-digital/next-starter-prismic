@@ -5,7 +5,7 @@ import {
   getSeoProps,
   getRecentPosts,
 } from "../utils/fetchData";
-import { Layout } from "../components";
+import { Layout } from "../components/Layout";
 import { components } from "../slices/general";
 import { fetchLinks } from "../slices/general/fetchLinks";
 

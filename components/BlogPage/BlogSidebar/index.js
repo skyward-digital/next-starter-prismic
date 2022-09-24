@@ -1,4 +1,4 @@
-// import { NewsletterForm } from "../../../components";
+// import { NewsletterForm } from "../../../components/NewsletterForm";
 import { BlogContents } from "../BlogContents";
 
 export const BlogSidebar = ({ data }) => {

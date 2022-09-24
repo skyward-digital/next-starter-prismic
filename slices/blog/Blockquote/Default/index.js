@@ -1,4 +1,4 @@
-import { RichText } from "../../../../components";
+import { RichText } from "../../../../components/RichText";
 
 const Blockquote = ({ quote, author }) => (
   <figure className="my-8">

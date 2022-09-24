@@ -1,4 +1,7 @@
-import { RichText, Link, ContactForm, Socials } from "../../../../components";
+import { RichText } from "../../../../components/RichText";
+import { Link } from "../../../../components/Link";
+import { ContactForm } from "../../../../components/ContactForm";
+import { Socials } from "../../../../components/Socials";
 
 const ContactDefault = ({
   id,

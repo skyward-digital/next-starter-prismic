@@ -1,4 +1,6 @@
-import { RichText, Image, Link } from "../../../../components";
+import { RichText } from "../../../../components/RichText";
+import { Link } from "../../../../components/Link";
+import { Image } from "../../../../components/Image";
 
 const TestimonialsDefault = ({ id, testimonial }) => {
   const {

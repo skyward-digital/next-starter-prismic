@@ -1,4 +1,4 @@
-import { Image } from "../../../../components";
+import { Image } from "../../../../components/Image";
 
 const Cover = ({ id, image }) => (
   <section id={id} className="py-12 md:py-20">

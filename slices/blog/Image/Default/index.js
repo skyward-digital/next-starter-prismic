@@ -1,4 +1,4 @@
-import { Image, RichText } from "../../../../components";
+import { Image, RichText } from "../../../../components/RichText";
 
 const BlogImage = ({ image, caption }) => (
   <div className="max-w-5xl mx-auto my-8 md:my-20">

@@ -1,5 +1,7 @@
 // import { useTheme } from "next-themes";
-import { Image, Link, RichText } from "../../../../components";
+import { RichText } from "../../../../components/RichText";
+import { Link } from "../../../../components/Link";
+import { Image } from "../../../../components/Image";
 
 const HeroProjects = ({
   id,

@@ -1,4 +1,6 @@
-import { RichText, Link, Image } from "../../../../components";
+import { RichText } from "../../../../components/RichText";
+import { Link } from "../../../../components/Link";
+import { Image } from "../../../../components/Image";
 
 const CallToActionSplitWithImage = ({
   id,

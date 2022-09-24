@@ -1,4 +1,6 @@
-import { RichText, Link, ProjectCard } from "../../../../components";
+import { RichText } from "../../../../components/RichText";
+import { Link } from "../../../../components/Link";
+import { ProjectCard } from "../../../../components/ProjectCard";
 
 const ProjectsDefault = ({
   id,

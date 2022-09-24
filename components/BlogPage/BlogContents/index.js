@@ -1,5 +1,5 @@
 import { Element, PrismicRichText } from "@prismicio/react";
-import { Link } from "../../../components";
+import { Link } from "../../../components/Link";
 
 import styles from "./index.module.css";
 

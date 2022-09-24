@@ -1,4 +1,6 @@
-import { RichText, Image, NewsletterForm } from "../../../../components";
+import { RichText } from "../../../../components/RichText";
+import { Image } from "../../../../components/Image";
+import { NewsletterForm } from "../../../../components/NewsletterForm";
 
 const NewsletterDefault = ({
   id,

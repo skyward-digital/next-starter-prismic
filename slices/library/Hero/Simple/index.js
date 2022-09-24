@@ -1,4 +1,5 @@
-import { Link, RichText } from "../../../../components";
+import { RichText } from "../../../../components/RichText";
+import { Link } from "../../../../components/Link";
 
 const HeroSimple = ({
   id,

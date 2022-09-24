@@ -1,6 +1,7 @@
 import { createClient } from "../prismic";
 import { getLayoutProps, getSeoProps } from "../utils/fetchData";
-import { Layout, Link } from "../components";
+import { Layout } from "../components/Layout";
+import { Link } from "../components/Link";
 
 const NotFound = ({ lang, layout }) => {
   const seo = getSeoProps({

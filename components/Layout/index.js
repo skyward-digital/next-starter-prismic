@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import { GlobalProvider } from "../../context/GlobalContext";
-import { Header, Footer, Seo } from "..";
+import { Header } from "../Header";
+import { Footer } from "../Footer";
+import { Seo } from "../SEO";
 
 export const Layout = ({
   seo,

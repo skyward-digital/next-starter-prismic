@@ -1,4 +1,4 @@
-import { RichText } from "../../../../components";
+import { RichText } from "../../../../components/RichText";
 
 const TextSimple = ({ id, title, description }) => (
   <section id={id} className="py-12 md:py-20">

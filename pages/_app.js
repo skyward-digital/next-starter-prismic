@@ -4,7 +4,7 @@ import "@fontsource/inter/latin-700.css";
 import "../styles/index.css";
 
 // import Script from "next/script";
-import { Link } from "../components";
+import { Link } from "../components/Link";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { PrismicProvider, PrismicToolbar } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";

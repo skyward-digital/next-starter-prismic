@@ -1,4 +1,4 @@
-import { Image } from "../../../../components";
+import { Image } from "../../../../components/Image";
 
 const TwoCol = ({ id, smallImage, largeImage, reversed }) => (
   <section id={id} className="py-12 md:py-20">

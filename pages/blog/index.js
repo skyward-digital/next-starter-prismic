@@ -5,7 +5,9 @@ import {
   getAllPosts,
   getAllCategories,
 } from "../../utils/fetchData";
-import { Layout, BlogList, RichText } from "../../components";
+import { Layout } from "../../components/Layout";
+import { BlogList } from "../../components/BlogList";
+import { RichText } from "../../components/RichText";
 import { fetchLinks } from "../../slices/general/fetchLinks";
 
 const Blog = ({ data, url, lang, layout, provider, posts, categories }) => {

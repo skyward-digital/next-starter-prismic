@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
 import { Disclosure } from "@headlessui/react";
 import { linkResolver } from "../../prismic";
-import { Link, Image } from "..";
+import { Link } from "../Link";
+import { Image } from "../Image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 

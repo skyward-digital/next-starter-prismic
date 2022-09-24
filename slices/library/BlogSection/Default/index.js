@@ -2,7 +2,9 @@ import { useContext } from "react";
 import { format } from "date-fns";
 import { asDate } from "@prismicio/helpers";
 import { GlobalContext } from "../../../../context/GlobalContext";
-import { RichText, Image, Link } from "../../../../components";
+import { RichText } from "../../../../components/RichText";
+import { Image } from "../../../../components/Image";
+import { Link } from "../../../../components/Link";
 
 const BlogSection = ({ id, title, description }) => {
   const { recentPosts } = useContext(GlobalContext);
