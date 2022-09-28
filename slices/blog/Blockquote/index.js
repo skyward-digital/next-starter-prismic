@@ -1,10 +1,10 @@
 import dynamic from "next/dynamic";
 
-const Blockquote = ({ slice: { primary, items, variation }, index }) => {
-  const componentMap = {
-    default: dynamic(() => import("./Default")),
-  };
+const componentMap = {
+  default: dynamic(() => import("./Default")),
+};
 
+const Blockquote = ({ slice: { primary, items, variation }, index }) => {
   const VariableComponent = componentMap[variation];
 
   return (

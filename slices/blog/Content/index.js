@@ -1,11 +1,11 @@
 import dynamic from "next/dynamic";
 
-const Content = ({ slice: { primary, items, variation }, index }) => {
-  const componentMap = {
-    default: dynamic(() => import("./Default")),
-    large: dynamic(() => import("./Large")),
-  };
+const componentMap = {
+  default: dynamic(() => import("./Default")),
+  large: dynamic(() => import("./Large")),
+};
 
+const Content = ({ slice: { primary, items, variation }, index }) => {
   const VariableComponent = componentMap[variation];
 
   return (
