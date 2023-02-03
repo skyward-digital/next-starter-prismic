@@ -1,5 +1,11 @@
 ## Introduction
 
+Hey :wave: thanks for taking the time to look through our resources!
+
+We're a little busy right now, and this project might not be up to date. If you like our work, please consider supporting us by providing updates or reporting issues that you find.
+
+With that out of the way, good luck with your awesome Next.js/Prismic project!
+
 ## How to make a slice
 
 ### 1. Break the design into pieces
